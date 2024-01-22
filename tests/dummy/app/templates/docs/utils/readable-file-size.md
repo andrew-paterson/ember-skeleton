@@ -4,19 +4,21 @@ Returns a human readable filesize, after receiving a number of bytes as the only
 
 ## Import the util
 
-{{docs-snippet name="import-readable-file-size-util.js"}}
+<DocsSnippet @name="import-readable-file-size-util.js" />
 
 ## Usage
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="readable-file-size-util.hbs"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="readable-file-size-util.hbs" class="viewport">
     <ul> 
-      {{#each fileSizes as |fileSize|}}
+      {{#each this.fileSizes as |fileSize|}}
         <li>{{fileSize}}</li>
       {{/each}}
     </ul>
-  {{/demo.example}}
-  {{demo.snippet "readable-file-size-util.js" label="Controller" language="javascript"}}
-  {{demo.snippet "readable-file-size-util.hbs" label="Template" language="htmlbars"}}
-  {{demo.snippet "filesizes.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="readable-file-size-util.js" @label="Controller" @language="javascript" />
+  <demo.snippet @name="readable-file-size-util.hbs" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="filesizes.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>

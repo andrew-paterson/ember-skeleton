@@ -1,8 +1,10 @@
-{{#ember-skeleton/sidebar-layout/outer-wrapper
-  systemAlert=systemAlert class="dashboard" contentHeader=true
-}}
-  {{#ember-skeleton/content-wrapper title="Dashboard"}}
-    {{basicLayoutControls.hideContent}}
+<EmberSkeleton::SidebarLayout::OuterWrapper
+  @systemAlert={{this.systemAlert}}
+  class="dashboard"
+  @contentHeader={{true}}
+>
+  <EmberSkeleton::ContentWrapper @title="Dashboard">
+    {{this.basicLayoutControls.hideContent}}
     <div
       id="ember-basic-dropdown-content-ember157"
       class="ember-basic-dropdown-content user-actions ember-basic-dropdown-content--right ember-basic-dropdown-content--below ember-basic-dropdown--transitioned-in ember-view"
@@ -22,6 +24,6 @@
       </div>
     </div>
     {{ember-skeleton/sanitise-classname "2-Sample"}}
-    {{sample-content}}
-  {{/ember-skeleton/content-wrapper}}
-{{/ember-skeleton/sidebar-layout/outer-wrapper}}
+    {{this.sample-content}}
+  </EmberSkeleton::ContentWrapper>
+</EmberSkeleton::SidebarLayout::OuterWrapper>

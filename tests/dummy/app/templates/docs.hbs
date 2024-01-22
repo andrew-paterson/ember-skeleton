@@ -1,61 +1,106 @@
-{{#docs-viewer as |viewer|}}
-  {{#viewer.nav as |nav|}}
-    {{nav.section "Introduction"}}
-    {{nav.item "What is Ember Skeleton?" "docs.index"}}
-    {{nav.item "App wide options" "docs.default-options"}}
-    {{nav.item "Page loading state" "docs.page-loading-state"}}
+<DocsViewer as |viewer|>
+  <viewer.nav as |nav|>
+    <nav.section @label="Introduction" />
+    <nav.item @label="What is Ember Skeleton?" @route="docs.index" />
+    <nav.item @label="App wide options" @route="docs.default-options" />
+    <nav.item @label="Page loading state" @route="docs.page-loading-state" />
 
-    {{nav.section "Styles"}}
-    {{nav.item "Introduction" "docs.styles.introduction"}}
-    {{nav.item "Theme colors" "docs.styles.theme-colors"}}
-    {{nav.item "Theme color variants" "docs.styles.theme-color-variants"}}
-    {{nav.item "Spacers" "docs.styles.spacers"}}
-    {{nav.item "Text" "docs.styles.text"}}
-    {{nav.item "Box arrows" "docs.styles.box-arrows"}}
-    {{nav.item "Box shadow mixin" "docs.styles.box-shadow-mixin"}}
-    {{nav.item "Card box shadow" "docs.styles.card-box-shadow"}}
-    {{nav.item "Flexbox" "docs.styles.flexbox"}}
-    {{nav.item "Miscellaneous" "docs.styles.miscellaneous"}}
+    <nav.section @label="Styles" />
+    <nav.item @label="Introduction" @route="docs.styles.introduction" />
+    <nav.item @label="Theme colors" @route="docs.styles.theme-colors" />
+    <nav.item
+      @label="Theme color variants"
+      @route="docs.styles.theme-color-variants"
+    />
+    <nav.item @label="Spacers" @route="docs.styles.spacers" />
+    <nav.item @label="Text" @route="docs.styles.text" />
+    <nav.item @label="Box arrows" @route="docs.styles.box-arrows" />
+    <nav.item @label="Box shadow mixin" @route="docs.styles.box-shadow-mixin" />
+    <nav.item @label="Card box shadow" @route="docs.styles.card-box-shadow" />
+    <nav.item @label="Flexbox" @route="docs.styles.flexbox" />
+    <nav.item @label="Miscellaneous" @route="docs.styles.miscellaneous" />
 
-    {{nav.section "Main page layouts"}}
-    {{nav.item "Panel layout" "docs.main-page-layouts.panel-layout"}}
-    {{nav.item "Sidebar layout" "docs.main-page-layouts.sidebar-layout"}}
+    <nav.section @label="Main page layouts" />
+    <nav.item
+      @label="Panel layout"
+      @route="docs.main-page-layouts.panel-layout"
+    />
+    <nav.item
+      @label="Sidebar layout"
+      @route="docs.main-page-layouts.sidebar-layout"
+    />
 
-    {{nav.section "Layout components"}}
-    {{nav.item "Content wrapper" "docs.layout-components.content-wrapper"}}
-    {{nav.item "Header component" "docs.layout-components.header-component"}}
-    {{nav.item "Loading component" "docs.layout-components.loading-component"}}
-    {{nav.item "Footer component" "docs.layout-components.footer-component"}}
-    {{nav.item "Sidebar component" "docs.layout-components.sidebar-components"}}
+    <nav.section @label="Layout components" />
+    <nav.item
+      @label="Content wrapper"
+      @route="docs.layout-components.content-wrapper"
+    />
+    <nav.item
+      @label="Header component"
+      @route="docs.layout-components.header-component"
+    />
+    <nav.item
+      @label="Loading component"
+      @route="docs.layout-components.loading-component"
+    />
+    <nav.item
+      @label="Footer component"
+      @route="docs.layout-components.footer-component"
+    />
+    <nav.item
+      @label="Sidebar component"
+      @route="docs.layout-components.sidebar-components"
+    />
 
-    {{nav.section "Utility components"}}
-    {{nav.item "Material card" "docs.utility-components.material-card"}}
+    <nav.section @label="Utility components" />
+    <nav.item
+      @label="Material card"
+      @route="docs.utility-components.material-card"
+    />
 
-    {{nav.section "Helpers"}}
-    {{nav.item "Array join" "docs.helpers.array-join"}}
-    {{nav.item "Custom inflector" "docs.helpers.custom-inflector"}}
-    {{nav.item "Humanise string" "docs.helpers.humanise-string"}}
-    {{nav.item "In array" "docs.helpers.in-array"}}
-    {{nav.item "Odd or even" "docs.helpers.odd-or-even"}}
-    {{nav.item "Readable file size" "docs.helpers.readable-file-size"}}
-    {{nav.item "Replace string" "docs.helpers.replace-string"}}
-    {{nav.item "Robotise string" "docs.helpers.robotise-string"}}
-    {{nav.item "Theme color string" "docs.helpers.theme-color-string"}}
-    {{nav.item "Theme icon" "docs.helpers.theme-icon"}}
+    <nav.section @label="Helpers" />
+    <nav.item @label="Array join" @route="docs.helpers.array-join" />
+    <nav.item
+      @label="Custom inflector"
+      @route="docs.helpers.custom-inflector"
+    />
+    <nav.item @label="Humanise string" @route="docs.helpers.humanise-string" />
+    <nav.item @label="In array" @route="docs.helpers.in-array" />
+    <nav.item @label="Odd or even" @route="docs.helpers.odd-or-even" />
+    <nav.item
+      @label="Readable file size"
+      @route="docs.helpers.readable-file-size"
+    />
+    <nav.item @label="Replace string" @route="docs.helpers.replace-string" />
+    <nav.item @label="Robotise string" @route="docs.helpers.robotise-string" />
+    <nav.item
+      @label="Theme color string"
+      @route="docs.helpers.theme-color-string"
+    />
+    <nav.item @label="Theme icon" @route="docs.helpers.theme-icon" />
 
-    {{nav.section "Utils"}}
-    {{nav.item "Array join" "docs.utils.array-join"}}
-    {{nav.item "Custom inflector" "docs.utils.custom-inflector"}}
-    {{nav.item "Odd or even" "docs.utils.odd-or-even"}}
-    {{nav.item "Readable file size" "docs.utils.readable-file-size"}}
-    {{nav.item "Theme color string" "docs.utils.theme-color-string"}}
-    {{nav.item "Theme icon" "docs.utils.theme-icon"}}
-    {{nav.item "Robotise string" "docs.utils.robotise-string"}}
-    {{nav.item "Introduction" "docs.introduction"}}
-    {{nav.item "Utils.robotise string" "docs.utils.robotise-string"}}
-  {{/viewer.nav}}
+    <nav.section @label="Utils" />
+    <nav.item @label="Array join" @route="docs.utils.array-join" />
+    <nav.item @label="Custom inflector" @route="docs.utils.custom-inflector" />
+    <nav.item @label="Odd or even" @route="docs.utils.odd-or-even" />
+    <nav.item
+      @label="Readable file size"
+      @route="docs.utils.readable-file-size"
+    />
+    <nav.item
+      @label="Theme color string"
+      @route="docs.utils.theme-color-string"
+    />
+    <nav.item @label="Theme icon" @route="docs.utils.theme-icon" />
+    <nav.item @label="Robotise string" @route="docs.utils.robotise-string" />
+    <nav.item @label="Introduction" @route="docs.introduction" />
+    <nav.item
+      @label="Utils.robotise string"
+      @route="docs.utils.robotise-string"
+    />
+  </viewer.nav>
 
-  {{#viewer.main}}
+  <viewer.main>
     {{outlet}}
-  {{/viewer.main}}
-{{/docs-viewer}}
+  </viewer.main>
+</DocsViewer>

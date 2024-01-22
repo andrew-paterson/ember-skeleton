@@ -2,8 +2,9 @@
 
 The first argument is an array, and then second is the string to find in it. Returns `true` if it is present, and `false` if it is not.
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="in-array"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="in-array" class="viewport">
     <table>
       <thead>
         <tr>
@@ -14,20 +15,21 @@ The first argument is an array, and then second is the string to find in it. Ret
         </tr>
       </thead>
       <tbody>
-        {{#each model.all as | employee |}}
+        {{#each this.model.all as | employee |}}
           <tr>
             <td>{{employee}}</td>
-            <td>{{ember-skeleton/in-array model.seniorEmployees employee}}</td>
-            <td>{{ember-skeleton/in-array model.juniorEmployees employee}}</td>
-            <td>{{ember-skeleton/in-array model.interns employee}}</td>
+            <td>{{ember-skeleton/in-array this.model.seniorEmployees employee}}</td>
+            <td>{{ember-skeleton/in-array this.model.juniorEmployees employee}}</td>
+            <td>{{ember-skeleton/in-array this.model.interns employee}}</td>
           </tr>
         {{/each}}
       </tbody>
     </table>
-    {{#each model.all as | employee |}}
+    {{#each this.model.all as | employee |}}
       
     {{/each}}
-  {{/demo.example}}
-  {{demo.snippet "in-array" label="Template" language="htmlbars"}}
-  {{demo.snippet "employee-levels.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="in-array" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="employee-levels.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>

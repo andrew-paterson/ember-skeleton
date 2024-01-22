@@ -36,7 +36,7 @@ In addition, the `.text-smaller` and `.text-larger` classes
 
 This class is added for use with long form text blocks, so that such blocks can be styled for maximum readability. The following variables can be overriden before importing `ember-skeleton-variables`.
 
-{{docs-snippet name="text-column-variables.scss"}}
+<DocsSnippet @name="text-column-variables.scss" />
 
 Note that `$text-column-justify-paragraph-min-width` defines the minimum screen width at which paragraphs inside `.text-column` must have their `text-align` property overridden to `justify`. If `null` the paragraphs will not have their `text-align` property overridden.
 

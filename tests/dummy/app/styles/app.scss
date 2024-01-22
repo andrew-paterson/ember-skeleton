@@ -29,7 +29,7 @@
     }
   }
 
-  #example-list-group-colour-variants .viewport {
+  #example-list-group-colour-variants.viewport {
     ul {
       list-style: none;
       li {
@@ -39,8 +39,8 @@
     }
   }
 
-  #example-border-radius .viewport,
-  #example-border-custom-colour-variants .viewport {
+  #example-border-radius.viewport,
+  #example-border-custom-colour-variants.viewport {
     display: flex;
     flex-wrap: wrap;
     & > div {
@@ -51,7 +51,7 @@
     }
   }
 
-  #example-border-radius .viewport {
+  #example-border-radius.viewport {
     & > div {
       background: $gray-dark;
       color: $white;
@@ -64,7 +64,7 @@
     }
   }
 
-  #example-border-custom-colour-variants .viewport {
+  #example-border-custom-colour-variants.viewport {
     display: flex;
     flex-wrap: wrap;
     & > div {
@@ -73,9 +73,9 @@
     }
   }
 
-  #example-overlay-colours-white .viewport,
-  #example-overlay-colours-black .viewport,
-  #example-custom-overlay-colours .viewport {
+  #example-overlay-colours-white.viewport,
+  #example-overlay-colours-black.viewport,
+  #example-custom-overlay-colours.viewport {
     padding: $spacer-xl;
     background: $gray-extra-light;
     display: flex;
@@ -86,12 +86,12 @@
       font-family: $monospace-font-family;
     }
   }
-  #example-overlay-colours-white .viewport {
+  #example-overlay-colours-white.viewport {
     background: $gray-dark;
     color: #fff;
   }
 
-  .padding-examples .viewport {
+  .padding-examples.viewport {
     > div {
       background: $gray-medium;
       > div {
@@ -101,7 +101,7 @@
     }
   }
 
-  .margin-examples .viewport {
+  .margin-examples.viewport {
     display: flex;
     flex-wrap: wrap;
     > div {
@@ -123,7 +123,7 @@
     }
   }
 
-  .last-child-margin-bottom-0-demo .viewport {
+  .last-child-margin-bottom-0-demo.viewport {
     > div {
       padding: $spacer-sm;
       background: $gray-dark;
@@ -135,7 +135,7 @@
     }
   }
 
-  .card-box-shadow-example .viewport {
+  .card-box-shadow-example.viewport {
     & > div {
       margin-bottom: $spacer-lg;
       padding: $spacer-lg;
@@ -144,8 +144,8 @@
     }
   }
 
-  .box-arrow-example .viewport,
-  .box-arrow-bg-example .viewport {
+  .box-arrow-example.viewport,
+  .box-arrow-bg-example.viewport {
     & > div {
       display: inline-flex;
       border: 1px solid $gray-medium;
@@ -156,7 +156,7 @@
     }
   }
 
-  .box-arrow-bg-example .viewport {
+  .box-arrow-bg-example.viewport {
     & > div {
       color: #fff;
       border: 1px solid $gray-dark;

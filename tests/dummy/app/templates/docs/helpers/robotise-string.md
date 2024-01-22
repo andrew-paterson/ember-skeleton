@@ -2,8 +2,9 @@
 
 Accepts a string as the first argument, and a separator as an optional second argument, which defaults to `_` if absent. `
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="robotise-string-basic"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="robotise-string-basic" class="viewport">
     <table>
       <thead>
         <tr>
@@ -13,7 +14,7 @@ Accepts a string as the first argument, and a separator as an optional second ar
         </tr>
       </thead>
       <tbody>
-        {{#each model as | person |}}
+        {{#each this.model as | person |}}
           <tr>
             <td>{{person.name}}</td>
             <td>{{ember-skeleton/robotise-string person.name}}</td>
@@ -22,7 +23,8 @@ Accepts a string as the first argument, and a separator as an optional second ar
         {{/each}}
       </tbody>
     </table>
-  {{/demo.example}}
-  {{demo.snippet "robotise-string-basic" label="Template" language="htmlbars"}}
-  {{demo.snippet "names-and-statuses-two.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="robotise-string-basic" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="names-and-statuses-two.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>

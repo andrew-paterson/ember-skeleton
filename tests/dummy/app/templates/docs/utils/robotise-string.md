@@ -3,8 +3,9 @@
 Accepts a string as the first argument, and a separator as an optional second argument, which defaults to `_` if absent. `
 
 ## Example
-{{#docs-demo as |demo|}}
-  {{#demo.example name="robotise-string"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="robotise-string" class="viewport">
     <table>
       <thead>
         <tr>
@@ -15,14 +16,15 @@ Accepts a string as the first argument, and a separator as an optional second ar
       </thead>
       <tbody>
         <tr>
-          <td>{{nameVersions.unchanged}}</td>
-          <td>{{nameVersions.default}}</td>
-          <td>{{nameVersions.customSeparator}}</td>
+          <td>{{this.nameVersions.unchanged}}</td>
+          <td>{{this.nameVersions.default}}</td>
+          <td>{{this.nameVersions.customSeparator}}</td>
         </tr>
       </tbody>
     </table>
-  {{/demo.example}}
-  {{demo.snippet "robotise-string-util.js" label="Controller"}}
-  {{demo.snippet "robotise-string" label="Template" language="htmlbars"}}
-  {{demo.snippet "names.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="robotise-string-util.js" @label="Controller" />
+  <demo.snippet @name="robotise-string" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="names.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>

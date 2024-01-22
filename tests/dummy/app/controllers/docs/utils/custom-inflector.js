@@ -1,22 +1,25 @@
-import Controller from '@ember/controller';
 import { computed } from '@ember/object';
+import Controller from '@ember/controller';
 // BEGIN-SNIPPET import-custom-inflector-util.js
 import customInflectorUtil from 'ember-skeleton/utils/custom-inflector';
 //END-SNIPPET
-export default Controller.extend({
+export default class CustomInflector extends Controller {
   // BEGIN-SNIPPET custom-inflector-util-default-plural.js
-  defaultPlural: computed('model', function () {
+  @computed('model')
+  get defaultPlural() {
     return this.model.map((person) => {
       return `${person.name} got ${person.votes} ${customInflectorUtil(
         person.votes,
         { singular: 'vote' }
       )}.`;
     });
-  }),
+  }
+
   //END-SNIPPET
 
   // BEGIN-SNIPPET custom-inflector-util-custom-plural.js
-  customPlural: computed('model', function () {
+  @computed('model')
+  get customPlural() {
     return this.model.map((person) => {
       return `${person.name} has been voted for  ${
         person.votes
@@ -25,6 +28,6 @@ export default Controller.extend({
         plural: 'several times',
       })}.`;
     });
-  }),
+  }
   //END-SNIPPET
-});
+}

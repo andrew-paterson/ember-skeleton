@@ -9,8 +9,9 @@ Replaces underscores with spaces in the string, and applies one of three casing 
 * `lowerCase`
 * `upperCase`
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="humanise-string-basic"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="humanise-string-basic" class="viewport">
     <table>
       <thead>
         <tr>
@@ -22,7 +23,7 @@ Replaces underscores with spaces in the string, and applies one of three casing 
         </tr>
       </thead>
       <tbody>
-        {{#each model as | person |}}
+        {{#each this.model as | person |}}
           <tr>
             <td>{{person.name}}</td>
             <td>{{ember-skeleton/humanise-string person.status}}</td>
@@ -33,7 +34,8 @@ Replaces underscores with spaces in the string, and applies one of three casing 
         {{/each}}
       </tbody>
     </table>
-  {{/demo.example}}
-  {{demo.snippet "humanise-string-basic" label="Template" language="htmlbars"}}
-  {{demo.snippet "names-and-statuses-two.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="humanise-string-basic" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="names-and-statuses-two.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>

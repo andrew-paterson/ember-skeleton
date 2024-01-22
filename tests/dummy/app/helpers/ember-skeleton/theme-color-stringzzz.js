@@ -1,5 +1,5 @@
-import Helper from '@ember/component/helper';
 import { inject as service } from '@ember/service';
+import Helper from '@ember/component/helper';
 import ENV from '../../config/environment';
 
 export function themeColorString(params, hash, defaultAssociations) {
@@ -55,11 +55,12 @@ function findReturnString(array, string) {
   ).returnString;
 }
 
-export default Helper.extend({
-  emberSkeleton: service(),
+export default class ThemeColorStringzzz extends Helper {
+  @service
+  emberSkeleton;
 
   compute(params, hash) {
     var defaultAssociations = this.emberSkeleton.themeColorStringDefaults;
     return themeColorString(params, hash, defaultAssociations);
-  },
-});
+  }
+}

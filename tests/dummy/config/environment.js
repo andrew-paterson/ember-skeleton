@@ -5,7 +5,7 @@ module.exports = function (environment) {
     modulePrefix: 'dummy',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'history',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -18,6 +18,7 @@ module.exports = function (environment) {
     },
 
     emberSkeletonOptions: {
+      // BEGIN-SNIPPET theme-color-string-app-defaults.js
       themeColorStringDefaults: [
         {
           returnString: 'success',
@@ -37,17 +38,19 @@ module.exports = function (environment) {
           fallback: true,
         },
       ],
-
+      // END-SNIPPET
+      // BEGIN-SNIPPET theme-icon-app-defaults.js
       themeIconDefaults: [
         {
           returnString: 'svg/icons/icon-alert',
           matchStrings: ['danger', 'failed'],
+          fallback: true,
         },
         {
           returnString: 'svg/icons/icon-tick',
           matchStrings: ['success', 'passed'],
         },
-      ],
+      ], // END-SNIPPET
     },
 
     APP: {

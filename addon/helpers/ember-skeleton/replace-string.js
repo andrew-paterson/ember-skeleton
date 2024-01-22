@@ -22,6 +22,8 @@ export function replaceString(params, hash) {
   searchArray.forEach((item) => {
     if (typeof item.find === 'string') {
       find = [item.find];
+    } else {
+      find = item.find;
     }
     if (find.indexOf(string) > -1) {
       final = item.replace;

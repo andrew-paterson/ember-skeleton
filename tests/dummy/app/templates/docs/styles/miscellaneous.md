@@ -24,20 +24,22 @@ The cursor will be a pointer on hover of the element.
   
 Applies the font family assigned to the `$monospace-font-family` variable to the element. The default value is `"Lucida Console", Monaco, "Courier New", Courier, monospace`.
 
-# Spinner
+## Spinner
 
 Any element with the classes `.spinner.on` will have a spinning animation.
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="spinning-badge.hbs"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="spinning-badge.hbs" class="viewport">
       <div class="spinner on badge badge-success">
         .spinner.on
       </div>
-    {{/demo.example}}
-  {{demo.snippet "spinning-badge.hbs"}}
-{{/docs-demo}}
+    </demo.example>
+  <demo.snippet @name="spinning-badge.hbs" />
+</DocsDemo>
+</div>
 
-# Other
+## Other
 
 All elements have `box-sizing: border-box`.
 

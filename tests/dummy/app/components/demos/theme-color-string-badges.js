@@ -1,13 +1,14 @@
-import Component from '@ember/component';
-import layout from '../../templates/components/demos/theme-color-string-badges';
-import { themeColorString } from 'ember-skeleton/helpers/ember-skeleton/theme-color-string';
+import { layout as templateLayout } from '@ember-decorators/component';
 import { inject as service } from '@ember/service';
+import Component from '@glimmer/component';
+import { themeColorString } from 'ember-skeleton/helpers/ember-skeleton/theme-color-string';
 
-export default Component.extend({
-  layout,
-  emberSkeleton: service(),
+export default class ThemeColorStringBadges extends Component {
+  @service
+  emberSkeleton;
+
   init() {
-    this._super(...arguments);
+    super.init(...arguments);
     this.one = themeColorString(
       ['ok'],
       null,
@@ -33,5 +34,5 @@ export default Component.extend({
       { fallback: 'info' },
       this.emberSkeleton.themeColorStringDefaults
     );
-  },
-});
+  }
+}

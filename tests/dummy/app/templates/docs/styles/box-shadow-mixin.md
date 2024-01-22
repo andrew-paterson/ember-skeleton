@@ -6,8 +6,9 @@ The default opacity is `0.16`.
 
 There are 12 positions available:
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="box-shadow-mixin-examples.hbs"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="box-shadow-mixin-examples.hbs" class="viewport">
     <div class="box-shadow-demo-top padding-lg margin-y-xl border">
       <code>@include .box-shadow(top)</code>
     </div>
@@ -44,35 +45,39 @@ There are 12 positions available:
     <div class="box-shadow-demo-topLeft padding-lg margin-y-xl border">
       <code>@include .box-shadow(topLeft)</code>
     </div>
-  {{/demo.example}}
-  {{demo.snippet "box-shadow-mixin-usage.scss" label="scss"}}
-  {{demo.snippet
-    "box-shadow-mixin-examples.hbs"
-    label="hbs"
-    language="htmlbars"
-  }}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="box-shadow-mixin-usage.scss" @label="scss" />
+  <demo.snippet 
+    @name="box-shadow-mixin-examples.hbs"
+    @label="hbs"
+    @language="htmlbars"
+  />
+</DocsDemo>
+</div>
 
 The mixin can be given a list of positions to add multiple box shadows to one element.
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="box-shadow-mixin-multiple-examples.hbs"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="box-shadow-mixin-multiple-examples.hbs" class="viewport">
     <div class="box-shadow-demo-multiple padding-lg margin-y-xl border">
       <code>@include box-shadow(topInset, rightInset, bottomInset, leftInset);</code>
     </div>
-    {{/demo.example}}
-  {{demo.snippet "box-shadow-mixin-mutliple.scss" label="scss"}}
-  {{demo.snippet
-    "box-shadow-mixin-multiple-examples.hbs"
-    label="hbs"
-    language="htmlbars"
-  }}
-{{/docs-demo}}
+    </demo.example>
+  <demo.snippet @name="box-shadow-mixin-mutliple.scss" @label="scss" />
+  <demo.snippet 
+    @name="box-shadow-mixin-multiple-examples.hbs"
+    @label="hbs"
+    @language="htmlbars"
+  />
+</DocsDemo>
+</div>
 
 Opacity can also be passed as the second argument. The default is `0.16`.
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="box-shadow-mixin-opacity-examples.hbs"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="box-shadow-mixin-opacity-examples.hbs" class="viewport">
     <div class="box-shadow-demo-bottomRight-opacity-10 padding-lg margin-y-xl border">
       <code>@include box-shadow(bottomRight, 0.1);</code>
     </div>
@@ -85,11 +90,12 @@ Opacity can also be passed as the second argument. The default is `0.16`.
     <div class="box-shadow-demo-bottomRight-opacity-70 padding-lg margin-y-xl border">
       <code>@include box-shadow(bottomRight, 0.7);</code>
     </div>
-    {{/demo.example}}
-  {{demo.snippet "box-shadow-mixin-opacity.scss" label="scss"}}
-  {{demo.snippet
-    "box-shadow-mixin-opacity-examples.hbs"
-    label="hbs"
-    language="htmlbars"
-  }}
-{{/docs-demo}}
+    </demo.example>
+  <demo.snippet @name="box-shadow-mixin-opacity.scss" @label="scss" />
+  <demo.snippet 
+    @name="box-shadow-mixin-opacity-examples.hbs"
+    @label="hbs"
+    @language="htmlbars"
+  />
+</DocsDemo>
+</div>

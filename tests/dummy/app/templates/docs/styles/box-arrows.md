@@ -2,8 +2,9 @@
 
 Adds an arrow to a box. The examples below show all the available combinations of arrow direction and position.
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="box-arrows.scss" class="box-arrow-example"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="box-arrows.scss" class="box-arrow-example viewport">
       <div class="box-arrow arrow-direction-up arrow-position-left">
         .box-arrow.arrow-direction-up.arrow-position-left
       </div>
@@ -28,20 +29,23 @@ Adds an arrow to a box. The examples below show all the available combinations o
       <div class="box-arrow arrow-direction-right arrow-position-top">
         .box-arrow.arrow-direction-right.arrow-position-top
       </div>
-    {{/demo.example}}
-  {{demo.snippet "box-arrows.scss"}}
-{{/docs-demo}}
+    </demo.example>
+  <demo.snippet @name="box-arrows.scss" />
+</DocsDemo>
+</div>
 
 By default, the arrow fill will be white, but if the element in question has any of the theme colours applied as a backgroud, the arrow fill will take in that colour.
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="box-arrows-bg.hbs" class="box-arrow-bg-example"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="box-arrows-bg.hbs" class="box-arrow-bg-example viewport">
       <div class="box-arrow arrow-direction-up arrow-position-left bg-success">
         .box-arrow.arrow-direction-up.arrow-position-left.bg-success
       </div>
       <div class="box-arrow arrow-direction-up arrow-position-right bg-warning">
         .box-arrow.arrow-direction-up.arrow-position-right.bg-warning
       </div>
-    {{/demo.example}}
-  {{demo.snippet "box-arrows-bg.hbs"}}
-{{/docs-demo}}
+    </demo.example>
+  <demo.snippet @name="box-arrows-bg.hbs" />
+</DocsDemo>
+</div>

@@ -9,6 +9,11 @@ module.exports = function (defaults) {
       importBootstrapFont: false,
       importBootstrapCSS: false,
     },
+    snippetSearchPaths: [
+      'tests/dummy/app',
+      'addon/utils',
+      'tests/dummy/config',
+    ],
   });
 
   /*

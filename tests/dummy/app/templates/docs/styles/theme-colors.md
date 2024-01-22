@@ -2,11 +2,11 @@
 
 This concept has been borrowed from Bootstrap. Many of the CSS classes available in the styles API are based on a map of theme colours, defined in the `$theme-colors` variable. The defaults are shown below.
 
-{{docs-snippet name="default-bootstrap-colours.scss" language="sass" title="Default theme colours"}}
+<DocsSnippet @name="default-bootstrap-colours.scss" @language="sass" @title="Default theme colours" />
 
 ## Theme color CSS selectors
 
-The Ember Skeleton `SASS` code will create multiple CSS style rules for each of the selectors listed below- one for each item in the `$theme-colors` map. See {{link-to "Theme color variants" "docs.styles.theme-color-variants"}} for the full CSS API based on theme colours.
+The Ember Skeleton `SASS` code will create multiple CSS style rules for each of the selectors listed below- one for each item in the `$theme-colors` map. See <LinkTo @route="docs.styles.theme-color-variants">Theme color variants"</LinkTo> for the full CSS API based on theme colours.
 
     .alert-*
     .badge-*
@@ -26,23 +26,25 @@ This map of colours will then be used to generate the colour variants of the `.b
 
 ## Adding custom theme colors
 
-Custom colours can be added to this map, by defining your own `$theme-colors` map *before* importing `ember-skeleton-variables`.
+Custom colours can be added to this map, by defining your own `$theme-colors` map _before_ importing `ember-skeleton-variables`.
 
-{{docs-snippet name="adding-cutom-bootstrap-colours.scss" language="css"}}
+<DocsSnippet @name="adding-cutom-bootstrap-colours.scss" @language="css" />
 
 Note that the above code will add the colours to the default $theme-colors` map, rather than replace it.
 
 The corresponding classes will then be avilable in your CSS. The below example shows bootstrap badges implemented with custom theme colours defined above.
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="badge-custom-colour-variants.hbs"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="badge-custom-colour-variants.hbs" class="viewport">
     <div class="badge badge-twitter">badge-twitter</div>
     <div class="badge badge-facebook">badge-facebook</div>
     <div class="badge badge-tripadvisor">badge-tripadvisor</div>
     <div class="badge badge-reddit">badge-reddit</div>
-  {{/demo.example}}
-  {{demo.snippet "badge-custom-colour-variants.hbs"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="badge-custom-colour-variants.hbs" @label="Template" @language="htmlbars"/>
+</DocsDemo>
+</div>
 
 ## Bootstrap YIQ threshold
 

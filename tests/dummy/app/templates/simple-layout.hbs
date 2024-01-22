@@ -1,7 +1,8 @@
-{{#ember-skeleton/panel-layout/outer-wrapper
-  systemAlert=systemAlert class="dashboard"
-}}
-  {{#ember-skeleton/content-wrapper title="Dashboard"}}
+<EmberSkeleton::PanelLayout::OuterWrapper
+  @systemAlert={{this.systemAlert}}
+  class="dashboard"
+>
+  <EmberSkeleton::ContentWrapper @title="Dashboard">
     {{!-- {{sample-content}} --}}
-  {{/ember-skeleton/content-wrapper}}
-{{/ember-skeleton/panel-layout/outer-wrapper}}
+  </EmberSkeleton::ContentWrapper>
+</EmberSkeleton::PanelLayout::OuterWrapper>

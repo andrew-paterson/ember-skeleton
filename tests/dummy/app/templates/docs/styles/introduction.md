@@ -4,13 +4,13 @@ The styles are implemented using `SASS`, and thus the `ember-cli-sass` addon is 
 
 There are two stylesheets which need to be imported in `app/styles/app.scss`.
 
-{{docs-snippet name="basic-style-imports.scss" language="css"}}
+<DocsSnippet @name="basic-style-imports.scss" @language="css" />
 
 ## Overriding SASS variables
 
 All variables listed in `app/styles/ember-skeleton/variables` can be overridden. This must be done before the import of `ember-skeleton-variables`.
 
-{{docs-snippet name="overriding-default-scss-vars.scss" language="scss" title="app.scss"}}
+<DocsSnippet @name="overriding-default-scss-vars.scss" @language="scss" @title="app.scss" />
 
 ## Boostrap integration
 

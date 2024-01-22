@@ -1,6 +1,4 @@
-import Component from '@ember/component';
-import layout from '../../templates/components/ember-skeleton/loading-page';
+import { layout as templateLayout } from '@ember-decorators/component';
+import Component from '@glimmer/component';
 
-export default Component.extend({
-  layout,
-});
+export default class LoadingPage extends Component {}

@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-  extends: 'recommended',
+  // extends: 'recommended',
   rules: {
-    'attribute-indentation': false,
+    // 'attribute-indentation': false,
     'no-implicit-this': {
       allow: [
         'ember-skeleton/array-join',

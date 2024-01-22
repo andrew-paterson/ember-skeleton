@@ -8,8 +8,9 @@ Note that the helper only looks for an exact matches- it does not replace text w
 
 The example below replaces "Andy Dwyer" with "Andrew Dwyer".
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="replace-string-basic"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="replace-string-basic" class="viewport">
     <table>
       <thead>
         <tr>
@@ -18,7 +19,7 @@ The example below replaces "Andy Dwyer" with "Andrew Dwyer".
         </tr>
       </thead>
       <tbody>
-        {{#each model as | person |}}
+        {{#each this.model as | person |}}
           <tr>
             <td>{{ember-skeleton/replace-string person.name "Andy Dwyer" "Andrew Dwyer"}}</td>
             <td>{{person.status}}</td>
@@ -26,17 +27,19 @@ The example below replaces "Andy Dwyer" with "Andrew Dwyer".
         {{/each}}
       </tbody>
     </table>
-  {{/demo.example}}
-  {{demo.snippet "replace-string-basic" label="Template" language="htmlbars"}}
-  {{demo.snippet "names-and-status-numbers.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="replace-string-basic" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="names-and-status-numbers.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>
 
 ## Advanced Usage
 
 Th example below replaces numerical statuses with string statuses.
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="replace-string-advanced"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="replace-string-advanced" class="viewport">
     <table>
       <thead>
         <tr>
@@ -45,7 +48,7 @@ Th example below replaces numerical statuses with string statuses.
         </tr>
       </thead>
       <tbody>
-        {{#each model as | person |}}
+        {{#each this.model as | person |}}
           <tr>
             <td>{{person.name}}</td>
             <td>
@@ -70,17 +73,19 @@ Th example below replaces numerical statuses with string statuses.
         {{/each}}
       </tbody>
     </table>
-  {{/demo.example}}
-  {{demo.snippet "replace-string-advanced" label="Template" language="htmlbars"}}
-  {{demo.snippet "names-and-status-numbers.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="replace-string-advanced" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="names-and-status-numbers.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>
 
 ## Array
 
 Note that you can pass an array as the `find` property in your advanced search hashes. The examples below replaces both "0" and "-1" with "false", and "1" with "true".
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="replace-string-array-simple"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="replace-string-array-simple" class="viewport">
     <table>
       <thead>
         <tr>
@@ -89,7 +94,7 @@ Note that you can pass an array as the `find` property in your advanced search h
         </tr>
       </thead>
       <tbody>
-        {{#each model as | person |}}
+        {{#each this.model as | person |}}
           <tr>
             <td>{{person.name}}</td>
             <td>{{ember-skeleton/replace-string person.status (array "-1" "0") "false"}}</td>
@@ -97,15 +102,17 @@ Note that you can pass an array as the `find` property in your advanced search h
         {{/each}}
       </tbody>
     </table>
-  {{/demo.example}}
-  {{demo.snippet "replace-string-array-simple" label="Template" language="htmlbars"}}
-  {{demo.snippet "names-and-status-numbers.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="replace-string-array-simple" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="names-and-status-numbers.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>
 
 Using a find array with the `advanced` hash:
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="replace-string-array"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="replace-string-array" class="viewport">
     <table>
       <thead>
         <tr>
@@ -114,7 +121,7 @@ Using a find array with the `advanced` hash:
         </tr>
       </thead>
       <tbody>
-        {{#each model as | person |}}
+        {{#each this.model as | person |}}
           <tr>
             <td>{{person.name}}</td>
             <td>
@@ -135,10 +142,11 @@ Using a find array with the `advanced` hash:
         {{/each}}
       </tbody>
     </table>
-  {{/demo.example}}
-  {{demo.snippet "replace-string-array" label="Template" language="htmlbars"}}
-  {{demo.snippet "names-and-status-numbers.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="replace-string-array" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="names-and-status-numbers.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>
 
 ## Fallback
 
@@ -146,8 +154,9 @@ You can pass a `fallback` string to the helper. If no matches are found, the fal
   
 The example below replaces "1" with "passed" and everything else with "did not pass".
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="replace-string-fallback-simple"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="replace-string-fallback-simple" class="viewport">
     <table>
       <thead>
         <tr>
@@ -156,7 +165,7 @@ The example below replaces "1" with "passed" and everything else with "did not p
         </tr>
       </thead>
       <tbody>
-        {{#each model as | person |}}
+        {{#each this.model as | person |}}
           <tr>
             <td>{{person.name}}</td>
             <td>{{ember-skeleton/replace-string person.status "1" "passed" fallback="did not pass"}}</td>
@@ -164,15 +173,17 @@ The example below replaces "1" with "passed" and everything else with "did not p
         {{/each}}
       </tbody>
     </table>
-  {{/demo.example}}
-  {{demo.snippet "replace-string-fallback-simple" label="Template" language="htmlbars"}}
-  {{demo.snippet "names-and-status-numbers.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="replace-string-fallback-simple" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="names-and-status-numbers.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>
 
 Using `fallback` with the `advanced` hash:
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="replace-string-fallback"}}
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="replace-string-fallback" class="viewport">
     <table>
       <thead>
         <tr>
@@ -181,7 +192,7 @@ Using `fallback` with the `advanced` hash:
         </tr>
       </thead>
       <tbody>
-        {{#each model as | person |}}
+        {{#each this.model as | person |}}
           <tr>
             <td>{{person.name}}</td>
             <td>
@@ -199,9 +210,10 @@ Using `fallback` with the `advanced` hash:
         {{/each}}
       </tbody>
     </table>
-  {{/demo.example}}
-  {{demo.snippet "replace-string-fallback" label="Template" language="htmlbars"}}
-  {{demo.snippet "names-and-status-numbers.js" label="Model" language="javascript"}}
-{{/docs-demo}}
+  </demo.example>
+  <demo.snippet @name="replace-string-fallback" @label="Template" @language="htmlbars" />
+  <demo.snippet @name="names-and-status-numbers.js" @label="Model" @language="javascript" />
+</DocsDemo>
+</div>
 
 If there are no matches and no `fallback` is passed, the original string is returned.
