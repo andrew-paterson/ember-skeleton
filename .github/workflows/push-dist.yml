@@ -18,10 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: ls ./addon
-      - run: cd ./addon
-      - run: ls
-      - run: cat package.json
+      - run: |
+          ls ./addon
+          cd ./addon
+          ls
+          cat package.json
       # - uses: pnpm/action-setup@v4
 
       # - uses: actions/setup-node@v4
