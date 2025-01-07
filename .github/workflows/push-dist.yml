@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: ls ./addon
-      - run: cd ./test-app
+      - run: cd ./addon
       - run: ls
       - run: cat package.json
       # - uses: pnpm/action-setup@v4
