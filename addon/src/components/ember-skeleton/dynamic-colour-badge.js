@@ -1,6 +1,6 @@
 import { tracked } from '@glimmer/tracking';
 import Component from '@glimmer/component';
-import contrastColour from 'ember-skeleton/utils/contrast-colour';
+import contrastColour from '../../utils/contrast-color';
 
 export default class DynamicColourBadge extends Component {
   @tracked background;

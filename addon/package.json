@@ -31,10 +31,9 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.9.0",
-    "ember-cli-flash": "^4.0.0",
-    "ember-data": "^5.3.0",
     "ember-test-selectors": "^7.0.0",
-    "ember-window-mock": "^1.0.1"
+    "ember-window-mock": "^1.0.1",
+    "ember-get-config": "^2.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -43,6 +42,8 @@
     "@babel/plugin-transform-class-properties": "^7.25.9",
     "@embroider/addon-dev": "^7.0.0",
     "@rollup/plugin-babel": "^6.0.4",
+    "ember-data": "^5.3.0",
+    "ember-cli-flash": "^4.0.0",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-ember": "^11.11.1",
@@ -59,18 +60,17 @@
   "ember": {
     "edition": "octane"
   },
-  "peerDependencies": {
-    "ember-source": ">= 4.0.0"
-  },
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*",
     "./test-support": "./dist/test-support/index.js",
-    "./addon-main.js": "./addon-main.js"
+    "./addon-main.js": "./addon-main.js",
+    "./ember-skeleton-variables.scss": "./ember-skeleton-variables.scss"
   },
   "files": [
     "addon-main.js",
-    "dist"
+    "dist",
+    "ember-skeleton-variables.scss"
   ],
   "ember-addon": {
     "main": "addon-main.js",

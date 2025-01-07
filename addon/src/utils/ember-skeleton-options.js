@@ -2,6 +2,7 @@
 import config from 'ember-get-config';
 
 export default function () {
+  // const config = {};
   var configOverrides = config.emberSkeletonOptions;
   const addonDefaults = {
     // BEGIN-SNIPPET addon-default-options.js

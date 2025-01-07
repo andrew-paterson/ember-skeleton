@@ -1,7 +1,7 @@
 import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
 import Component from '@glimmer/component';
-import themeColorStringUtil from 'ember-skeleton/utils/theme-color-string';
+import themeColorStringUtil from '../../utils/theme-color-string';
 
 export default class MaterialCard extends Component {
   classes = ' border rounded padding-lg card-box-shadow ';
@@ -17,7 +17,7 @@ export default class MaterialCard extends Component {
     }
     return `border-${themeColorStringUtil(
       this.args.borderColorProp,
-      this.args.themeColorStringHash
+      this.args.themeColorStringHash,
     )}`;
   }
 

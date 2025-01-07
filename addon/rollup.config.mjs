@@ -5,9 +5,7 @@ const addon = new Addon({
   srcDir: 'src',
   destDir: 'dist',
 });
-console.log(
-  'rollup----------------------------------------------------------------------',
-);
+
 export default {
   // This provides defaults that work well alongside `publicEntrypoints` below.
   // You can augment this if you need to.
@@ -21,7 +19,6 @@ export default {
       'helpers/**/*.js',
       'services/**/*.js',
       'utils/**/*.js',
-      'utils/*.js',
       'index.js',
     ]),
 
@@ -33,7 +30,6 @@ export default {
       'helpers/**/*.js',
       'services/**/*.js',
       'utils/**/*.js',
-      'utils/*.js',
       'index.js',
     ]),
 
@@ -57,7 +53,7 @@ export default {
 
     // addons are allowed to contain imports of .css files, which we want rollup
     // to leave alone and keep in the published output.
-    addon.keepAssets(['**/*.css']),
+    addon.keepAssets(['**/*.scss']),
 
     // Remove leftover build artifacts when starting a new build.
     addon.clean(),
