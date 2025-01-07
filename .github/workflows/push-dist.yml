@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: cd ./addon
+      - run: cd ./test-app
       - run: ls
       - run: cat package.json
       # - uses: pnpm/action-setup@v4
