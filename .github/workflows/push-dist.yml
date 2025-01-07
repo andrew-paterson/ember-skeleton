@@ -18,25 +18,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          ls ./addon
-          cd ./addon
-          ls
-          cat package.json
-      # - uses: pnpm/action-setup@v4
 
-      # - uses: actions/setup-node@v4
-      #   with:
-      #     node-version: 18
-      #     cache: pnpm
-      # - name: Install Dependencies
-      #   run: pnpm install --frozen-lockfile
-      # - run: cd addon
-      # - run: ls
-      # - run: cat package.json
-      # - run: pnpm run build
-      # - uses: kategengler/put-built-npm-package-contents-on-branch@v2.0.0
-      #   with:
-      #     branch: dist
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      #     working-directory: 'addon'
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: pnpm
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        run: |
+          cd ./addon
+          pnpm run build
+      - uses: kategengler/put-built-npm-package-contents-on-branch@v2.0.0
+        with:
+          branch: dist
+          token: ${{ secrets.GITHUB_TOKEN }}
+          working-directory: 'addon'
