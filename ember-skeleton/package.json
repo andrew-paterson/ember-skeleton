@@ -16,66 +16,47 @@
     "test": "tests"
   },
   "scripts": {
-    "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
-    "lint:css": "stylelint \"**/*.css\"",
-    "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
-    "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\"",
-    "lint:hbs": "ember-template-lint .",
-    "lint:hbs:fix": "ember-template-lint . --fix",
+    "build": "rollup --config",
+    "lint": "concurrently 'pnpm:lint:*(!fix)' --names 'lint:'",
+    "lint:fix": "concurrently 'pnpm:lint:*:fix' --names 'fix:'",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
-    "lint_implicit_this:hbs": "ember-template-lint ./test-app/app --config-path .template-lintrc.js --format=json",
-    "build": "rollup --config",
-    "prepublishOnly": "rollup --config",
-    "start": "rollup --config --watch"
+    "prepack": "rollup --config",
+    "start": "rollup --config --watch",
+    "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.9.0",
+    "decorator-transforms": "^2.3.0",
     "ember-test-selectors": "^7.0.0",
     "ember-window-mock": "^1.0.1",
     "ember-get-config": "^2.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
-    "@babel/eslint-parser": "^7.23.3",
-    "@babel/plugin-proposal-decorators": "^7.25.9",
-    "@babel/plugin-transform-class-properties": "^7.25.9",
-    "@embroider/addon-dev": "^7.0.0",
+    "@babel/eslint-parser": "^7.25.9",
+    "@babel/runtime": "^7.26.0",
+    "@embroider/addon-dev": "^7.1.1",
     "@rollup/plugin-babel": "^6.0.4",
-    "ember-data": "^5.3.0",
-    "ember-cli-flash": "^4.0.0",
-    "eslint": "^8.55.0",
+    "babel-plugin-ember-template-compilation": "^2.3.0",
+    "concurrently": "^9.1.0",
+    "ember-template-lint": "^6.0.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-ember": "^11.11.1",
-    "eslint-plugin-n": "^16.4.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-qunit": "^8.0.1",
-    "prettier": "^3.1.1",
-    "rollup": "^4.28.1"
+    "eslint-plugin-ember": "^12.3.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.15.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.2",
+    "rollup": "^4.29.1",
+    "rollup-plugin-copy": "^3.5.0"
   },
   "engines": {
     "node": ">= 18"
   },
-  "homepage": "https://andrew-paterson.github.io/ember-skeleton",
-  "ember": {
-    "edition": "octane"
-  },
-  "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*",
-    "./test-support": "./dist/test-support/index.js",
-    "./addon-main.js": "./addon-main.js",
-    "./ember-skeleton-variables.scss": "./ember-skeleton-variables.scss"
-  },
-  "files": [
-    "addon-main.js",
-    "dist",
-    "ember-skeleton-variables.scss"
-  ],
   "ember-addon": {
-    "main": "addon-main.js",
-    "type": "addon",
-    "version": 2,
     "app-js": {
       "./components/blank-template.js": "./dist/_app_/components/blank-template.js",
       "./components/ember-skeleton/alternative-content.js": "./dist/_app_/components/ember-skeleton/alternative-content.js",
@@ -104,22 +85,22 @@
       "./helpers/ember-skeleton/string-split.js": "./dist/_app_/helpers/ember-skeleton/string-split.js",
       "./helpers/ember-skeleton/theme-color-string.js": "./dist/_app_/helpers/ember-skeleton/theme-color-string.js",
       "./helpers/ember-skeleton/theme-icon.js": "./dist/_app_/helpers/ember-skeleton/theme-icon.js",
-      "./services/ember-skeleton.js": "./dist/_app_/services/ember-skeleton.js",
-      "./utils/array-join.js": "./dist/_app_/utils/array-join.js",
-      "./utils/contrast-color.js": "./dist/_app_/utils/contrast-color.js",
-      "./utils/custom-inflector.js": "./dist/_app_/utils/custom-inflector.js",
-      "./utils/ember-skeleton-options.js": "./dist/_app_/utils/ember-skeleton-options.js",
-      "./utils/ember-skeleton/custom-sort-objects.js": "./dist/_app_/utils/ember-skeleton/custom-sort-objects.js",
-      "./utils/ember-skeleton/group-non-model-data-by.js": "./dist/_app_/utils/ember-skeleton/group-non-model-data-by.js",
-      "./utils/ember-skeleton/natural-sort.js": "./dist/_app_/utils/ember-skeleton/natural-sort.js",
-      "./utils/ember-skeleton/object-key-from-value.js": "./dist/_app_/utils/ember-skeleton/object-key-from-value.js",
-      "./utils/ember-skeleton/shared-string-from-start.js": "./dist/_app_/utils/ember-skeleton/shared-string-from-start.js",
-      "./utils/humanise-string.js": "./dist/_app_/utils/humanise-string.js",
-      "./utils/odd-or-even.js": "./dist/_app_/utils/odd-or-even.js",
-      "./utils/readable-file-size.js": "./dist/_app_/utils/readable-file-size.js",
-      "./utils/robotise-string.js": "./dist/_app_/utils/robotise-string.js",
-      "./utils/theme-color-string.js": "./dist/_app_/utils/theme-color-string.js",
-      "./utils/theme-icon.js": "./dist/_app_/utils/theme-icon.js"
-    }
-  }
+      "./services/ember-skeleton.js": "./dist/_app_/services/ember-skeleton.js"
+    },
+    "main": "addon-main.cjs",
+    "type": "addon",
+    "version": 2
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*.js",
+    "./addon-main.js": "./addon-main.cjs"
+  },
+  "files": [
+    "addon-main.cjs",
+    "dist"
+  ]
 }

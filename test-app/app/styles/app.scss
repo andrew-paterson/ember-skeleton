@@ -1,7 +1,7 @@
 :root {
   --brand-primary: #3490dc;
 }
-@import 'ember-skeleton-variables';
+@import 'node_modules/ember-skeleton/dist/scss/ember-skeleton-variables';
 
 .ember-skeleton-styles {
   font-size: 10px;
@@ -14,8 +14,8 @@
   }
   @import './snippets/_pre-variables-import';
   // BEGIN-SNIPPET basic-style-imports.scss
-  @import 'ember-skeleton-variables';
-  @import 'ember-skeleton';
+  @import 'node_modules/ember-skeleton/dist/scss/ember-skeleton-variables';
+  @import 'node_modules/ember-skeleton/dist/scss/ember-skeleton';
   // END-SNIPPET
   @import './snippets/_post-variables-import';
 

@@ -9,9 +9,9 @@ module.exports = function (defaults) {
       importBootstrapFont: false,
       importBootstrapCSS: false,
     },
-    snippetSearchPaths: ['app', '../addon/src/utils', 'config'],
+    snippetSearchPaths: ['app', '../ember-skeleton/src/utils', 'config'],
     'ember-cli-addon-docs': {
-      documentingAddonAt: '../addon',
+      documentingAddonAt: '../ember-skeleton',
     },
   });
 
