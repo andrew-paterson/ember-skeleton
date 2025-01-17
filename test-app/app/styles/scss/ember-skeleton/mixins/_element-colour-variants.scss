@@ -1,0 +1,7 @@
+@mixin fill-variant($bg) {
+  fill: $bg !important;
+}
+
+@mixin stroke-variant($bg) {
+  stroke: $bg !important;
+}

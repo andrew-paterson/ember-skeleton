@@ -1,0 +1,47 @@
+@use 'sass:math';
+
+table {
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-collapse: collapse;
+  border: 1px var(--table-border-style) var(--table-border-color);
+  font-size: 1em;
+  &.striped tr:nth-child(even) td {
+    background-color: #f4f4f4;
+  }
+  th {
+    color: var(--table-header-cell-color);
+    background-color: var(--table-header-cell-background-color);
+    font-size: #{math.div(var(--table-header-cell-font-size), var(--body-text-font-size))}em;
+    text-transform: var(--table-header-cell-text-transform);
+    text-align: var(--table-header-cell-text-align);
+    font-family: var(--table-header-cell-font-family);
+    font-weight: var(--table-header-cell-font-weight);
+    padding: var(--table-cell-padding-y) var(--table-cell-padding-x);
+    border: 1px var(--table-border-style) $table-header-cell-border-color;
+    line-height: 100%;
+  }
+  td {
+    color: inherit;
+    background-color: var(--table-cell-background-color);
+    font-family: var(--table-cell-font-family);
+    line-height: var(--table-cell-text-line-height);
+    padding: var(--table-cell-padding-y) var(--table-cell-padding-x);
+    font-size: 1em;
+    border: 1px var(--table-border-style) var(--table-border-color);
+  }
+  &.compact-table {
+    > tbody > tr > td {
+      background-color: #fff;
+      border-color: #d9d9d9;
+      padding: 3px 10px;
+    }
+  }
+
+  &.light-header > thead > tr > th {
+    color: inherit;
+    background-color: var(--table-cell-background-color);
+    border: 1px var(--table-border-style) var(--table-border-color);
+  }
+}

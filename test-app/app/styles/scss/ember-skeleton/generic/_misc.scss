@@ -1,0 +1,61 @@
+.hidden {
+  display: none !important;
+}
+
+.hover-pointer:hover,
+[role='button'] {
+  cursor: pointer;
+}
+
+.pop-up-box {
+  padding: 15px;
+  background: #fff;
+  @include card-box-shadow;
+  border: 1px solid #bbb;
+  border-radius: var(--button-border-radius);
+  margin: 10px 0;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  left: inherit;
+  right: 0;
+}
+
+.bottom-0 {
+  top: inherit;
+  bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+hr {
+  border-width: 0;
+  border-top: var(--hr-border-top-width) solid var(--hr-border-top-color);
+  margin: 1em 0;
+}

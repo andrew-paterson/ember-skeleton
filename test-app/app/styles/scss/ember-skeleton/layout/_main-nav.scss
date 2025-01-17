@@ -1,0 +1,107 @@
+div.main-nav {
+  max-width: var(--sidebar-expanded-width);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--sidebar-background);
+  &.nav-collapsed {
+    max-width: var(--sidebar-collapsed-width);
+  }
+
+  &.nav-toggled {
+    transition: var(--sidebar-toggle-transition);
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul li {
+    margin: 0;
+    list-style: none;
+    height: var(--sidebar-nav-item-height);
+    width: var(--sidebar-expanded-width);
+    font-size: --main-nav-item-font-size;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: var(--gray-light);
+    display: flex;
+    align-items: center;
+    background: var(--gray-dark);
+    &.no-link {
+      padding: 0 var(--spacer-lg);
+    }
+  }
+
+  // TODO move to Hyrax
+  .menu-toggle {
+    background: var(--sidebar-toggle-menu-background);
+    display: flex;
+    justify-content: space-between;
+    height: var(--sidebar-toggle-menu-list-item-height);
+    border-bottom: 1px solid #666;
+    width: var(--sidebar-expanded-width);
+  }
+
+  .menu-toggle svg.nav-collapse {
+    height: 18px;
+    fill: var(--sidebar-nav-item-color);
+  }
+
+  .hamburger {
+    .hamburger-stripe {
+      height: 2px;
+      width: 26px;
+      border-radius: 2px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      background: var(--sidebar-hamburger-color);
+      display: block;
+    }
+  }
+
+  .hamburger .hamburger-stripe:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: none;
+    font-weight: 400;
+    color: var(--sidebar-nav-item-color);
+    display: flex;
+    align-items: center;
+    height: var(--sidebar-nav-item-height);
+    flex-grow: 1;
+  }
+
+  a:hover {
+    color: var(--sidebar-nav-item-active-hover-color);
+    background-color: #777;
+    text-decoration: none;
+  }
+
+  a.active {
+    background-color: #777;
+    color: var(--sidebar-nav-item-active-hover-color);
+    cursor: default;
+  }
+
+  li svg {
+    fill: #fff;
+    width: var(--sidebar-collapsed-width);
+    height: var(--sidebar-nav-item-height);
+    padding: var(--spacer-lg);
+  }
+}
+
+.nav-frozen .main-nav ul {
+  opacity: 0.3;
+  li a:hover {
+    cursor: not-allowed;
+    background: transparent;
+  }
+}

@@ -1,0 +1,59 @@
+.alert {
+  --alert-padding-y: var(--spacer-lg);
+  --alert-padding-x: var(--spacer-lg);
+  --alert-border-radius: var(--spacer-md);
+  --alert-link-font-weight: 600;
+  --alert-border-width: 2px;
+  --alert-bg-level: -10;
+  --alert-border-level: -9;
+  --alert-color-level: 6;
+  --alert-close-button-width: 50px;
+  --alert-font-size: 1.5rem;
+  --alert-bg: transparent;
+  --alert-color: inherit;
+  --alert-border-color: transparent;
+  position: relative;
+  font-size: calc(var(--alert-font-size) * var(--rem-adjustment));
+  padding: var(--alert-padding-y) var(--alert-padding-x);
+  border: var(--alert-border-width) solid var(--alert-border-color);
+  border-radius: var(--alert-border-radius);
+  background-color: var(--alert-bg);
+  color: var(--alert-color);
+  overflow: hidden;
+}
+
+.alert-heading {
+  color: inherit;
+}
+
+.alert-link {
+  font-weight: var(--alert-link-font-weight);
+}
+
+.alert-dismissible {
+  padding-right: 50px;
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: var(--alert-padding-y) var(--alert-padding-x);
+    color: inherit;
+    width: var(--alert-close-button-width);
+    svg {
+      fill: #fff;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+@debug $theme-colors;
+@each $color, $value in $theme-colors {
+  @debug '.alert-#{$color}';
+  .alert-#{$color} {
+    --alert-bg: var(#{$value}-extra-light);
+    --alert-color: var(#{$value}-extra-dark);
+    --alert-border-color: var(#{$value}-dark);
+    --alert-link-color: var(#{$value}-extra-dark);
+  }
+}

@@ -1,0 +1,35 @@
+@use 'sass:list';
+
+@function color-yiq($color) {
+  @if (list.index($yiq-light-text, $color)) {
+    @return --yiq-text-light;
+  } @else {
+    @return --yiq-text-dark;
+  }
+}
+
+// Retrieve color Sass maps
+@function color($key: 'blue') {
+  @return map-get($colors, $key);
+}
+
+@function theme-color($key: 'primary') {
+  @return map-get($theme-colors, $key);
+}
+
+// Request a theme color level
+@function theme-color-level($color-name: 'primary', $level: 0) {
+  $color: theme-color($color-name);
+  $color-base: if($level > 0, #000, #fff);
+  $level: abs($level);
+
+  @return mix($color-base, $color, $level * $theme-color-interval);
+}
+
+@function chain-selectors($selectors) {
+  $chain: '';
+  @each $selector in $selectors {
+    $chain: $chain + $selector + ',';
+  }
+  @return $chain;
+}

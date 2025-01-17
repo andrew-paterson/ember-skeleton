@@ -1,0 +1,18 @@
+.width-100 {
+  width: 100%;
+}
+
+.width-20px {
+  width: 20px;
+}
+
+@each $spacing-type in 'height', 'width' {
+  @each $key, $value in $spacers {
+    .#{$spacing-type}-#{$key} {
+      #{$spacing-type}: var(#{$value});
+    }
+    .max-#{$spacing-type}-#{$key} {
+      max-#{$spacing-type}: var(#{$value});
+    }
+  }
+}

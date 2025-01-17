@@ -1,5 +1,30 @@
 # Theme color variants
 
+## Backgrounds
+
+### Basic usage
+
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="backgrounds.hbs" class="viewport">
+    <div class="bg-primary padding-md text-white">bg-primary</div>
+    <div class="bg-secondary padding-md text-white">bg-secondary</div>
+    <div class="bg-success padding-md text-white">bg-success</div>
+    <div class="bg-info padding-md text-white">bg-info</div>
+    <div class="bg-warning padding-md text-white">bg-warning</div>
+    <div class="bg-danger padding-md text-white">bg-danger</div>
+    <div class="bg-light padding-md text-white">bg-light</div>
+    <div class="bg-dark padding-md text-white">bg-dark</div>
+    <div class="bg-gray-extra-light padding-md text-white">bg-gray-extra-light</div>
+    <div class="bg-gray-light padding-md text-white">bg-gray-light</div>
+    <div class="bg-gray-medium padding-md text-white">bg-gray-medium</div>
+    <div class="bg-gray-dark padding-md text-white">bg-gray-dark</div>
+    <div class="bg-white padding-md text-white">bg-white</div>
+  </demo.example>
+  <demo.snippet @name="backgrounds.hbs" />
+</DocsDemo>
+</div>
+
 ## Text colours
 
 <div class="ember-skeleton-styles">
@@ -150,7 +175,7 @@ Button sizes
 
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
-  <demo.example @name="button sizes.hbs" class="viewport">
+  <demo.example @name="button-sizes.hbs" class="viewport">
     <div>
       <button type="button" class="btn btn-lg btn-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>btn-lg</button>
     </div>
@@ -165,7 +190,7 @@ Button sizes
 
 ## List groups
 
-## Basic usage
+### Basic usage
 
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
@@ -181,7 +206,7 @@ Button sizes
 </DocsDemo>
 </div>
 
-## Flush
+### Flush
 
 Removes the side borders.
 
@@ -199,7 +224,7 @@ Removes the side borders.
 </DocsDemo>
 </div>
 
-## List group with colour variants
+### List group with colour variants
 
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
@@ -220,7 +245,7 @@ Removes the side borders.
 </DocsDemo>
 </div>
 
-## List group header
+### List group header
 
 The boostrap list group styles are extended by adding the class `.list-group-item-header` which applies the font weight defined the the variable `$list-group-header-font-weight`. The default is 600.
 
@@ -266,7 +291,25 @@ Taken from [Bootstrap borders](https://getbootstrap.com/docs/4.1/utilities/borde
 </DocsDemo>
 </div>
 
-## Border radius
+### Border width
+
+Can be from 1px to 5px.
+
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="border-widths" class="viewport">
+    <div class="border">.border</div>
+    <div class="border border-1px">.border.border-1px</div>
+    <div class="border border-2px">.border.border-2px</div>
+    <div class="border border-3px">.border.border-3px</div>
+    <div class="border border-4px">.border.border-4px</div>
+    <div class="border border-5px">.border.border-5px</div>
+   </demo.example>
+  <demo.snippet @name="border-widths" />
+</DocsDemo>
+</div>
+
+### Border radius
 
 Taken from [Bootstrap border radius](https://getbootstrap.com/docs/4.1/utilities/borders/)
 
@@ -287,7 +330,7 @@ Taken from [Bootstrap border radius](https://getbootstrap.com/docs/4.1/utilities
 
 ## Overlay colours
 
-Provides a set of classes that apply either a fill or background to an element in `RGBa` format, thus allowing transparency. The defaults provide both black and white at levels 10, 30 and 50. These numbers refer to percentage opacity. The classes are as follows:
+Provides a set of classes that apply either a fill or background to an element in `RGBa` format, thus allowing transparency. The defaults provide both black and white at levels 10, 30, 50 and 80. These numbers refer to percentage opacity. The classes are as follows:
 
     .overlay-bg-white-10
     .overlay-bg-white-30
@@ -308,6 +351,7 @@ Provides a set of classes that apply either a fill or background to an element i
     <div class="overlay-bg-black-10">.overlay-bg-black-10</div>
     <div class="overlay-bg-black-30">.overlay-bg-black-30</div>
     <div class="overlay-bg-black-50">.overlay-bg-black-50</div>
+    <div class="overlay-bg-black-80">.overlay-bg-black-80</div>
   </demo.example>
   <demo.snippet @name="overlay-colours-black" />
 </DocsDemo>
@@ -319,32 +363,9 @@ Provides a set of classes that apply either a fill or background to an element i
     <div class="overlay-bg-white-10">.overlay-bg-white-10</div>
     <div class="overlay-bg-white-30">.overlay-bg-white-30</div>
     <div class="overlay-bg-white-50">.overlay-bg-white-50</div>
+    <div class="overlay-bg-white-80">.overlay-bg-white-80</div>
   </demo.example>
   <demo.snippet @name="overlay-colours-white" />
-</DocsDemo>
-</div>
-
-The `$overlay-colors` map can be extended in a similar way to `$theme-colors`. Additionally, you can customise the levels that are included. Note the the colours must be defined in `RGB` format.
-
-<DocsSnippet @name="custom-overlay-colors.scss" @language="css" />
-
-<div class="ember-skeleton-styles">
-<DocsDemo class="body-text" as |demo|>
-  <demo.example @name="custom-overlay-colours" class="viewport">
-    <div class="overlay-bg-green-10">.overlay-bg-green-10</div>
-    <div class="overlay-bg-green-30">.overlay-bg-green-30</div>
-    <div class="overlay-bg-green-50">.overlay-bg-green-50</div>
-    <div class="overlay-bg-green-80">.overlay-bg-green-80</div>
-    <div class="overlay-bg-red-10">.overlay-bg-red-10</div>
-    <div class="overlay-bg-red-30">.overlay-bg-red-30</div>
-    <div class="overlay-bg-red-50">.overlay-bg-red-50</div>
-    <div class="overlay-bg-red-80">.overlay-bg-red-80</div>
-    <div class="overlay-bg-blue-10">.overlay-bg-blue-10</div>
-    <div class="overlay-bg-blue-30">.overlay-bg-blue-30</div>
-    <div class="overlay-bg-blue-50">.overlay-bg-blue-50</div>
-    <div class="overlay-bg-blue-80">.overlay-bg-blue-80</div>
-  </demo.example>
-  <demo.snippet @name="custom-overlay-colours" />
 </DocsDemo>
 </div>
 
@@ -355,7 +376,7 @@ The Bootstap theme colours have are extended to incldue `fill` and `stroke`, for
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="circle-svg.hbs" class="viewport">
-     <svg class="fill-info stroke-dark" height="100" width="100">
+     <svg class="fill-info stroke-primary" height="100" width="100">
       <circle cx="50" cy="50" r="40" stroke-width="3" />
     </svg> 
   </demo.example>
