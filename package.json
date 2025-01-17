@@ -1,7 +1,7 @@
 {
   "private": true,
   "workspaces": [
-    "addon",
+    "ember-skeleton",
     "test-app"
   ],
   "packageManager": "pnpm@9.12.2"

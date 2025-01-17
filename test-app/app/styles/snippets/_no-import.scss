@@ -1,68 +1,70 @@
-// BEGIN-SNIPPET overriding-default-scss-vars.scss
-$page-header-font-size: 3em;
-$page-header-color: #0097d3;
+:root {
+  // BEGIN-SNIPPET overriding-default-scss-vars.scss
+  $page-header-font-size: 3em;
+  $page-header-color: #0097d3;
 
-@import 'ember-skeleton-variables';
-@import 'ember-skeleton';
-// END-SNIPPET
+  @import 'ember-skeleton-variables';
+  @import 'ember-skeleton';
+  // END-SNIPPET
 
-// BEGIN-SNIPPET default-spacers.scss
-$spacer-sm: 3px !default;
-$spacer-md: 6px !default;
-$spacer-lg: 12px !default;
-$spacer-xl: 24px !default;
-$spacer-xxl: 36px !default;
-// END-SNIPPET
+  // BEGIN-SNIPPET default-spacers.scss
+  --spacer-sm: 3px;
+  --spacer-md: 6px;
+  --spacer-lg: 12px;
+  --spacer-xl: 24px;
+  --spacer-xxl: 36px;
+  // END-SNIPPET
 
-// BEGIN-SNIPPET text-column-variables.scss
-$text-column-line-height: 150% !default;
-$text-column-max-width: 700px !default;
-$text-column-justify-paragraph-min-width: 480px !default;
-// END-SNIPPET
+  // BEGIN-SNIPPET text-column-variables.scss
+  --text-column-line-height: 150%;
+  --text-column-max-width: 700px;
+  --text-column-justify-paragraph-min-width: 480px;
+  // END-SNIPPET
 
-// BEGIN-SNIPPET default-bootstrap-colours.scss
-$blue: #007bff !default;
-$indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
-$pink: #e83e8c !default;
-$red: #dc3545 !default;
-$orange: #fd7e14 !default;
-$yellow: #ffc107 !default;
-$green: #28a745 !default;
-$teal: #20c997 !default;
-$cyan: #17a2b8 !default;
-$gray-extra-light: #f3f3f3 !default;
-$gray-light: #cccccc !default;
-$gray-medium: #999999 !default;
-$gray-dark: #333333 !default;
-$white: #ffffff !default;
+  // BEGIN-SNIPPET default-bootstrap-colours.scss
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --gray-extra-light: #f3f3f3;
+  --gray-light: #cccccc;
+  --gray-medium: #999999;
+  --gray-dark: #333333;
+  --white: #ffffff;
 
-$primary: $blue !default;
-$secondary: $indigo !default;
-$success: $green !default;
-$info: $cyan !default;
-$warning: $orange !default;
-$danger: $red !default;
-$light: $gray-light !default;
-$dark: $gray-dark !default;
+  --primary: var(--blue);
+  --secondary: var(--indigo);
+  --success: var(--green);
+  --info: var(--cyan);
+  --warning: var(--orange);
+  --danger: var(--red);
+  --light: var(--gray-light);
+  --dark: var(--gray-dark);
 
-$theme-colors: () !default;
-$theme-colors: map-merge(
-  (
-    'primary': $primary,
-    'secondary': $secondary,
-    'success': $success,
-    'info': $info,
-    'warning': $warning,
-    'danger': $danger,
-    'light': $light,
-    'dark': $dark,
-    'gray-extra-light': $gray-extra-light,
-    'gray-light': $gray-light,
-    'gray-medium': $gray-medium,
-    'gray-dark': $gray-dark,
-    'white': $white,
-  ),
-  $theme-colors
-);
-// END-SNIPPET
+  $theme-colors: ();
+  $theme-colors: map-merge(
+    (
+      'primary': --primary,
+      'secondary': --secondary,
+      'success': --success,
+      'info': --info,
+      'warning': --warning,
+      'danger': --danger,
+      'light': --light,
+      'dark': --dark,
+      'gray-extra-light': --gray-extra-light,
+      'gray-light': --gray-light,
+      'gray-medium': --gray-medium,
+      'gray-dark': --gray-dark,
+      'white': --white,
+    ),
+    $theme-colors
+  );
+  // END-SNIPPET
+}

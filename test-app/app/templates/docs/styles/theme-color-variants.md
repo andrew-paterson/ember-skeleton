@@ -1,6 +1,6 @@
 # Theme color variants
 
-## Text colours 
+## Text colours
 
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
@@ -77,14 +77,16 @@ The `.btn` class applies general button styles, and `btn-{{this.theme-color}}` o
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="button-colour-variants.hbs" class="viewport">
-    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>Primary</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
     <button type="button" class="btn btn-success">Success</button>
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-warning">Warning</button>
     <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-gray-dark">Gray dark</button>
+    <button type="button" class="btn btn-gray-medium">Gray medium</button>
+    <button type="button" class="btn btn-gray-light">Gray light</button>
+    <button type="button" class="btn btn-gray-extra-light">Gray extra light</button>
     <button type="button" class="btn btn-link">Link</button>
     </demo.example>
   <demo.snippet @name="button-colour-variants.hbs" />
@@ -94,14 +96,17 @@ The `.btn` class applies general button styles, and `btn-{{this.theme-color}}` o
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="button-outline-colour-variants.hbs" class="viewport">
-    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>Primary</button>
     <button type="button" class="btn btn-outline-secondary">Secondary</button>
     <button type="button" class="btn btn-outline-success">Success</button>
     <button type="button" class="btn btn-outline-danger">Danger</button>
     <button type="button" class="btn btn-outline-warning">Warning</button>
     <button type="button" class="btn btn-outline-info">Info</button>
-    <button type="button" class="btn btn-outline-light">Light</button>
-    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-gray-dark">Gray dark</button>
+    <button type="button" class="btn btn-outline-gray-medium">Gray medium</button>
+    <button type="button" class="btn btn-outline-gray-light">Gray light</button>
+    <button type="button" class="btn btn-outline-gray-extra-light">Gray extra light</button>
+    <button type="button" class="btn btn-outline-link">Link</button>
   </demo.example>
   <demo.snippet @name="button-outline-colour-variants.hbs" />
 </DocsDemo>
@@ -112,7 +117,47 @@ Adding the class `flashing` will cause the button to chnage between normal and o
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="flashing-button.hbs" class="viewport">
-    <button class="btn btn-primary flashing">Flashing button</button>
+    <div>
+      <button type="button" class="btn flashing btn-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>Primary</button>
+      <button type="button" class="btn flashing btn-secondary">Secondary</button>
+      <button type="button" class="btn flashing btn-success">Success</button>
+      <button type="button" class="btn flashing btn-danger">Danger</button>
+      <button type="button" class="btn flashing btn-warning">Warning</button>
+      <button type="button" class="btn flashing btn-info">Info</button>
+      <button type="button" class="btn flashing btn-gray-dark">Gray dark</button>
+      <button type="button" class="btn flashing btn-gray-medium">Gray medium</button>
+      <button type="button" class="btn flashing btn-gray-light">Gray light</button>
+      <button type="button" class="btn flashing btn-gray-extra-light">Gray extra light</button>
+    </div>
+    <div>
+      <button type="button" class="btn flashing btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>Primary</button>
+      <button type="button" class="btn flashing btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn flashing btn-outline-success">Success</button>
+      <button type="button" class="btn flashing btn-outline-danger">Danger</button>
+      <button type="button" class="btn flashing btn-outline-warning">Warning</button>
+      <button type="button" class="btn flashing btn-outline-info">Info</button>
+      <button type="button" class="btn flashing btn-outline-gray-dark">Gray dark</button>
+      <button type="button" class="btn flashing btn-outline-gray-medium">Gray medium</button>
+      <button type="button" class="btn flashing btn-outline-gray-light">Gray light</button>
+      <button type="button" class="btn flashing btn-outline-gray-extra-light">Gray extra light</button>
+    </div>
+  </demo.example>
+  <demo.snippet @name="flashing-button.hbs" />
+</DocsDemo>
+</div>
+
+Button sizes
+
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="flashing-button.hbs" class="viewport">
+    <div>
+      <button type="button" class="btn btn-lg btn-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>btn-lg</button>
+    </div>
+    <div>
+      <button type="button" class="btn btn-sm btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>btn-sm</button>
+      <button type="button" class="btn btn-block btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>btn-block</button>
+    </div>
   </demo.example>
   <demo.snippet @name="flashing-button.hbs" />
 </DocsDemo>
@@ -179,10 +224,10 @@ Removes the side borders.
 
 The boostrap list group styles are extended by adding the class `.list-group-item-header` which applies the font weight defined the the variable `$list-group-header-font-weight`. The default is 600.
 
-## Borders 
+## Borders
 
 Taken from [Bootstrap borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
- 
+
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="border-custom-colour-variants" class="viewport">
@@ -199,7 +244,7 @@ Taken from [Bootstrap borders](https://getbootstrap.com/docs/4.1/utilities/borde
    </demo.example>
   <demo.snippet @name="border-custom-colour-variants" />
 </DocsDemo>
-</div> 
+</div>
 
 ## Border radius
 
@@ -218,7 +263,7 @@ Taken from [Bootstrap border radius](https://getbootstrap.com/docs/4.1/utilities
    </demo.example>
   <demo.snippet @name="border-radius" @language="htmlbars" />
 </DocsDemo>
-</div> 
+</div>
 
 ## Overlay colours
 
@@ -305,4 +350,4 @@ Note the following variables:
     $svg-foreground-graphic-fill
     $svg-foreground-graphic-stroke-color
 
-By adding the class `foreground-graphic` to any element inside an svg, the fill and stoke colours will be whatever the corresponding variables are set to (Default is `#fff`). 
+By adding the class `foreground-graphic` to any element inside an svg, the fill and stoke colours will be whatever the corresponding variables are set to (Default is `#fff`).

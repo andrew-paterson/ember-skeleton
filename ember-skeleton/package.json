@@ -24,8 +24,9 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "prepack": "rollup --config",
-    "start": "rollup --config --watch",
-    "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
+    "start": "rollup --config --watch --no-watch.clearScreen",
+    "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
+    "format:scss": "prettier --write 'src/**/*.scss'"
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.9.0",
