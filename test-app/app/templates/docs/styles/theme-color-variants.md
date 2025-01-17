@@ -150,7 +150,7 @@ Button sizes
 
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
-  <demo.example @name="flashing-button.hbs" class="viewport">
+  <demo.example @name="button sizes.hbs" class="viewport">
     <div>
       <button type="button" class="btn btn-lg btn-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>btn-lg</button>
     </div>
@@ -159,7 +159,7 @@ Button sizes
       <button type="button" class="btn btn-block btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>btn-block</button>
     </div>
   </demo.example>
-  <demo.snippet @name="flashing-button.hbs" />
+  <demo.snippet @name="button-sizes.hbs" />
 </DocsDemo>
 </div>
 
@@ -223,6 +223,26 @@ Removes the side borders.
 ## List group header
 
 The boostrap list group styles are extended by adding the class `.list-group-item-header` which applies the font weight defined the the variable `$list-group-header-font-weight`. The default is 600.
+
+<div class="ember-skeleton-styles">
+<DocsDemo class="body-text" as |demo|>
+  <demo.example @name="list-group-headers" class="viewport">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-header-primary list-group-item-action list-group-item-primary" role="button">.list-group-item.list-group-item-header-primary.list-group-item-action.list-group-item-primary</li>
+      <li class="list-group-item list-group-item-action list-group-item-primary" role="button">.list-group-item.list-group-item-action.list-group-item-primary</li>
+      <li class="list-group-item list-group-item-header-secondary list-group-item-action list-group-item-secondary" role="button">.list-group-item.list-group-item-header-secondary.list-group-item-action.list-group-item-secondary</li>
+      <li class="list-group-item list-group-item-action list-group-item-secondary" role="button">.list-group-item.list-group-item-action.list-group-item-secondary</li>
+      <li class="list-group-item list-group-item-action list-group-item-success" role="button">.list-group-item.list-group-item-action.list-group-item-success</li>
+      <li class="list-group-item list-group-item-action list-group-item-danger" role="button">.list-group-item.list-group-item-action.list-group-item-danger</li>
+      <li class="list-group-item list-group-item-action list-group-item-warning" role="button">.list-group-item.list-group-item-action.list-group-item-warning</li>
+      <li class="list-group-item list-group-item-action list-group-item-info" role="button">.list-group-item.list-group-item-action.list-group-item-info</li>
+      <li class="list-group-item list-group-item-action list-group-item-light" role="button">.list-group-item.list-group-item-action.list-group-item-light</li>
+      <li class="list-group-item list-group-item-action list-group-item-dark" role="button">.list-group-item.list-group-item-action.list-group-item-dark</li>
+    </ul>
+  </demo.example>
+  <demo.snippet @name="list-group-headers" />
+</DocsDemo>
+</div>
 
 ## Borders
 
