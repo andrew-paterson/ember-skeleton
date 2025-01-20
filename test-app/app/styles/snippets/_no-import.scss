@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 :root {
   // BEGIN-SNIPPET overriding-default-scss-vars.scss
   $page-header-font-size: 3em;
@@ -48,7 +50,7 @@
   --dark: var(--gray-dark);
 
   $theme-colors: ();
-  $theme-colors: map-merge(
+  $theme-colors: map.merge(
     (
       'primary': --primary,
       'secondary': --secondary,

@@ -1,3 +1,6 @@
+@use 'sass:map';
+@use 'sass:list';
+
 @mixin box-shadow($shadowNames, $opacity: 0.16) {
   $map: (
     top: 0 -3px 6px rgba(0, 0, 0, $opacity),
@@ -15,9 +18,9 @@
   );
   $shadowValues: ();
   @each $shadowName in $shadowNames {
-    $shadowValue: map-get($map, $shadowName);
+    $shadowValue: map.get($map, $shadowName);
     @if $shadowValue {
-      $shadowValues: append($shadowValues, $shadowValue, comma);
+      $shadowValues: list.append($shadowValues, $shadowValue, comma);
     }
   }
   box-shadow: $shadowValues;

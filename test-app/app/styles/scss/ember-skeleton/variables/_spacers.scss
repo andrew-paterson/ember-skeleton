@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 :root {
   --spacer-sm: 3px;
   --spacer-md: 6px;
@@ -8,7 +10,7 @@
 }
 
 $spacers: ();
-$spacers: map-merge(
+$spacers: map.merge(
   (
     sm: --spacer-sm,
     md: --spacer-md,

@@ -1,24 +1,9 @@
-@use 'sass:math';
-
-.body-text {
-  input,
-  .input,
-  textarea {
-    font-size: #{math.div(var(--input-font-size), var(--body-text-font-size))}em;
-  }
-  label,
-  legend,
-  .label {
-    font-size: #{math.div(var(--label-font-size), var(--body-text-font-size))}em;
-  }
-}
-
 label,
 legend,
 .label {
   color: var(--label-color);
   font-family: var(--label-font-family);
-  font-size: var(--label-font-size);
+  font-size: calc(var(--label-font-size) * var(--rem-adjustment));
   font-weight: var(--label-font-weight);
   line-height: var(--label-line-height);
 }
@@ -44,7 +29,7 @@ textarea {
   font-family: var(--input-font-family);
   margin: 0;
   padding: var(--input-top-bottom-padding) var(--input-side-padding);
-  font-size: var(--input-font-size);
+  font-size: calc(var(--input-font-size) * var(--rem-adjustment));
   &:hover {
     border-color: var(--input-hover-border-color);
   }

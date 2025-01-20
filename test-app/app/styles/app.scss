@@ -3,9 +3,6 @@
   --rem-adjustment: 0.625;
 }
 
-// .viewport {
-//   font-size:;
-// }
 @import './scss/ember-skeleton-variables';
 
 .ember-skeleton-styles {
@@ -17,15 +14,11 @@
   code {
     background: transparent !important;
   }
-  // @import './snippets/_pre-variables-import';
+  @import './snippets/_pre-variables-import';
   // BEGIN-SNIPPET basic-style-imports.scss
-  // @import './scss/ember-skeleton-variables';
+  @import './scss/ember-skeleton-variables';
   @import './scss/ember-skeleton';
   // END-SNIPPET
-
-  // @import './scss/ember-skeleton/generic/_alert';
-
-  // @import './snippets/_post-variables-import';
 
   .theme-icons-demo {
     .viewport > div {

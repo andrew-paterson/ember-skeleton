@@ -1,6 +1,5 @@
 @each $colorName, $rgbValue in $overlay-colors {
   @each $level in $overlay-levels {
-    @debug 'overlay-bg-#{$colorName}-#{$level}';
     .overlay-bg-#{$colorName}-#{$level} {
       $cssValue: 'rgba(' #{$rgbValue}',' #{$level * 0.01}')';
       background: #{$cssValue};

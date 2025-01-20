@@ -22,7 +22,7 @@ div.main-nav {
     list-style: none;
     height: var(--sidebar-nav-item-height);
     width: var(--sidebar-expanded-width);
-    font-size: --main-nav-item-font-size;
+    font-size: calc(var(--main-nav-item-font-size) * var(--rem-adjustment));
     letter-spacing: 0.3px;
     text-transform: uppercase;
     color: var(--gray-light);

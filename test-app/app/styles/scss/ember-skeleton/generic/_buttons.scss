@@ -140,7 +140,6 @@ fieldset:disabled a.btn {
 
 // Button colours
 @each $color, $value in $theme-colors {
-  @debug '.btn-#{$color}';
   .btn-#{$color} {
     --button-background-color: var(#{$value});
     --button-hover-background-color: var(#{$value}-dark);

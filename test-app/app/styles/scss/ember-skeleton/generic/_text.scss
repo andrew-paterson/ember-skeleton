@@ -8,7 +8,7 @@ body {
 
 .page-header {
   color: var(--page-header-color);
-  font-size: var(--page-header-font-size);
+  font-size: calc(var(--page-header-font-size) * var(--rem-adjustment));
   text-transform: var(--page-header-text-transform);
   text-align: var(--page-header-text-align);
   font-family: var(--page-header-font-family);
@@ -56,16 +56,16 @@ h4 {
   background-color: transparent;
 }
 h1 {
-  font-size: var(--body-text-header-h1-font-size);
+  font-size: calc(var(--body-text-header-h1-font-size) * var(--rem-adjustment));
 }
 h2 {
-  font-size: var(--body-text-header-h2-font-size);
+  font-size: calc(var(--body-text-header-h2-font-size) * var(--rem-adjustment));
 }
 h3 {
-  font-size: var(--body-text-header-h3-font-size);
+  font-size: calc(var(--body-text-header-h3-font-size) * var(--rem-adjustment));
 }
 h4 {
-  font-size: var(--body-text-header-h4-font-size);
+  font-size: calc(var(--body-text-header-h4-font-size) * var(--rem-adjustment));
 }
 
 .body-text {
@@ -86,28 +86,24 @@ h4 {
   }
 
   h1 {
-    font-size: #{math.div(
-        var(--body-text-header-h1-font-size),
-        var(--body-text-font-size)
-      )}em;
+    font-size: calc(
+      var(--body-text-header-h1-font-size) * var(--rem-adjustment)
+    );
   }
   h2 {
-    font-size: #{math.div(
-        var(--body-text-header-h2-font-size),
-        var(--body-text-font-size)
-      )}em;
+    font-size: calc(
+      var(--body-text-header-h2-font-size) * var(--rem-adjustment)
+    );
   }
   h3 {
-    font-size: #{math.div(
-        var(--body-text-header-h3-font-size),
-        var(--body-text-font-size)
-      )}em;
+    font-size: calc(
+      var(--body-text-header-h3-font-size) * var(--rem-adjustment)
+    );
   }
   h4 {
-    font-size: #{math.div(
-        var(--body-text-header-h4-font-size),
-        var(--body-text-font-size)
-      )}em;
+    font-size: calc(
+      var(--body-text-header-h4-font-size) * var(--rem-adjustment)
+    );
   }
   p {
     margin-bottom: var(--body-text-paragraph-space-after);
@@ -143,7 +139,7 @@ h4 {
 }
 
 .text-larger {
-  font-size: var(--text-larger-size);
+  font-size: calc(var(--text-larger-size) * var(--rem-adjustment));
 }
 
 .text-bold {
@@ -151,7 +147,7 @@ h4 {
 }
 
 .text-smaller {
-  font-size: var(--text-smaller-size);
+  font-size: calc(var(--text-smaller-size) * var(--rem-adjustment));
 }
 
 .text-align-left {
@@ -213,6 +209,4 @@ h4 {
       color: var(#{$value}-extra-dark) !important;
     }
   }
-
-  // @include text-emphasis-variant('.text-#{$color}', $value);
 }

@@ -47,9 +47,8 @@
     }
   }
 }
-@debug $theme-colors;
+
 @each $color, $value in $theme-colors {
-  @debug '.alert-#{$color}';
   .alert-#{$color} {
     --alert-bg: var(#{$value}-extra-light);
     --alert-color: var(#{$value}-extra-dark);

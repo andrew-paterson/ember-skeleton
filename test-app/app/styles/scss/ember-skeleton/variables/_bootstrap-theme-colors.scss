@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -119,7 +121,7 @@ $yiq-contrasted-threshold: 160;
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 
 $theme-colors: ();
-$theme-colors: map-merge(
+$theme-colors: map.merge(
   (
     'primary': --primary,
     'secondary': --secondary,
@@ -139,7 +141,7 @@ $theme-colors: map-merge(
 $overlay-levels: 10, 30, 50, 80;
 
 $overlay-colors: ();
-$overlay-colors: map-merge(
+$overlay-colors: map.merge(
   (
     'black': '0,0,0',
     'white': '255,255,255',

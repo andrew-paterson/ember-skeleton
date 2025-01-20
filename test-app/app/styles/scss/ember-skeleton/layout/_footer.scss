@@ -17,7 +17,7 @@ footer {
       font-weight: var(--footer-info-font-weight);
       font-family: var(--footer-info-font-family);
       text-transform: var(--footer-info-text-transform);
-      font-size: var(--footer-info-font-size);
+      font-size: calc(var(--footer-info-font-size) * var(--rem-adjustment));
 
       &:not(:last-child) {
         margin-right: 15px;
