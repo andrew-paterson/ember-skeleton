@@ -10,7 +10,7 @@ The plural version is optional- if not passed, the plural version of the phrase 
 
 ## Usage
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="custom-inflector-basic" class="viewport">
     <ul> 
@@ -25,7 +25,7 @@ The plural version is optional- if not passed, the plural version of the phrase 
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="custom-inflector-advanced" class="viewport">
     <ul> 

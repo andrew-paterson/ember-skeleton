@@ -4,5 +4,8 @@
     "ember-skeleton",
     "test-app"
   ],
-  "packageManager": "pnpm@9.12.2"
+  "packageManager": "pnpm@9.12.2",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
 }

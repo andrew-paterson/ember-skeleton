@@ -2,14 +2,14 @@
 
 Accepts a string as the first argument.
 
-Replaces underscores with spaces in the string, and applies one of three casing functions: 
+Replaces underscores with spaces in the string, and applies one of three casing functions:
 
-* `sentenceCase (default)`
-* `titleCase`
-* `lowerCase`
-* `upperCase`
+- `sentenceCase (default)`
+- `titleCase`
+- `lowerCase`
+- `upperCase`
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="humanise-string-basic" class="viewport">
     <table>

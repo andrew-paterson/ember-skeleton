@@ -26,6 +26,7 @@
 }
 
 @each $color, $value in $theme-colors {
+  @debug '.badge-#{$color}';
   .badge-#{$color} {
     --badge-color: var(#{color-yiq($value)});
     --badge-background-color: var(#{$value});

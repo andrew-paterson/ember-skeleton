@@ -1,9 +1,14 @@
 // BEGIN-SNIPPET adding-cutom-bootstrap-colours.scss
+:root {
+  --facebook-color: #1877f2;
+  --reddit-color: #ff4500;
+  --tripadvisor-color: #34e0a1;
+}
+
 $theme-colors: (
-  'twitter': #1da1f2,
-  'facebook': #1877f2,
-  'reddit': #ff4500,
-  'tripadvisor': #34e0a1,
+  'facebook': --facebook-color,
+  'reddit': --reddit-color,
+  'tripadvisor': --tripadvisor-color,
 );
 // END-SNIPPET
 

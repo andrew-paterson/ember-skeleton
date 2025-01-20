@@ -2,7 +2,7 @@
 
 Accepts an integer as the first argument, and returns either `odd` or `even`.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="odd-or-even" class="viewport">
     <ul> 

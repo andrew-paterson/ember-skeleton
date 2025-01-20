@@ -120,7 +120,7 @@ $theme-color-interval: 8%;
 $yiq-contrasted-threshold: 160;
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 
-$theme-colors: ();
+$theme-colors: () !default;
 $theme-colors: map.merge(
   (
     'primary': --primary,
@@ -137,6 +137,8 @@ $theme-colors: map.merge(
   ),
   $theme-colors
 );
+
+@debug $theme-colors;
 
 $overlay-levels: 10, 30, 50, 80;
 

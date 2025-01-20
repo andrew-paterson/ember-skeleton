@@ -2,7 +2,7 @@
 
 Adds an arrow to a box. The examples below show all the available combinations of arrow direction and position.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="box-arrows.scss" class="box-arrow-example viewport">
       <div class="box-arrow arrow-direction-up arrow-position-left">
@@ -36,7 +36,7 @@ Adds an arrow to a box. The examples below show all the available combinations o
 
 By default, the arrow fill will be white, but if the element in question has any of the theme colours applied as a backgroud, the arrow fill will take in that colour.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="box-arrows-bg.hbs" class="box-arrow-bg-example viewport">
       <div class="box-arrow arrow-direction-up arrow-position-left bg-success">

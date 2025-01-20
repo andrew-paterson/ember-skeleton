@@ -3,9 +3,7 @@
   --rem-adjustment: 0.625;
 }
 
-@import './scss/ember-skeleton-variables';
-
-.ember-skeleton-styles {
+.ember-skeleton-container {
   font-size: 10px;
   position: relative;
   header {
@@ -14,11 +12,6 @@
   code {
     background: transparent !important;
   }
-  @import './snippets/_pre-variables-import';
-  // BEGIN-SNIPPET basic-style-imports.scss
-  @import './scss/ember-skeleton-variables';
-  @import './scss/ember-skeleton';
-  // END-SNIPPET
 
   .theme-icons-demo {
     .viewport > div {

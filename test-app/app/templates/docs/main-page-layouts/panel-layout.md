@@ -2,7 +2,7 @@
 
 Created a layout with a horizontal panel spanning the full width of the screen. The content is centred within it. Invoked as below.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text layout-container" as |demo|>
   <demo.example @name="panel-layout.hbs" class="viewport">
     <EmberSkeleton::PanelLayout::OuterWrapper>

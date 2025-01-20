@@ -4,7 +4,7 @@
 
 ### Basic usage
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="backgrounds.hbs" class="viewport">
     <div class="bg-primary padding-md text-white">bg-primary</div>
@@ -27,7 +27,7 @@
 
 ## Text colours
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="text-colour-variants.hbs" class="viewport">
     <div class="text-primary">text-primary</div>
@@ -52,7 +52,7 @@
 
 Taken from [Bootstrap badge](https://getbootstrap.com/docs/4.1/components/badge/)
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="badge-colour-variants.hbs" class="viewport">
     <div class="badge badge-primary">badge-primary</div>
@@ -77,7 +77,7 @@ Taken from [Bootstrap badge](https://getbootstrap.com/docs/4.1/components/badge/
 
 Taken from [Booststrap alerts](https://getbootstrap.com/docs/4.1/components/alerts/)
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="alert-colour-variants.hbs" class="viewport">
     <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
@@ -99,7 +99,7 @@ Taken from [Bootstrap buttons](https://getbootstrap.com/docs/4.1/components/butt
 
 The `.btn` class applies general button styles, and `btn-{{this.theme-color}}` or `btn-outline-{{this.theme-color}}` applies a theme colour. The class `flashing` will cause the button to flash between outline state to normal state.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="button-colour-variants.hbs" class="viewport">
     <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>Primary</button>
@@ -118,7 +118,7 @@ The `.btn` class applies general button styles, and `btn-{{this.theme-color}}` o
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="button-outline-colour-variants.hbs" class="viewport">
     <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.7 20.4" class="single-colour icon-lock"><path d="M16.7 10.7V19c0 0.4-0.1 0.7-0.4 1 -0.3 0.3-0.6 0.4-1 0.4H1.4c-0.4 0-0.7-0.1-1-0.4C0.1 19.8 0 19.4 0 19v-8.4c0-0.4 0.1-0.7 0.4-1 0.3-0.3 0.6-0.4 1-0.4h0.5V6.5c0-1.8 0.6-3.3 1.9-4.6C5 0.6 6.6 0 8.4 0s3.3 0.6 4.6 1.9c1.3 1.3 1.9 2.8 1.9 4.6v2.8h0.5c0.4 0 0.7 0.1 1 0.4C16.6 10 16.7 10.3 16.7 10.7zM4.6 9.3h7.4V6.5c0-1-0.4-1.9-1.1-2.6 -0.7-0.7-1.6-1.1-2.6-1.1S6.5 3.1 5.7 3.9 4.6 5.5 4.6 6.5V9.3z"></path></svg>Primary</button>
@@ -139,7 +139,7 @@ The `.btn` class applies general button styles, and `btn-{{this.theme-color}}` o
 
 Adding the class `flashing` will cause the button to chnage between normal and outline state.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="flashing-button.hbs" class="viewport">
     <div>
@@ -173,7 +173,7 @@ Adding the class `flashing` will cause the button to chnage between normal and o
 
 Button sizes
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="button-sizes.hbs" class="viewport">
     <div>
@@ -192,7 +192,7 @@ Button sizes
 
 ### Basic usage
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="list-group-general" class="viewport">
     <div class="list-group list-group">
@@ -210,7 +210,7 @@ Button sizes
 
 Removes the side borders.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="list-group-flush" class="viewport">
     <div class="list-group list-group-flush">
@@ -226,7 +226,7 @@ Removes the side borders.
 
 ### List group with colour variants
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="list-group-colour-variants" class="viewport">
     <ul class="list-group">
@@ -249,7 +249,7 @@ Removes the side borders.
 
 The boostrap list group styles are extended by adding the class `.list-group-item-header` which applies the font weight defined the the variable `$list-group-header-font-weight`. The default is 600.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="list-group-headers" class="viewport">
     <ul class="list-group">
@@ -273,7 +273,7 @@ The boostrap list group styles are extended by adding the class `.list-group-ite
 
 Taken from [Bootstrap borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="border-custom-colour-variants" class="viewport">
     <div class="border">.border</div>
@@ -295,7 +295,7 @@ Taken from [Bootstrap borders](https://getbootstrap.com/docs/4.1/utilities/borde
 
 Can be from 1px to 5px.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="border-widths" class="viewport">
     <div class="border">.border</div>
@@ -313,7 +313,7 @@ Can be from 1px to 5px.
 
 Taken from [Bootstrap border radius](https://getbootstrap.com/docs/4.1/utilities/borders/)
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="border-radius" class="viewport">
       <div class="rounded">.rounded</div>
@@ -345,7 +345,7 @@ Provides a set of classes that apply either a fill or background to an element i
     .overlay-fill-black-30
     .overlay-fill-black-50
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="overlay-colours-black" class="viewport">
     <div class="overlay-bg-black-10">.overlay-bg-black-10</div>
@@ -357,7 +357,7 @@ Provides a set of classes that apply either a fill or background to an element i
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="overlay-colours-white" class="viewport">
     <div class="overlay-bg-white-10">.overlay-bg-white-10</div>
@@ -373,7 +373,7 @@ Provides a set of classes that apply either a fill or background to an element i
 
 The Bootstap theme colours have are extended to incldue `fill` and `stroke`, for application to SVGs.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="circle-svg.hbs" class="viewport">
      <svg class="fill-info stroke-primary" height="100" width="100">

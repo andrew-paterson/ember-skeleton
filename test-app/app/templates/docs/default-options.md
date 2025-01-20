@@ -12,13 +12,13 @@ Any additional settings can be added to the `emberSkeletonOptions` object. These
 
 ## Theme color string defaults
 
-Allows you to define default settings for use by the <LinkTo class="docs-md__a" @route="docs.helpers.theme-color-string">`ember-skeleton/theme-color-string` helper</LinkTo>. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
+Allows you to define default settings for use by the <LinkTo class="docs-md\_\_a" @route="docs.helpers.theme-color-string">`ember-skeleton/theme-color-string` helper</LinkTo>. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
 
 <DocsSnippet @name="theme-color-string-app-defaults.js" @language="javascript" />
 
 The above settings would allow the following three use cases.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="theme-color-string-default-badge.hbs" class="viewport">
 <b class="badge badge-{{ember-skeleton/theme-color-string "passed"}}">passed</b>
@@ -34,11 +34,11 @@ The above settings would allow the following three use cases.
 
 ## Theme icon defaults
 
-Allows you to define default settings for use by the <LinkTo class="docs-md__a" @route="docs.helpers.theme-icon">`ember-skeleton/theme-icon-string` helper</LinkTo>. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
+Allows you to define default settings for use by the <LinkTo class="docs-md\_\_a" @route="docs.helpers.theme-icon">`ember-skeleton/theme-icon-string` helper</LinkTo>. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
 
 <DocsSnippet @name="theme-icon-app-defaults.js" @language="javascript" />
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="theme-icon-defaults-usage.hbs" class="theme-icons-demo viewport">
 {{(component (ember-skeleton/theme-icon "passed"))}}
@@ -49,4 +49,5 @@ Allows you to define default settings for use by the <LinkTo class="docs-md__a" 
 </demo.example>
 <demo.snippet @name="theme-icon-defaults-usage.hbs" />
 </DocsDemo>
+
 </div>

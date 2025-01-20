@@ -6,7 +6,7 @@ This concept has been borrowed from Bootstrap. Many of the CSS classes available
 
 ## Theme color CSS selectors
 
-The Ember Skeleton `SASS` code will create multiple CSS style rules for each of the selectors listed below- one for each item in the `$theme-colors` map. See <LinkTo class="docs-md__a" @route="docs.styles.theme-color-variants">Theme color variants"</LinkTo> for the full CSS API based on theme colours.
+The Ember Skeleton `SASS` code will create multiple CSS style rules for each of the selectors listed below- one for each item in the `$theme-colors` map. See <LinkTo class="docs-md\_\_a" @route="docs.styles.theme-color-variants">Theme color variants"</LinkTo> for the full CSS API based on theme colours.
 
     .alert-*
     .badge-*
@@ -35,10 +35,9 @@ Note that the above code will add the colours to the default $theme-colors` map,
 
 The corresponding classes will then be avilable in your CSS. The below example shows bootstrap badges implemented with custom theme colours defined above.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="badge-custom-colour-variants.hbs" class="viewport">
-    <div class="badge badge-twitter">badge-twitter</div>
     <div class="badge badge-facebook">badge-facebook</div>
     <div class="badge badge-tripadvisor">badge-tripadvisor</div>
     <div class="badge badge-reddit">badge-reddit</div>

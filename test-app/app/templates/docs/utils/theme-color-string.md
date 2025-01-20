@@ -2,9 +2,9 @@
 
 ## Use case
 
-In general, you should be using the <LinkTo class="docs-md__a" @route="docs.helpers.theme-color-string">helper"</LinkTo> directly in your templates. The util should only be used when this is not possible.
+In general, you should be using the <LinkTo class="docs-md\_\_a" @route="docs.helpers.theme-color-string">helper"</LinkTo> directly in your templates. The util should only be used when this is not possible.
 
-For a general explanation of the use case, see <LinkTo class="docs-md__a" @route="docs.helpers.theme-color-string">the helper docs"</LinkTo>.
+For a general explanation of the use case, see <LinkTo class="docs-md\_\_a" @route="docs.helpers.theme-color-string">the helper docs"</LinkTo>.
 
 ## Import the util
 
@@ -14,7 +14,7 @@ For a general explanation of the use case, see <LinkTo class="docs-md__a" @route
 
 The `ember-skeleton/theme-color-string` util accepts a string as the first argument (`person.status` in the example below), and an object as the second argument, where each key is a potential value of `person.status` and each value is one of the defined theme colours. The helper returns the relevant theme colour, and thus, the badges below display correctly.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-bootstrap-badges-dynamic-data-basic" class="viewport">
 <table>
@@ -52,7 +52,7 @@ The util will check if the value of the first argument is present in any of the 
 
 Note that you can set `fallback: true` on one of the objects. In this case, the returnString of that object will be returned if no matches are found. Note that this can be overriden by passing `fallback` to the util as outlined below.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-bootstrap-badges-dynamic-data-default-status" class="viewport">
 <table>
@@ -80,7 +80,7 @@ Note that you can set `fallback: true` on one of the objects. In this case, the 
 
 Note that where a key value pair passed directly to the helper conflicts with a default association, the default association will be overriden.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-bootstrap-badges-dynamic-data-default-overridden" class="viewport">
 <table>
@@ -109,7 +109,7 @@ Note that where a key value pair passed directly to the helper conflicts with a 
 
 You can also pass a fallback string to the helper then invoking it. This will be returned by the helper if no other matches are found.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-bootstrap-badges-dynamic-data-default-fallback" class="viewport">
 <b class="badge badge-{{this.statusClassFallback}}">missing</b>
@@ -122,7 +122,7 @@ You can also pass a fallback string to the helper then invoking it. This will be
 
 If the string passed to the helper does not find any matches, and no fallback is given, the helper will return the lowercased input string.
 
-<div class="ember-skeleton-styles">
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-theme-color-string-no-match" class="viewport">
 <b class="badge badge-{{this.statusClassNoMatches}}">info</b>

@@ -3,7 +3,8 @@
 Pass an array as the first argument and the join string as the second. You can optionally pass the named arg `finalJoinString` to use a different join string for the final item.
 
 ## Example
-<div class="ember-skeleton-styles">
+
+<div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="array-join" class="viewport">
     {{this.sentence}}
