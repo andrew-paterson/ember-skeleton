@@ -24,18 +24,19 @@ legend,
 }
 
 fieldset {
-  border: var(--fieldset-border-width) var(--fieldset-border-style) var(--fieldset-border-color);
+  border: var(--fieldset-border-width) var(--fieldset-border-style)
+    var(--fieldset-border-color);
   border-radius: var(--fieldset-border-radius);
   background-color: var(--fieldset-background-color);
 }
 
 input,
 .input,
-textarea,
-#{chain-selectors(var(--input-selectors))} {
+textarea {
   background-color: var(--input-background-color);
   color: var(--input-color);
-  border: var(--input-border-width) var(--input-border-style) var(--input-border-color);
+  border: var(--input-border-width) var(--input-border-style)
+    var(--input-border-color);
   border-radius: var(--input-border-radius);
   -moz-border-radius: var(--input-border-radius);
   -webkit-border-radius: var(--input-border-radius);
@@ -58,8 +59,7 @@ textarea,
   }
 }
 
-.input,
-#{chain-selectors(var(--input-selectors))} {
+.input {
   display: inline-flex;
   align-items: center;
 }

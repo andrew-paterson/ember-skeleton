@@ -1,5 +1,7 @@
 # Box shadow mixin
 
+<!-- TODO SASS only -->
+
 The `box-shadow` mixin accepts two arguments- the position and opacity.
 
 The default opacity is `0.16`.

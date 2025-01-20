@@ -126,18 +126,18 @@
 
 @each $color, $value in $theme-colors {
   .bg-#{$color}.box-arrow.arrow-direction-up:after {
-    border-bottom-color: $value;
+    border-bottom-color: var(#{$value});
   }
 
   .bg-#{$color}.box-arrow.arrow-direction-left:after {
-    border-right-color: $value;
+    border-right-color: var(#{$value});
   }
 
   .bg-#{$color}.box-arrow.arrow-direction-down:after {
-    border-top-color: $value;
+    border-top-color: var(#{$value});
   }
 
   .bg-#{$color}.box-arrow.arrow-direction-right:after {
-    border-left-color: $value;
+    border-left-color: var(#{$value});
   }
 }

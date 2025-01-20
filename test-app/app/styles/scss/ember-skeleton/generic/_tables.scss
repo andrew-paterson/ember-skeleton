@@ -13,13 +13,16 @@ table {
   th {
     color: var(--table-header-cell-color);
     background-color: var(--table-header-cell-background-color);
-    font-size: #{math.div(var(--table-header-cell-font-size), var(--body-text-font-size))}em;
+    font-size: #{math.div(
+        var(--table-header-cell-font-size),
+        var(--body-text-font-size)
+      )}em;
     text-transform: var(--table-header-cell-text-transform);
     text-align: var(--table-header-cell-text-align);
     font-family: var(--table-header-cell-font-family);
     font-weight: var(--table-header-cell-font-weight);
     padding: var(--table-cell-padding-y) var(--table-cell-padding-x);
-    border: 1px var(--table-border-style) $table-header-cell-border-color;
+    border: 1px var(--table-border-style) var(--table-header-cell-border-color);
     line-height: 100%;
   }
   td {
