@@ -3,29 +3,16 @@
 @use 'sass:color';
 @use 'sass:map';
 
-$blue: #007bff;
-$indigo: #6610f2;
-$purple: #6f42c1;
-$pink: #e83e8c;
-$red: #dc3545;
-$orange: #fd7e14;
-$yellow: #ffc107;
-$green: #28a745;
-$teal: #20c997;
-$cyan: #17a2b8;
-$gray-extra-light: #f3f3f3;
-$gray-light: #cccccc;
+$primary: #32b1c6;
+$secondary: #1c5e75;
+$danger: #e85157;
+$warning: #ec9643;
+$success: #4da87d;
+$info: #61c3d3;
+$gray-extra-light: #f9f9f9;
+$gray-light: #dddddd;
 $gray-medium: #999999;
 $gray-dark: #333333;
-$white: #ffffff;
-$primary: $blue;
-$secondary: $indigo;
-$success: $green;
-$info: $cyan;
-$warning: $orange;
-$danger: $red;
-$light: $gray-light;
-$dark: $gray-dark;
 
 $theme-colors: ();
 $theme-colors: map.merge(
@@ -40,33 +27,20 @@ $theme-colors: map.merge(
     'gray-light': $gray-light,
     'gray-medium': $gray-medium,
     'gray-dark': $gray-dark,
-    'white': $white,
   ),
   $theme-colors
 );
-
+$levels: (5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%);
 @each $color, $value in $theme-colors {
-  @debug --#{$color}-light;
-  @debug color.mix(white, $value, 40%);
+  @each $level in $levels {
+    @debug --#{$color}-lighten-#{$level};
+    @debug color.adjust($value, $lightness: $level);
+  }
 }
+$darkenLevels: (5%, 10%, 15%, 20%, 25%);
 @each $color, $value in $theme-colors {
-  @debug --#{$color}-extra-light;
-  @debug color.mix(white, $value, 80%);
-}
-@each $color, $value in $theme-colors {
-  @debug --#{$color}-dark;
-  @debug color.mix(black, $value, 15%);
-}
-@each $color, $value in $theme-colors {
-  @debug --#{$color}-extra-dark;
-  @debug color.mix(black, $value, 60%);
-}
-@each $color, $value in $theme-colors {
-  @debug --#{$color}-mildly-dark;
-  @debug color.mix(black, $value, 5%);
-}
-
-@each $color, $value in $theme-colors {
-  @debug --#{$color}-mildly-light;
-  @debug color.mix(white, $value, 60%);
+  @each $level in $darkenLevels {
+    @debug --#{$color}-darken-#{$level};
+    @debug color.adjust($value, $lightness: -1 * $level);
+  }
 }

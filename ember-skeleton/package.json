@@ -98,10 +98,12 @@
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*.js",
-    "./addon-main.js": "./addon-main.cjs"
+    "./addon-main.js": "./addon-main.cjs",
+    "./vendor/*": "./vendor/*"
   },
   "files": [
     "addon-main.cjs",
-    "dist"
+    "dist",
+    "vendor"
   ]
 }
