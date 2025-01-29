@@ -4,7 +4,11 @@
   /*------------------------------
 DEFAULT INTERFACE ELEMENT STYLES
 ------------------------------*/
-  --general-asterisk-color: var(--primary);
+  --general-asterisk-color: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
   --general-asterisk-font-size: 36px;
   --general-asterisk-line-height: 0px;
   --general-asterisk-font-weight: var(--bold-font-weight);

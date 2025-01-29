@@ -17,11 +17,8 @@
   --table-cell-text-align: left;
 
   --table-header-cell-color: #fff;
-  --table-header-cell-background-color: #aaa;
-  --table-header-cell-border-color: darken(
-    var(--table-header-cell-background-color),
-    15%
-  );
+  --table-header-cell-background-color: hsl(0, 0%, 67%);
+  --table-header-cell-border-color: hsl(0, 0%, 42%);
   --table-header-cell-background-image: none;
   --table-header-cell-text-transform: none;
   --table-header-cell-text-align: left;

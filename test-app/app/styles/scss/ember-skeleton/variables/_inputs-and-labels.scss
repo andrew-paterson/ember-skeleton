@@ -11,7 +11,11 @@
   --input-border-color: #c9c9c9;
   --input-background-color: #fff;
   --input-hover-border-color: #999;
-  --input-focus-border-color: var(--primary);
+  --input-focus-border-color: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
   --input-valid-border-color: #80a57c;
   --input-valid-background-color: #e5f2e4;
   --input-invalid-border-color: #c67f8b;

@@ -4,5 +4,9 @@
   --badge-padding-x: 9px;
   --badge-border-radius: 3px;
   --badge-color: #fff;
-  --badge-background-color: var(--primary);
+  --badge-background-color: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
 }

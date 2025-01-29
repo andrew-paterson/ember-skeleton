@@ -38,7 +38,11 @@
   --body-text-paragraph-line-height: 170%;
 
   --link-font-weight: var(--bold-font-weight);
-  --link-color: var(--primary);
+  --link-color: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
   --link-text-decoration: none;
   --link-hover-color: var(--link-color);
   --link-hover-text-decoration: none;
