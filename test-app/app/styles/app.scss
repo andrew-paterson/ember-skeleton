@@ -3,6 +3,10 @@
   --rem-adjustment: 0.625;
 }
 
+@import './ember-skeleton/scss/ember-skeleton/variables/theme-colors';
+@import './ember-skeleton/scss/ember-skeleton-variables';
+@import './ember-skeleton/scss/ember-skeleton';
+
 .ember-skeleton-container {
   font-size: 10px;
   position: relative;

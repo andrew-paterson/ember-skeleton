@@ -7,19 +7,19 @@
 <div class="ember-skeleton-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="backgrounds.hbs" class="viewport">
-    <div class="bg-primary padding-md text-white">bg-primary</div>
-    <div class="bg-secondary padding-md text-white">bg-secondary</div>
-    <div class="bg-success padding-md text-white">bg-success</div>
-    <div class="bg-info padding-md text-white">bg-info</div>
-    <div class="bg-warning padding-md text-white">bg-warning</div>
-    <div class="bg-danger padding-md text-white">bg-danger</div>
-    <div class="bg-light padding-md text-white">bg-light</div>
-    <div class="bg-dark padding-md text-white">bg-dark</div>
-    <div class="bg-gray-extra-light padding-md text-white">bg-gray-extra-light</div>
-    <div class="bg-gray-light padding-md text-white">bg-gray-light</div>
-    <div class="bg-gray-medium padding-md text-white">bg-gray-medium</div>
-    <div class="bg-gray-dark padding-md text-white">bg-gray-dark</div>
-    <div class="bg-white padding-md text-white">bg-white</div>
+    <div class="bg-primary padding-md text-yiq">bg-primary</div>
+    <div class="bg-secondary padding-md text-yiq">bg-secondary</div>
+    <div class="bg-success padding-md text-yiq">bg-success</div>
+    <div class="bg-info padding-md text-yiq">bg-info</div>
+    <div class="bg-warning padding-md text-yiq">bg-warning</div>
+    <div class="bg-danger padding-md text-yiq">bg-danger</div>
+    <div class="bg-light padding-md text-yiq">bg-light</div>
+    <div class="bg-dark padding-md text-yiq">bg-dark</div>
+    <div class="bg-gray-extra-light padding-md text-yiq">bg-gray-extra-light</div>
+    <div class="bg-gray-light padding-md text-yiq">bg-gray-light</div>
+    <div class="bg-gray-medium padding-md text-yiq">bg-gray-medium</div>
+    <div class="bg-gray-dark padding-md text-yiq">bg-gray-dark</div>
+    <div class="bg-white padding-md text-yiq">bg-white</div>
   </demo.example>
   <demo.snippet @name="backgrounds.hbs" />
 </DocsDemo>
@@ -36,8 +36,6 @@
     <div class="text-info">text-info</div>
     <div class="text-warning">text-warning</div>
     <div class="text-danger">text-danger</div>
-    <div class="text-light">text-light</div>
-    <div class="text-dark">text-dark</div>
     <div class="text-gray-extra-light">text-gray-extra-light</div>
     <div class="text-gray-light">text-gray-light</div>
     <div class="text-gray-medium">text-gray-medium</div>
@@ -61,8 +59,6 @@ Taken from [Bootstrap badge](https://getbootstrap.com/docs/4.1/components/badge/
     <div class="badge badge-info">badge-info</div>
     <div class="badge badge-warning">badge-warning</div>
     <div class="badge badge-danger">badge-danger</div>
-    <div class="badge badge-light">badge-light</div>
-    <div class="badge badge-dark">badge-dark</div>
     <div class="badge badge-gray-extra-light">badge-gray-extra-light</div>
     <div class="badge badge-gray-light">badge-gray-light</div>
     <div class="badge badge-gray-medium">badge-gray-medium</div>
@@ -86,8 +82,10 @@ Taken from [Booststrap alerts](https://getbootstrap.com/docs/4.1/components/aler
     <div class="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
     <div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
     <div class="alert alert-info" role="alert">A simple info alert—check it out!</div>
-    <div class="alert alert-light" role="alert">A simple light alert—check it out!</div>
-    <div class="alert alert-dark" role="alert">A simple dark alert—check it out!</div>
+    <div class="alert alert-gray-extra-light" role="alert">A simple gray extra light alert—check it out!</div>
+    <div class="alert alert-gray-light" role="alert">A simple gray light alert—check it out!</div>
+    <div class="alert alert-gray-medium" role="alert">A simple gray medium alert—check it out!</div>
+    <div class="alert alert-gray-dark" role="alert">A simple gray dark alert—check it out!</div>
     </demo.example>
   <demo.snippet @name="alert-colour-variants.hbs" />
 </DocsDemo>
@@ -237,8 +235,10 @@ Removes the side borders.
       <li class="list-group-item list-group-item-action list-group-item-danger" role="button">.list-group-item.list-group-item-action.list-group-item-danger</li>
       <li class="list-group-item list-group-item-action list-group-item-warning" role="button">.list-group-item.list-group-item-action.list-group-item-warning</li>
       <li class="list-group-item list-group-item-action list-group-item-info" role="button">.list-group-item.list-group-item-action.list-group-item-info</li>
-      <li class="list-group-item list-group-item-action list-group-item-light" role="button">.list-group-item.list-group-item-action.list-group-item-light</li>
-      <li class="list-group-item list-group-item-action list-group-item-dark" role="button">.list-group-item.list-group-item-action.list-group-item-dark</li>
+      <li class="list-group-item list-group-item-action list-group-item-gray-extra-light" role="button">.list-group-item.list-group-item-action.list-group-item-gray-extra-light</li>
+      <li class="list-group-item list-group-item-action list-group-item-gray-light" role="button">.list-group-item.list-group-item-action.list-group-item-gray-light</li>
+      <li class="list-group-item list-group-item-action list-group-item-gray-medium" role="button">.list-group-item.list-group-item-action.list-group-item-gray-medium</li>
+      <li class="list-group-item list-group-item-action list-group-item-gray-dark" role="button">.list-group-item.list-group-item-action.list-group-item-gray-dark</li>
     </ul>
   </demo.example>
   <demo.snippet @name="list-group-colour-variants" />
@@ -253,16 +253,17 @@ The boostrap list group styles are extended by adding the class `.list-group-ite
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="list-group-headers" class="viewport">
     <ul class="list-group">
-      <li class="list-group-item list-group-item-header-primary list-group-item-action list-group-item-primary" role="button">.list-group-item.list-group-item-header-primary.list-group-item-action.list-group-item-primary</li>
-      <li class="list-group-item list-group-item-action list-group-item-primary" role="button">.list-group-item.list-group-item-action.list-group-item-primary</li>
-      <li class="list-group-item list-group-item-header-secondary list-group-item-action list-group-item-secondary" role="button">.list-group-item.list-group-item-header-secondary.list-group-item-action.list-group-item-secondary</li>
-      <li class="list-group-item list-group-item-action list-group-item-secondary" role="button">.list-group-item.list-group-item-action.list-group-item-secondary</li>
-      <li class="list-group-item list-group-item-action list-group-item-success" role="button">.list-group-item.list-group-item-action.list-group-item-success</li>
-      <li class="list-group-item list-group-item-action list-group-item-danger" role="button">.list-group-item.list-group-item-action.list-group-item-danger</li>
-      <li class="list-group-item list-group-item-action list-group-item-warning" role="button">.list-group-item.list-group-item-action.list-group-item-warning</li>
-      <li class="list-group-item list-group-item-action list-group-item-info" role="button">.list-group-item.list-group-item-action.list-group-item-info</li>
-      <li class="list-group-item list-group-item-action list-group-item-light" role="button">.list-group-item.list-group-item-action.list-group-item-light</li>
-      <li class="list-group-item list-group-item-action list-group-item-dark" role="button">.list-group-item.list-group-item-action.list-group-item-dark</li>
+      <li class="list-group-item list-group-item-header">.list-group-item.list-group-item-header</li>
+      <li class="list-group-item list-group-item-header list-group-item-primary">.list-group-item.list-group-item-header.list-group-item-primary</li>
+      <li class="list-group-item list-group-item-header list-group-item-secondary">.list-group-item.list-group-item-header.list-group-item-secondary</li>
+      <li class="list-group-item list-group-item-header list-group-item-success">.list-group-item.list-group-item-header.list-group-item-success</li>
+      <li class="list-group-item list-group-item-header list-group-item-danger">.list-group-item.list-group-item-header.list-group-item-danger</li>
+      <li class="list-group-item list-group-item-header list-group-item-warning">.list-group-item.list-group-item-header.list-group-item-warning</li>
+      <li class="list-group-item list-group-item-header list-group-item-info">.list-group-item.list-group-item-header.list-group-item-info</li>
+      <li class="list-group-item list-group-item-header list-group-item-gray-extra-light">.list-group-item.list-group-item-header.list-group-item-gray-extra-light</li>
+      <li class="list-group-item list-group-item-header list-group-item-gray-light">.list-group-item.list-group-item-header.list-group-item-gray-light</li>
+      <li class="list-group-item list-group-item-header list-group-item-gray-medium">.list-group-item.list-group-item-header.list-group-item-gray-medium</li>
+      <li class="list-group-item list-group-item-header list-group-item-gray-dark">.list-group-item.list-group-item-header.list-group-item-gray-dark</li>
     </ul>
   </demo.example>
   <demo.snippet @name="list-group-headers" />
@@ -283,8 +284,10 @@ Taken from [Bootstrap borders](https://getbootstrap.com/docs/4.1/utilities/borde
     <div class="border border-danger">.border.border-danger</div>
     <div class="border border-warning">.border.border-warning</div>
     <div class="border border-info">.border.border-info</div>
-    <div class="border border-light">.border.border-light</div>
-    <div class="border border-dark">.border.border-dark</div>
+    <div class="border border-gray-extra-light">.border.border-gray-extra-light</div>
+    <div class="border border-gray-light">.border.border-gray-light</div>
+    <div class="border border-gray-medium">.border.border-gray-medium</div>
+    <div class="border border-gray-dark">.border.border-gray-dark</div>
     <div class="border border-white">.border.border-white</div>
    </demo.example>
   <demo.snippet @name="border-custom-colour-variants" />

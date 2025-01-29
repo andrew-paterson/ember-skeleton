@@ -36,9 +36,13 @@
   }
 }
 
-@each $color, $value in $theme-colors {
+@each $color in $theme-colors {
   .border-#{$color} {
-    border-color: var(#{$value});
+    border-color: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      var(--#{$color}-lightness)
+    );
   }
 }
 

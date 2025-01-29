@@ -1,10 +1,25 @@
 :root {
-  --button-color: color-yiq(--primary);
+  --button-theme-color: hsl(
+    var(--theme-hue),
+    var(--theme-saturation),
+    var(--theme-lightness)
+  );
+  --button-theme-color-dark: hsl(
+    var(--theme-hue),
+    var(--theme-saturation),
+    calc(var(--theme-lightness) - 15%)
+  );
+  --button-theme-color-light: hsl(
+    var(--theme-hue),
+    var(--theme-saturation),
+    calc(var(--theme-lightness) + 15%)
+  );
+
+  --button-color: var(--primary-contrasted);
   --button-hover-color: var(--button-color);
-  --button-background-color: var(--primary);
-  --button-hover-background-color: var(--primary-darken-15);
-  --button-border-color: var(--primary-darken-15);
-  --button-focus-box-shadow-color: var(--primary-lighten-25);
+  --button-background-color: var(--button-theme-color);
+  --button-hover-background-color: var(--button-theme-color-dark);
+  --button-border-color: var(--button-background-color);
   --button-padding-y: 10px;
   --button-font-family: 'Lato', Arial, sans-serif;
   --button-font-size: 1.3rem;
@@ -24,4 +39,5 @@
   --button-link-disabled-color: #333;
   --button-outline-background-color: #fff;
   --button-svg-fill: var(--button-color);
+  --button-hover-svg-fill: var(--button-hover-color);
 }

@@ -124,20 +124,20 @@
   margin-bottom: -1px;
 }
 
-@each $color, $value in $theme-colors {
+@each $color in $theme-colors {
   .bg-#{$color}.box-arrow.arrow-direction-up:after {
-    border-bottom-color: var(#{$value});
+    border-bottom-color: var(--#{$color});
   }
 
   .bg-#{$color}.box-arrow.arrow-direction-left:after {
-    border-right-color: var(#{$value});
+    border-right-color: var(--#{$color});
   }
 
   .bg-#{$color}.box-arrow.arrow-direction-down:after {
-    border-top-color: var(#{$value});
+    border-top-color: var(--#{$color});
   }
 
   .bg-#{$color}.box-arrow.arrow-direction-right:after {
-    border-left-color: var(#{$value});
+    border-left-color: var(--#{$color});
   }
 }

@@ -1,0 +1,134 @@
+@use 'sass:map';
+@use 'sass:list';
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --gray-extra-light: #f3f3f3;
+  --gray-light: #cccccc;
+  --gray-medium: #999999;
+  --gray-dark: #333333;
+  --white: #ffffff;
+
+  --primary-contrasted: var(--yiq-text-light);
+  --secondary-contrasted: var(--yiq-text-light);
+  --success-contrasted: var(--yiq-text-light);
+  --info-contrasted: var(--yiq-text-light);
+  --warning-contrasted: var(--yiq-text-light);
+  --danger-contrasted: var(--yiq-text-light);
+  --gray-extra-light-contrasted: var(--yiq-text-dark);
+  --gray-light-contrasted: var(--yiq-text-dark);
+  --gray-medium-contrasted: var(--yiq-text-light);
+  --gray-dark-contrasted: var(--yiq-text-light);
+
+  --theme-hue: 211;
+  --theme-saturation: 100%;
+  --theme-lightness: 50%;
+
+  --primary-hue: 211;
+  --primary-saturation: 100%;
+  --primary-lightness: 50%;
+  --secondary-hue: 261;
+  --secondary-saturation: 51%;
+  --secondary-lightness: 51%;
+  --success-hue: 134;
+  --success-saturation: 61%;
+  --success-lightness: 41%;
+  --info-hue: 188;
+  --info-saturation: 78%;
+  --info-lightness: 41%;
+  --warning-hue: 27;
+  --warning-saturation: 98%;
+  --warning-lightness: 54%;
+  --danger-hue: 354;
+  --danger-saturation: 70%;
+  --danger-lightness: 54%;
+  --gray-extra-light-hue: 0;
+  --gray-extra-light-saturation: 0%;
+  --gray-extra-light-lightness: 95%;
+  --gray-light-hue: 0;
+  --gray-light-saturation: 0%;
+  --gray-light-lightness: 80%;
+  --gray-medium-hue: 0;
+  --gray-medium-saturation: 0%;
+  --gray-medium-lightness: 60%;
+  --gray-dark-hue: 0;
+  --gray-dark-saturation: 0%;
+  --gray-dark-lightness: 20%;
+  --white-hue: 0;
+  --white-saturation: 0%;
+  --white-lightness: 100%;
+
+  --primary: #007bff;
+  --secondary: #6f42c1;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #fd7e14;
+  --danger: #dc3545;
+  --light: #cccccc;
+  --dark: #333333;
+
+  --button-theme-colors: var(--theme-colors);
+
+  --yiq-text-dark: #222;
+  --yiq-text-light: #fff;
+
+  --svg-foreground-graphic-fill: #fff;
+  --svg-foreground-graphic-stroke-color: #fff;
+}
+
+$yiq-light-text: (
+  '--primary',
+  '--secondary',
+  '--success',
+  '--info',
+  '--warning',
+  '--danger',
+  '--gray-medium',
+  '--gray-dark'
+);
+
+$yiq-dark-text: ('--gray-extra-light', '--gray-light', '--white');
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8%;
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 160;
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+
+$theme-colors: () !default;
+$theme-colors: list.join(
+  $theme-colors,
+  (
+    'primary',
+    'secondary',
+    'success',
+    'info',
+    'warning',
+    'danger',
+    'gray-extra-light',
+    'gray-light',
+    'gray-medium',
+    'gray-dark',
+    'white'
+  )
+);
+
+$overlay-levels: 10, 30, 50, 80;
+
+$overlay-colors: ();
+$overlay-colors: map.merge(
+  (
+    'black': '0,0,0',
+    'white': '255,255,255',
+  ),
+  $overlay-colors
+);

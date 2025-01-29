@@ -35,11 +35,27 @@
   }
 }
 
-@each $color, $value in $theme-colors {
+@each $color in $theme-colors {
   .alert-#{$color} {
-    --alert-bg: var(#{$value}-extra-light);
-    --alert-color: var(#{$value}-extra-dark);
-    --alert-border-color: var(#{$value}-dark);
-    --alert-link-color: var(#{$value}-extra-dark);
+    --alert-variation-light: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      calc(var(--#{$color}-lightness) + 25%)
+    );
+    --alert-variation-dark: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      calc(var(--#{$color}-lightness) - 10%)
+    );
+    --alert-variation-extra-dark: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      calc(var(--#{$color}-lightness) - 35%)
+    );
+
+    --alert-bg: var(--alert-variation-light);
+    --alert-color: var(--alert-variation-extra-dark);
+    --alert-border-color: var(--alert-variation-dark);
+    --alert-link-color: var(--alert-variation-extra-dark);
   }
 }

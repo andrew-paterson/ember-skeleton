@@ -139,7 +139,7 @@ h4 {
 }
 
 .text-larger {
-  font-size: calc(var(--text-larger-size) * var(--rem-adjustment));
+  font-size: var(--text-larger-size);
 }
 
 .text-bold {
@@ -147,7 +147,7 @@ h4 {
 }
 
 .text-smaller {
-  font-size: calc(var(--text-smaller-size) * var(--rem-adjustment));
+  font-size: var(--text-smaller-size);
 }
 
 .text-align-left {
@@ -191,14 +191,22 @@ h4 {
   }
 }
 
-@each $color, $value in $theme-colors {
+@each $color in $theme-colors {
   .text-#{$color} {
-    color: var(#{$value});
+    color: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      var(--#{$color}-lightness)
+    );
 
     a {
       &:not(:disabled):not(.disabled):hover,
       &:not(:disabled):not(.disabled):focus {
-        color: var(#{$value}-extra-dark) !important;
+        color: hsl(
+          var(--#{$color}-hue),
+          var(--#{$color}-saturation),
+          calc(var(--#{$color}-lightness) - 25%)
+        ) !important;
       }
     }
   }
@@ -206,7 +214,11 @@ h4 {
   a.text-#{$color} {
     &:not(:disabled):not(.disabled):hover,
     &:not(:disabled):not(.disabled):focus {
-      color: var(#{$value}-extra-dark) !important;
+      color: hsl(
+        var(--#{$color}-hue),
+        var(--#{$color}-saturation),
+        calc(var(--#{$color}-lightness) - 25%)
+      ) !important;
     }
   }
 }

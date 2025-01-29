@@ -22,15 +22,16 @@
     color: var(--button-hover-color);
     background: var(--button-hover-background-color);
     border-color: var(--button-hover-background-color);
+    svg {
+      fill: var(--button-hover-svg-fill);
+    }
   }
   &:focus,
   &.focus,
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active {
     outline: 0;
-    background: var(--button-hover-background-color);
-    border-color: var(--button-hover-background-color);
-    box-shadow: 0 0 0 3px var(--button-focus-box-shadow-color);
+    box-shadow: 0 0 0 3px var(--button-variant-light);
   }
   &.disabled,
   &:disabled {
@@ -114,26 +115,41 @@ fieldset:disabled a.btn {
 }
 
 // Button colours
-@each $color, $value in $theme-colors {
+@each $color in $theme-colors {
+  .btn-#{$color},
+  .btn-outline-#{$color} {
+    --button-variant: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      var(--#{$color}-lightness)
+    );
+    --button-variant-dark: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      calc(var(--#{$color}-lightness) - 15%)
+    );
+    --button-variant-light: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      calc(var(--#{$color}-lightness) + 15%)
+    );
+  }
   .btn-#{$color} {
-    --button-background-color: var(#{$value});
-    --button-hover-background-color: var(#{$value}-dark);
-    --button-color: var(#{color-yiq($value)});
-    --button-border-color: var(#{$value});
-    --button-focus-box-shadow-color: var(#{$value}-light);
+    --button-background-color: var(--button-variant);
+    --button-hover-background-color: var(--button-variant-dark);
+    --button-border-color: var(--button-background-color);
+    --button-color: var(--#{$color}-contrasted);
+    --button-hover-color: var(--button-color);
     --button-svg-fill: var(--button-color);
     cursor: pointer;
   }
-}
 
-@each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
+    --button-border-color: var(--button-variant);
+    --button-color: var(--button-border-color);
     --button-background-color: var(--button-outline-background-color);
-    --button-hover-background-color: var(#{$value});
-    --button-color: var(#{$value});
-    --button-border-color: var(#{$value});
-    --button-focus-box-shadow-color: var(#{$value}-light);
-    --button-hover-color: var(#{color-yiq($value)});
+    --button-hover-background-color: var(--button-border-color);
+    --button-hover-color: var(--#{$color}-contrasted);
     --button-svg-fill: var(--button-color);
   }
 }
