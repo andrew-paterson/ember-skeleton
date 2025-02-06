@@ -9,7 +9,7 @@ Replaces underscores with spaces in the string, and applies one of three casing 
 - `lowerCase`
 - `upperCase`
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="humanise-string-basic" class="viewport">
     <table>

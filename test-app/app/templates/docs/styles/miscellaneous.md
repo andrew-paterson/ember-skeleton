@@ -28,7 +28,7 @@ Applies the font family assigned to the `$monospace-font-family` variable to the
 
 Any element with the classes `.spinner.on` will have a spinning animation.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="spinning-badge.hbs" class="viewport">
       <div class="spinner on badge badge-success">

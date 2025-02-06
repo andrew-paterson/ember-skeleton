@@ -1,6 +1,6 @@
 # Card box shadow
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="card-box-shaow-default.scss" class="card-box-shadow-example viewport">
     <div class="card-box-shadow">

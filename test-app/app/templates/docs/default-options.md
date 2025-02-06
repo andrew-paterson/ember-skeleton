@@ -18,7 +18,7 @@ Allows you to define default settings for use by the <LinkTo class="docs-md\_\_a
 
 The above settings would allow the following three use cases.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="theme-color-string-default-badge.hbs" class="viewport">
 <b class="badge badge-{{ember-skeleton/theme-color-string "passed"}}">passed</b>
@@ -38,7 +38,7 @@ Allows you to define default settings for use by the <LinkTo class="docs-md\_\_a
 
 <DocsSnippet @name="theme-icon-app-defaults.js" @language="javascript" />
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="theme-icon-defaults-usage.hbs" class="theme-icons-demo viewport">
 {{(component (ember-skeleton/theme-icon "passed"))}}

@@ -31,9 +31,9 @@
   "dependencies": {
     "@embroider/addon-shim": "^1.9.0",
     "decorator-transforms": "^2.3.0",
+    "ember-get-config": "^2.1.1",
     "ember-test-selectors": "^7.0.0",
-    "ember-window-mock": "^1.0.1",
-    "ember-get-config": "^2.1.1"
+    "ember-window-mock": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -52,7 +52,8 @@
     "eslint-plugin-prettier": "^5.2.1",
     "prettier": "^3.4.2",
     "rollup": "^4.29.1",
-    "rollup-plugin-copy": "^3.5.0"
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-sass": "^1.15.2"
   },
   "engines": {
     "node": ">= 18"
@@ -73,7 +74,6 @@
       "./components/ember-skeleton/sidebar-content.js": "./dist/_app_/components/ember-skeleton/sidebar-content.js",
       "./components/ember-skeleton/sidebar-layout/outer-wrapper.js": "./dist/_app_/components/ember-skeleton/sidebar-layout/outer-wrapper.js",
       "./components/ember-skeleton/sidebar-layout/sidebar-wrapper.js": "./dist/_app_/components/ember-skeleton/sidebar-layout/sidebar-wrapper.js",
-      "./components/ember-skeleton/status-icon-string.js": "./dist/_app_/components/ember-skeleton/status-icon-string.js",
       "./components/ember-skeleton/svg/icon-collapse-sidebar.js": "./dist/_app_/components/ember-skeleton/svg/icon-collapse-sidebar.js",
       "./helpers/ember-skeleton/array-join.js": "./dist/_app_/helpers/ember-skeleton/array-join.js",
       "./helpers/ember-skeleton/custom-inflector.js": "./dist/_app_/helpers/ember-skeleton/custom-inflector.js",
@@ -85,7 +85,6 @@
       "./helpers/ember-skeleton/robotise-string.js": "./dist/_app_/helpers/ember-skeleton/robotise-string.js",
       "./helpers/ember-skeleton/string-split.js": "./dist/_app_/helpers/ember-skeleton/string-split.js",
       "./helpers/ember-skeleton/theme-color-string.js": "./dist/_app_/helpers/ember-skeleton/theme-color-string.js",
-      "./helpers/ember-skeleton/theme-icon.js": "./dist/_app_/helpers/ember-skeleton/theme-icon.js",
       "./services/ember-skeleton.js": "./dist/_app_/services/ember-skeleton.js"
     },
     "main": "addon-main.cjs",

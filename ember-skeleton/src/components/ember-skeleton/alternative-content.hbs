@@ -2,12 +2,10 @@
   class="text-align-center body-text flex flex-direction-column flex-align-center padding-xl"
 >
   {{#if @alternativeContent.icon}}
-    {{#let (component @alternativeContent.icon) as |Icon|}}
-      <Icon
-        class="fill-{{or @alternativeContent.iconFill 'gray-medium'}}
-          margin-bottom-xl alternative-content-icon"
-      />
-    {{/let}}
+    <@alternativeContent.icon
+      class="fill-{{or @alternativeContent.iconFill 'gray-medium'}}
+        margin-bottom-xl alternative-content-icon"
+    />
   {{/if}}
   {{#if @alternativeContent.title}}
     <h1 class="page-header">{{@alternativeContent.title}}</h1>{{/if}}

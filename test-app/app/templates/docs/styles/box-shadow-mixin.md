@@ -8,7 +8,7 @@ The default opacity is `0.16`.
 
 There are 12 positions available:
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="box-shadow-mixin-examples.hbs" class="viewport">
     <div class="box-shadow-demo-top padding-lg margin-y-xl border">
@@ -59,7 +59,7 @@ There are 12 positions available:
 
 The mixin can be given a list of positions to add multiple box shadows to one element.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="box-shadow-mixin-multiple-examples.hbs" class="viewport">
     <div class="box-shadow-demo-multiple padding-lg margin-y-xl border">
@@ -77,7 +77,7 @@ The mixin can be given a list of positions to add multiple box shadows to one el
 
 Opacity can also be passed as the second argument. The default is `0.16`.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="box-shadow-mixin-opacity-examples.hbs" class="viewport">
     <div class="box-shadow-demo-bottomRight-opacity-10 padding-lg margin-y-xl border">

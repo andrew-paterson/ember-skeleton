@@ -4,7 +4,7 @@ Pass an array as the first argument and the join string as the second. You can o
 
 ## Example
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="array-join" class="viewport">
     {{this.sentence}}

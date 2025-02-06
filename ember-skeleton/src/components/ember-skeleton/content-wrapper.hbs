@@ -1,10 +1,10 @@
-<div class='padding-xxl content-container' ...attributes>
-  {{#if @title}}<h1 class='page-header foobar'>{{@title}}</h1>{{/if}}
-  {{#if @titleComponent}}{{component
-      @titleComponent
-      titleComponentProps=@titleComponentProps
-    }}{{/if}}
-  <div class='content-body body-text'>
+<div class="padding-xxl content-container" ...attributes>
+  {{#if (has-block "titleComponent")}}
+    {{yield to="titleComponent"}}
+  {{else}}
+    {{#if @title}}<h1 class="page-header">{{@title}}</h1>{{/if}}
+  {{/if}}
+  <div class="content-body body-text">
     {{yield}}
   </div>
 </div>

@@ -1,0 +1,29 @@
+.esk-container {
+  --table-border-style: solid;
+  --table-border-color: #ccc;
+  --table-row-hover-background-color: lighten($secondary, 55%);
+
+  --table-cell-padding-y: var(--spacer-md);
+  --table-cell-padding-bottom: var(--spacer-md);
+  --table-cell-padding-x: var(--spacer-lg);
+  --table-cell-text-line-height: 100%;
+  --table-cell-background-color: #fff;
+  --table-cell-background-image: none;
+  --table-cell-color: var(--body-text-color);
+  --table-cell-font-family: var(--main-font-family);
+  --table-cell-font-style: normal;
+  --table-cell-font-size: var(--body-text-font-size);
+  --table-cell-text-transform: none;
+  --table-cell-text-align: left;
+
+  --table-header-cell-color: #fff;
+  --table-header-cell-background-color: hsl(0, 0%, 67%);
+  --table-header-cell-border-color: hsl(0, 0%, 42%);
+  --table-header-cell-background-image: none;
+  --table-header-cell-text-transform: none;
+  --table-header-cell-text-align: left;
+  --table-header-cell-font-family: var(--main-font-family);
+  --table-header-cell-font-weight: var(--bold-font-weight);
+  --table-header-cell-font-style: normal;
+  --table-header-cell-font-size: var(--body-text-font-size);
+}

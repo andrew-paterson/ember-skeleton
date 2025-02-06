@@ -1,7 +1,7 @@
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import Service from '@ember/service';
-import emberSkeletonOptions from '../utils/ember-skeleton-options';
+import emberSkeletonOptions from '../utils/ember-skeleton-options.js';
 import window from 'ember-window-mock';
 export default class EmberSkeletonService extends Service {
   layoutType = 'main';
@@ -11,10 +11,7 @@ export default class EmberSkeletonService extends Service {
   @tracked sidebarCollapsed;
   @tracked navFrozen;
   @tracked alternativeContent;
-
-  get options() {
-    return emberSkeletonOptions();
-  }
+  @tracked options = emberSkeletonOptions();
 
   @action
   toggleSidebarExpanded() {

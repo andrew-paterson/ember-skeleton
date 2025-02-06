@@ -8,7 +8,7 @@ Note that the helper only looks for an exact matches- it does not replace text w
 
 The example below replaces "Andy Dwyer" with "Andrew Dwyer".
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="replace-string-basic" class="viewport">
     <table>
@@ -37,7 +37,7 @@ The example below replaces "Andy Dwyer" with "Andrew Dwyer".
 
 Th example below replaces numerical statuses with string statuses.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="replace-string-advanced" class="viewport">
     <table>
@@ -83,7 +83,7 @@ Th example below replaces numerical statuses with string statuses.
 
 Note that you can pass an array as the `find` property in your advanced search hashes. The examples below replaces both "0" and "-1" with "false", and "1" with "true".
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="replace-string-array-simple" class="viewport">
     <table>
@@ -110,7 +110,7 @@ Note that you can pass an array as the `find` property in your advanced search h
 
 Using a find array with the `advanced` hash:
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="replace-string-array" class="viewport">
     <table>
@@ -154,7 +154,7 @@ You can pass a `fallback` string to the helper. If no matches are found, the fal
 
 The example below replaces "1" with "passed" and everything else with "did not pass".
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="replace-string-fallback-simple" class="viewport">
     <table>
@@ -181,7 +181,7 @@ The example below replaces "1" with "passed" and everything else with "did not p
 
 Using `fallback` with the `advanced` hash:
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="replace-string-fallback" class="viewport">
     <table>

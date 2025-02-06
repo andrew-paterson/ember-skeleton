@@ -4,7 +4,7 @@ Determines whether the singular or plural version of a word should be used. Acce
 
 The plural version is optional- if not passed, the plural version of the phrase defaults to the singular version with 's' appended.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="custom-inflector-basic" class="viewport">
     <ul> 
@@ -18,7 +18,7 @@ The plural version is optional- if not passed, the plural version of the phrase 
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="custom-inflector-advanced" class="viewport">
     <ul> 

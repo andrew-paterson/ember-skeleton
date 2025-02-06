@@ -1,24 +1,14 @@
 {{#if this.emberSkeleton.alternativeContent}}
   <div class="ember-skeleton-alternative-content flex-expand">
-    {{#let
-      (component this.emberSkeleton.options.alternativeContentComponent)
-      as |AlternativeContentComponent|
-    }}
-      <AlternativeContentComponent
-        @alternativeContent={{this.emberSkeleton.alternativeContent}}
-      />
-    {{/let}}
+    <this.emberSkeleton.options.alternativeContentComponent
+      @alternativeContent={{this.emberSkeleton.alternativeContent}}
+    />
   </div>
 {{else}}
   {{#if this.emberSkeleton.isLoading}}
-    {{#let
-      (component this.emberSkeleton.options.loadingComponent)
-      as |LoadingComponent|
-    }}
-      <div class="flex flex-expand flex-align-center flex-justify-center">
-        <LoadingComponent />
-      </div>
-    {{/let}}
+    <div class="flex flex-expand flex-align-center flex-justify-center">
+      <this.emberSkeleton.options.loadingComponent />
+    </div>
   {{/if}}
   {{#if this.renderContent}}
     <div

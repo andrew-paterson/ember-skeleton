@@ -15,14 +15,15 @@ There is a built in component for displaying alternative content. Simply set the
 
 Click the button below to toggle the alternative layout on and off for the two examples below.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
   <button class="btn btn-primary" {{on "click" this.toggleAlternativeContent}}>Toggle alternative layout</button>
 </div>
 
 <DocsDemo class="body-text layout-container" as |demo|>
-<demo.example @name="alternative-content-sidebar.hbs" class="viewport ember-skeleton-container">
+<demo.example @name="alternative-content-sidebar.hbs" class="viewport esk-container">
 <EmberSkeleton::SidebarLayout::OuterWrapper>
 <EmberSkeleton::ContentWrapper @title="Default content - sidebar layout">
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 </EmberSkeleton::ContentWrapper>
 </EmberSkeleton::SidebarLayout::OuterWrapper>
@@ -32,9 +33,10 @@ Click the button below to toggle the alternative layout on and off for the two e
 </DocsDemo>
 
 <DocsDemo class="body-text layout-container" as |demo|>
-<demo.example @name="alternative-content-panel.hbs" class="viewport ember-skeleton-container">
+<demo.example @name="alternative-content-panel.hbs" class="viewport esk-container">
 <EmberSkeleton::PanelLayout::OuterWrapper>
 <EmberSkeleton::ContentWrapper @title="Default content - panel layout">
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 </EmberSkeleton::ContentWrapper>
 </EmberSkeleton::PanelLayout::OuterWrapper>

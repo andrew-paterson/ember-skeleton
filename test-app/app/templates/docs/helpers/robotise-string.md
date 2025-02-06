@@ -2,7 +2,7 @@
 
 Accepts a string as the first argument, and a separator as an optional second argument, which defaults to `_` if absent. `
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="robotise-string-basic" class="viewport">
     <table>

@@ -32,7 +32,7 @@ A version of each class listed below is generated for each defined spacer.
 
 The padding is represented by the darker grey areas in the examples below.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="padding-xxl.hbs" class="padding-examples viewport">
     <div class="padding-xxl">
@@ -43,7 +43,7 @@ The padding is represented by the darker grey areas in the examples below.
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="padding-md.hbs" class="padding-examples viewport">
     <div class="padding-md">
@@ -54,7 +54,7 @@ The padding is represented by the darker grey areas in the examples below.
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="padding-x-xl.hbs" class="padding-examples viewport">
     <div class="padding-x-xl">
@@ -65,7 +65,7 @@ The padding is represented by the darker grey areas in the examples below.
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="padding-y-xl.hbs" class="padding-examples viewport">
     <div class="padding-y-xl">
@@ -76,7 +76,7 @@ The padding is represented by the darker grey areas in the examples below.
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="padding-left-xl.hbs" class="padding-examples viewport">
     <div class="padding-left-xl">
@@ -89,7 +89,7 @@ The padding is represented by the darker grey areas in the examples below.
 
 ## Margin examples
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="margin-xl.hbs" class="margin-examples viewport">
     <div class="margin-xl">margin-xl</div>
@@ -100,7 +100,7 @@ The padding is represented by the darker grey areas in the examples below.
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="margin-sm.hbs" class="margin-examples viewport">
     <div class="margin-sm">margin-sm</div>
@@ -111,7 +111,7 @@ The padding is represented by the darker grey areas in the examples below.
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="margin-x-lg.hbs" class="margin-examples viewport">
     <div class="margin-x-lg">margin-x-lg</div>
@@ -122,7 +122,7 @@ The padding is represented by the darker grey areas in the examples below.
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="margin-y-lg.hbs" class="margin-examples vertical viewport">
     <div class="margin-y-lg">margin-y-lg</div>
@@ -133,7 +133,7 @@ The padding is represented by the darker grey areas in the examples below.
 </DocsDemo>
 </div>
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="margin-bottom-lg-margin-right-lg.hbs" class="margin-examples viewport">
     <div class="margin-bottom-lg margin-right-lg">margin-bottom-lg margin-right-lg</div>
@@ -149,7 +149,7 @@ The padding is represented by the darker grey areas in the examples below.
 
 ## Height, width, max-width and max-height examples
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="height-width-max-height-max-width.hbs" class="height-width-demo viewport"> 
       <div class="max-width-xxl height-xxl"></div>
@@ -162,7 +162,7 @@ The padding is represented by the darker grey areas in the examples below.
 
 Add additional spacers to the `$spacers` map in your `scss` code, _before_ you import `ember-skeleton-variables`, and ten use in your templates as shown below.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="extending-spacers.hbs" class="height-width-demo viewport">
     <div class="padding-xxxl">
@@ -196,7 +196,7 @@ Sets width to 100%
 
 Sets bottom margin to 0, if the element is the past child.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="last-child-margin-bottom.hbs" class="last-child-margin-bottom-0-demo viewport">
     <div> 

@@ -14,7 +14,7 @@ For a general explanation of the use case, see <LinkTo class="docs-md\_\_a" @rou
 
 The `ember-skeleton/theme-icon` helper accepts a string as the first arguemnt (`person.status` in the example below), and a hash of key value pairs, where each key is a potential value of `person.status` and each value the path to a component. The helper returns the relevant path, and thus the correct icon component is displayed.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-theme-icons-hash" class="theme-icons-demo viewport">
 <table>
@@ -53,7 +53,7 @@ The helper will check if the value of the first argument is present in any of th
 
 Note that you can set `fallback: true` on one of the objects. In this case, the returnString of that object will be returned if no matches are found. Note that this can be overriden by passing `fallback` to the util as outlined below.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-default-theme-icons" class="theme-icons-demo viewport">
 <table>
@@ -82,7 +82,7 @@ Note that you can set `fallback: true` on one of the objects. In this case, the 
 
 Note that where a key value pair passed directly to the helper conflicts with a default association, the default association will be overriden.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-theme-icon-overridden" class="theme-icons-demo viewport">
 <table>
@@ -111,7 +111,7 @@ Note that where a key value pair passed directly to the helper conflicts with a 
 
 You can also pass a fallback string to the helper then invoking it. This will be returned by the helper if no other matches are found.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-theme-icons-default-fallback" class="theme-icons-demo viewport">
 <div>{{component this.statusIconFallback}}missing</div>
@@ -124,7 +124,7 @@ You can also pass a fallback string to the helper then invoking it. This will be
 
 If the string passed to the helper does not find any matches, and no fallback is given, the helper will return `null`.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="util-theme-icon-no-match" class="theme-icons-demo viewport">
 <div>{{component this.statusIconNoMatches}}info</div>

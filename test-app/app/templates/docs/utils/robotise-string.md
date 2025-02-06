@@ -4,7 +4,7 @@ Accepts a string as the first argument, and a separator as an optional second ar
 
 ## Example
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="robotise-string" class="viewport">
     <table>

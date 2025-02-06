@@ -1,6 +1,7 @@
 import { Addon } from '@embroider/addon-dev/rollup';
 import { babel } from '@rollup/plugin-babel';
 import copy from 'rollup-plugin-copy';
+import sass from 'rollup-plugin-sass';
 
 const addon = new Addon({
   srcDir: 'src',
@@ -67,6 +68,12 @@ export default {
         { src: '../README.md', dest: '.' },
         { src: '../LICENSE.md', dest: '.' },
       ],
+    }),
+
+    sass({
+      options: {
+        // includePaths: ['node_modules'],
+      },
     }),
   ],
 };

@@ -4,7 +4,7 @@ Adds static classes to a component to give it rounded corners, large padding, a 
 
 ## Basic usage
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="material-card-basic.hbs" class="viewport">
 <EmberSkeleton::MaterialCard>
@@ -19,7 +19,7 @@ Adds static classes to a component to give it rounded corners, large padding, a 
 
 The `depth` prop sets the depth of the box shadow based on the Google Material Design spec. The default is `1`, max is `5`.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="material-card-depth.hbs" class="viewport">
 <EmberSkeleton::MaterialCard @depth={{1}} class="margin-bottom-lg">
@@ -46,7 +46,7 @@ The `depth` prop sets the depth of the box shadow based on the Google Material D
 
 If the `materialCardHoverEffect` prop is `true`, a hover effect will be applied when the user hovers over the card.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="material-card-hover.hbs" class="viewport">
 <EmberSkeleton::MaterialCard @materialCardHoverEffect={{true}}>
@@ -63,7 +63,7 @@ Uses the <LinkTo class="docs-md**a" @route="docs.styles.theme-colors">defined th
 
 The simplest scenario is when `borderColorProp` is the name of one of the theme colours.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="material-card-theme-color-border.hbs" class="viewport">
 <EmberSkeleton::MaterialCard @borderColorProp="danger">
@@ -77,7 +77,7 @@ The simplest scenario is when `borderColorProp` is the name of one of the theme 
 
 The second scenario is where the `borderColorProp` is not one of the <LinkTo class="docs-md\_\_a" @route="docs.styles.theme-colors">defined theme colours"</LinkTo>, but it is handled by the theme color string defaults in `config/environment.js`.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="material-card-theme-colors.hbs" class="viewport">
 {{#each this.model as | person |}}
@@ -94,7 +94,7 @@ The second scenario is where the `borderColorProp` is not one of the <LinkTo cla
 
 You can pass a hash of custom theme color string associations using the `themeColorStringHash` prop. Note that you can also pass `fallback="..."` to this hash to provide a fallback border color. See the <LinkTo class="docs-md\_\_a" @route="docs.helpers.theme-color-string">theme color string helper docs"</LinkTo> for more.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
 <demo.example @name="material-card-theme-custom-colors.hbs" class="viewport">
 {{#each this.model as | person |}}

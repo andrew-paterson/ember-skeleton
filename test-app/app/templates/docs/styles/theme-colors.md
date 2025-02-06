@@ -35,7 +35,7 @@ Note that the above code will add the colours to the default $theme-colors` map,
 
 The corresponding classes will then be avilable in your CSS. The below example shows bootstrap badges implemented with custom theme colours defined above.
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="badge-custom-colour-variants.hbs" class="viewport">
     <div class="badge badge-facebook">badge-facebook</div>

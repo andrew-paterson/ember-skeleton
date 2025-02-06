@@ -8,7 +8,7 @@ Returns a human readable filesize, after receiving a number of bytes as the only
 
 ## Usage
 
-<div class="ember-skeleton-container">
+<div class="esk-container">
 <DocsDemo class="body-text" as |demo|>
   <demo.example @name="readable-file-size-util.hbs" class="viewport">
     <ul> 

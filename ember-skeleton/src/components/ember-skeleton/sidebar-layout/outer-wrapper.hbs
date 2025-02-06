@@ -1,33 +1,29 @@
 <div
   data-test-id="ember-skeleton-sidebar-layout"
-  class="wrapper sidebar-layout ember-skeleton-container test
+  class="wrapper sidebar-layout esk-container
     {{this.emberSkeleton.appNamespace}}
     {{if this.emberSkeleton.hideContent 'hide-content' 'show-content'}}
     {{if this.contentHeader 'content-header'}}
     {{if this.emberSkeleton.navFrozen 'nav-frozen'}}"
   ...attributes
 >
-  {{component
-    this.emberSkeleton.options.headerComponent
-    headerProps=@headerProps
-  }}
+
+  <this.emberSkeleton.options.headerComponent @headerProps={{@headerProps}} />
   <section id="columns">
-    <EmberSkeleton::SidebarLayout::SidebarWrapper
-      class="ember-skeleton-sidebar"
-    >
-      {{component
-        this.emberSkeleton.options.sidebarContentComponent
-        sidebarProps=@sidebarProps
-      }}
+    <EmberSkeleton::SidebarLayout::SidebarWrapper class="esk-sidebar">
+
+      <this.emberSkeleton.options.sidebarContentComponent
+        @sidebarProps={{@sidebarProps}}
+      />
     </EmberSkeleton::SidebarLayout::SidebarWrapper>
     <div class="main">
       <EmberSkeleton::MainContent>
         {{yield}}
       </EmberSkeleton::MainContent>
-      {{component
-        this.emberSkeleton.options.footerComponent
-        footerProps=@footerProps
-      }}
+
+      <this.emberSkeleton.options.footerComponent
+        @footerProps={{@footerProps}}
+      />
     </div>
   </section>
 </div>
