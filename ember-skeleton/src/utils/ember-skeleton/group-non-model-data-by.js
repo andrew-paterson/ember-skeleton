@@ -4,7 +4,7 @@ export default function groupNonModelDataBy(collection, property) {
   if (items) {
     items.forEach(function (item) {
       let value = item[property];
-      let group = groups.findBy('value', value);
+      let group = groups.find((group) => group.value === value);
       if (group) {
         group.items.push(item);
       } else {
