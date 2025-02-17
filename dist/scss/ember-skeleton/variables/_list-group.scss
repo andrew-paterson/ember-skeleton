@@ -1,0 +1,17 @@
+.esk-container {
+  --list-group-border-width: 1px;
+  --list-group-item-padding-y: 12px;
+  --list-group-item-padding-x: 10px;
+  --list-group-color: #666;
+  --list-group-bg: #fff;
+  --list-group-border-color: #ccc;
+  --list-group-action-hover-color: #222;
+  --list-group-action-hover-bg: #ccc;
+  --list-group-active-color: #111;
+  --list-group-active-bg: #eee;
+  --list-group-active-border-color: #999;
+  --list-group-disabled-color: #888;
+  --list-group-disabled-bg: #ddd;
+  --list-group-disabled-bg-darker: darken(#ddd, 10%);
+  --list-group-header-font-weight: 600;
+}

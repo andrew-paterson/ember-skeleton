@@ -1,0 +1,38 @@
+@import './ember-skeleton-variables';
+
+.esk-container {
+  color: var(--body-color);
+  font-family: var(--main-font-family);
+  line-height: inherit;
+
+  @import 'ember-skeleton/generic/_spinning-animation';
+
+  @import 'ember-skeleton/generic/_list-group';
+  @import 'ember-skeleton/generic/_badge';
+  @import 'ember-skeleton/generic/_alert';
+  @import 'ember-skeleton/generic/_misc';
+  @import 'ember-skeleton/generic/_text';
+  @import 'ember-skeleton/generic/_buttons';
+  @import 'ember-skeleton/generic/_backgrounds';
+  @import 'ember-skeleton/generic/_borders';
+
+  @import 'ember-skeleton/generic/_tables';
+  @import 'ember-skeleton/generic/_inputs-and-labels';
+  @import 'ember-skeleton/generic/_box-arrows';
+  @import 'ember-skeleton/generic/_card-box-shadow';
+  @import 'ember-skeleton/generic/_svg';
+  @import 'ember-skeleton/generic/_overlays';
+  @import 'ember-skeleton/generic/_flexbox';
+  @import 'ember-skeleton/generic/_spacer-margin-padding';
+  @import 'ember-skeleton/generic/_spacer-height-width';
+
+  @import 'ember-skeleton/layout/_header';
+  @import 'ember-skeleton/layout/_footer';
+
+  @import 'ember-skeleton/layout/_main-nav';
+  @import 'ember-skeleton/layout/_alternative-content';
+}
+
+@import 'ember-skeleton/layout/_layout-basics';
+@import 'ember-skeleton/layout/_sidebar-layout';
+@import 'ember-skeleton/layout/_panel-layout';

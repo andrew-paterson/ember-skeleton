@@ -1,0 +1,56 @@
+.esk-container {
+  --svg-data-uri-icon-tick: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 28"  class="single-colour tick"><path fill="%23fff" d="M13 28c-0.7 0-1.3-0.2-1.9-0.7l-10-8c-1.3-1-1.5-2.9-0.5-4.2 1-1.3 2.9-1.5 4.2-0.5l7.9 6.3L32.9 0.9c1.2-1.2 3.1-1.2 4.2 0 1.2 1.2 1.2 3.1 0 4.2l-22 22C14.5 27.7 13.8 28 13 28z"/></svg>');
+
+  --label-color: #444;
+  --label-font-family: var(--main-font-family);
+  --label-font-size: var(--body-text-font-size);
+  --label-font-weight: 400;
+  --label-line-height: 150%;
+
+  --input-color: #333;
+  --input-border-color: #c9c9c9;
+  --input-background-color: #fff;
+  --input-hover-border-color: #999;
+  --input-focus-border-color: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
+  --input-valid-border-color: #80a57c;
+  --input-valid-background-color: #e5f2e4;
+  --input-invalid-border-color: #c67f8b;
+  --input-invalid-background-color: #f5e1e5;
+  --input-warning-border-color: #e97c0c;
+  --input-warning-background-color: lighten(#fbc56d, 10%);
+  --input-disabled-color: #333;
+  --input-disabled-border-color: #c9c9c9;
+  --input-disabled-background-color: #eee;
+
+  --input-border-width: 1px;
+  --input-border-style: solid;
+  --input-height: var(--spacer-xxl);
+  --input-font-family: var(--main-font-family);
+  --input-font-style: normal;
+  --input-text-transform: none;
+  --input-font-size: var(--body-text-font-size);
+  --input-font-weight: inherit;
+  --input-line-height: 100%;
+  --input-margin-top: 0px;
+  --input-margin-bottom: var(--spacer-xl);
+  --input-side-padding: var(--spacer-md);
+  --input-top-bottom-padding: var(--spacer-sm);
+  --input-border-radius: 3px;
+
+  --radio-checkbox-width-height: 18px;
+  --radio-checkbox-selected-background-color: #bbb;
+  --radio-checkbox-hover-background-color: #eee;
+  --radio-button-checkbox-width-height: 18px;
+  --radio-checkbox-selected-background-size: 11px;
+  --radio-checkbox-selected-background-position: center 3px;
+
+  --fieldset-border-width: 2px;
+  --fieldset-border-style: solid;
+  --fieldset-border-color: green;
+  --fieldset-border-radius: 3px;
+  --fieldset-background-color: #eee;
+}

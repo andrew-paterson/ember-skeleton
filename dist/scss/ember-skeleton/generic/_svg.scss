@@ -1,0 +1,22 @@
+@each $color in $theme-colors {
+  .fill-#{$color},
+  .hover-fill-#{$color}:hover {
+    fill: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      var(--#{$color}-lightness)
+    );
+  }
+  .stroke-#{$color} {
+    stroke: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      var(--#{$color}-lightness)
+    );
+  }
+}
+
+.foreground-graphic {
+  fill: var(--svg-foreground-graphic-fill);
+  stroke: var(--svg-foreground-graphic-stroke-color);
+}

@@ -1,0 +1,34 @@
+header {
+  background-color: var(--header-background-color);
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  z-index: var(--header-z-index);
+  @include box-shadow(bottom);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div.logo-container {
+    width: var(--sidebar-expanded-width);
+    padding: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    height: var(--header-height);
+  }
+
+  div.logo-container svg,
+  div.logo-container img {
+    height: calc(var(--header-height) - 2 * var(--header-padding-vertical));
+    width: auto;
+  }
+
+  div.logo-container a {
+    display: block;
+  }
+  div.logo-container a:link,
+  div.logo-container a:visited,
+  div.logo-container a:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,27 @@
+@each $color in $theme-colors {
+  .bg-#{$color} {
+    background-color: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      var(--#{$color}-lightness)
+    ) !important;
+    &.text-yiq {
+      color: var(--#{$color}-contrasted);
+    }
+    .fill-yiq {
+      fill: var(--#{$color}-contrasted);
+    }
+  }
+
+  a.bg-#{$color},
+  button.bg-#{$color} {
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):focus {
+      background-color: var(--#{$color}-mildly-dark) !important;
+    }
+  }
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}

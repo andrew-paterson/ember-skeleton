@@ -1,0 +1,107 @@
+{
+  "name": "ember-skeleton",
+  "version": "2.0.0",
+  "description": "The default blueprint for ember-cli addons.",
+  "keywords": [
+    "ember-addon"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrew-paterson/ember-skeleton"
+  },
+  "license": "MIT",
+  "author": "",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "lint": "concurrently 'pnpm:lint:*(!fix)' --names 'lint:'",
+    "lint:fix": "concurrently 'pnpm:lint:*:fix' --names 'fix:'",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "start": "rollup --config --watch --no-watch.clearScreen",
+    "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
+    "format:scss": "prettier --write 'src/**/*.scss'"
+  },
+  "dependencies": {
+    "@embroider/addon-shim": "^1.9.0",
+    "decorator-transforms": "^2.3.0",
+    "ember-get-config": "^2.1.1",
+    "ember-test-selectors": "^7.0.0",
+    "ember-window-mock": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/eslint-parser": "^7.25.9",
+    "@babel/runtime": "^7.26.0",
+    "@embroider/addon-dev": "^7.1.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "babel-plugin-ember-template-compilation": "^2.3.0",
+    "concurrently": "^9.1.0",
+    "ember-template-lint": "^6.0.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-ember": "^12.3.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.15.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.2",
+    "rollup": "^4.29.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-sass": "^1.15.2"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "ember-addon": {
+    "app-js": {
+      "./components/blank-template.js": "./dist/_app_/components/blank-template.js",
+      "./components/ember-skeleton/alternative-content.js": "./dist/_app_/components/ember-skeleton/alternative-content.js",
+      "./components/ember-skeleton/content-wrapper.js": "./dist/_app_/components/ember-skeleton/content-wrapper.js",
+      "./components/ember-skeleton/dynamic-colour-badge.js": "./dist/_app_/components/ember-skeleton/dynamic-colour-badge.js",
+      "./components/ember-skeleton/footer.js": "./dist/_app_/components/ember-skeleton/footer.js",
+      "./components/ember-skeleton/header.js": "./dist/_app_/components/ember-skeleton/header.js",
+      "./components/ember-skeleton/loading-graphic.js": "./dist/_app_/components/ember-skeleton/loading-graphic.js",
+      "./components/ember-skeleton/loading-page.js": "./dist/_app_/components/ember-skeleton/loading-page.js",
+      "./components/ember-skeleton/main-content.js": "./dist/_app_/components/ember-skeleton/main-content.js",
+      "./components/ember-skeleton/material-card.js": "./dist/_app_/components/ember-skeleton/material-card.js",
+      "./components/ember-skeleton/panel-layout/outer-wrapper.js": "./dist/_app_/components/ember-skeleton/panel-layout/outer-wrapper.js",
+      "./components/ember-skeleton/sidebar-content.js": "./dist/_app_/components/ember-skeleton/sidebar-content.js",
+      "./components/ember-skeleton/sidebar-layout/outer-wrapper.js": "./dist/_app_/components/ember-skeleton/sidebar-layout/outer-wrapper.js",
+      "./components/ember-skeleton/sidebar-layout/sidebar-wrapper.js": "./dist/_app_/components/ember-skeleton/sidebar-layout/sidebar-wrapper.js",
+      "./components/ember-skeleton/svg/icon-collapse-sidebar.js": "./dist/_app_/components/ember-skeleton/svg/icon-collapse-sidebar.js",
+      "./helpers/ember-skeleton/array-join.js": "./dist/_app_/helpers/ember-skeleton/array-join.js",
+      "./helpers/ember-skeleton/custom-inflector.js": "./dist/_app_/helpers/ember-skeleton/custom-inflector.js",
+      "./helpers/ember-skeleton/custom-sort-objects.js": "./dist/_app_/helpers/ember-skeleton/custom-sort-objects.js",
+      "./helpers/ember-skeleton/humanise-string.js": "./dist/_app_/helpers/ember-skeleton/humanise-string.js",
+      "./helpers/ember-skeleton/odd-or-even.js": "./dist/_app_/helpers/ember-skeleton/odd-or-even.js",
+      "./helpers/ember-skeleton/readable-file-size.js": "./dist/_app_/helpers/ember-skeleton/readable-file-size.js",
+      "./helpers/ember-skeleton/replace-string.js": "./dist/_app_/helpers/ember-skeleton/replace-string.js",
+      "./helpers/ember-skeleton/robotise-string.js": "./dist/_app_/helpers/ember-skeleton/robotise-string.js",
+      "./helpers/ember-skeleton/string-split.js": "./dist/_app_/helpers/ember-skeleton/string-split.js",
+      "./helpers/ember-skeleton/theme-color-string.js": "./dist/_app_/helpers/ember-skeleton/theme-color-string.js",
+      "./services/ember-skeleton.js": "./dist/_app_/services/ember-skeleton.js"
+    },
+    "main": "addon-main.cjs",
+    "type": "addon",
+    "version": 2
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*.js",
+    "./addon-main.js": "./addon-main.cjs",
+    "./vendor/*": "./vendor/*"
+  },
+  "files": [
+    "addon-main.cjs",
+    "dist",
+    "vendor"
+  ]
+}
