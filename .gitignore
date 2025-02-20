@@ -3,3 +3,4 @@ ember-skeleton
 commit-and-push.sh
 tmp
 node_modules
+dist_bak
