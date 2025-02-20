@@ -1,7 +1,7 @@
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import Service from '@ember/service';
-// import emberSkeletonOptions from '../utils/ember-skeleton-options.js';
+import emberSkeletonOptions from '../utils/ember-skeleton-options.js';
 import window from 'ember-window-mock';
 import { g, i, n } from 'decorator-transforms/runtime';
 
@@ -27,11 +27,11 @@ class EmberSkeletonService extends Service {
     g(this.prototype, 'alternativeContent', [tracked]);
   }
   #alternativeContent = (i(this, 'alternativeContent'), undefined);
-  // static {
-  //   g(this.prototype, "options", [tracked], function () {
-  //     return emberSkeletonOptions();
-  //   });
-  // }
+  static {
+    g(this.prototype, 'options', [tracked], function () {
+      return emberSkeletonOptions();
+    });
+  }
   #options = (i(this, 'options'), undefined);
   toggleSidebarExpanded() {
     this.sidebarCollapsed = !this.sidebarCollapsed;
