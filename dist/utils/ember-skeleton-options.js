@@ -1,8 +1,10 @@
-import config from 'ember-get-config';
+// import config from 'ember-get-config';
 
 /* eslint-disable ember/new-module-imports */
 function emberSkeletonOptions() {
-  // const config = {};
+  const config = {
+    emberSkeletonOptions: {},
+  };
   var configOverrides = config.emberSkeletonOptions;
   const addonDefaults = {
     // BEGIN-SNIPPET addon-default-options.js
