@@ -88,7 +88,8 @@
       "./helpers/ember-skeleton/replace-string.js": "./dist/_app_/helpers/ember-skeleton/replace-string.js",
       "./helpers/ember-skeleton/robotise-string.js": "./dist/_app_/helpers/ember-skeleton/robotise-string.js",
       "./helpers/ember-skeleton/string-split.js": "./dist/_app_/helpers/ember-skeleton/string-split.js",
-      "./helpers/ember-skeleton/theme-color-string.js": "./dist/_app_/helpers/ember-skeleton/theme-color-string.js"
+      "./helpers/ember-skeleton/theme-color-string.js": "./dist/_app_/helpers/ember-skeleton/theme-color-string.js",
+      "./services/ember-skeleton.js": "./dist/_app_/services/ember-skeleton.js"
     },
     "main": "addon-main.cjs",
     "type": "addon",
