@@ -3,15 +3,26 @@ import { action } from '@ember/object';
 import Service from '@ember/service';
 import emberSkeletonOptions from '../utils/ember-skeleton-options.js';
 import window from 'ember-window-mock';
-export default class EmberSkeletonService extends Service {
-  layoutType = 'main';
+import { getOwner } from '@ember/application';
+import themeColorStringUtil from '../utils/theme-color-string.js';
 
-  @tracked layoutType;
+export default class EmberSkeletonService extends Service {
+  @tracked layoutType = 'main';
   @tracked isLoading;
   @tracked sidebarCollapsed;
   @tracked navFrozen;
   @tracked alternativeContent;
-  @tracked options = emberSkeletonOptions();
+  @tracked options = emberSkeletonOptions(
+    getOwner(this).resolveRegistration('config:environment'),
+  );
+
+  themeColorString(string, options) {
+    return themeColorStringUtil(
+      string,
+      options,
+      this.options.themeColorStringDefaults,
+    );
+  }
 
   @action
   toggleSidebarExpanded() {

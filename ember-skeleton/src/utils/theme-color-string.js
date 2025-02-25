@@ -1,12 +1,14 @@
-import emberSkeletonOptions from './ember-skeleton-options';
-
-export default function themeColorString(string, hash = {}) {
-  var defaultAssociations = emberSkeletonOptions().themeColorStringDefaults;
+export default function themeColorString(
+  string,
+  themeColorStringDefaults,
+  hash = {},
+) {
   if (!string) {
     return;
   }
   string = string.toLowerCase();
-  defaultAssociations = defaultAssociations || hash.defaultAssociations || [];
+  const defaultAssociations = themeColorStringDefaults || [];
+
   var hashAssociations = [];
   for (var key in hash) {
     var existingAssociation = hashAssociations.find((item) => {
@@ -21,6 +23,7 @@ export default function themeColorString(string, hash = {}) {
       });
     }
   }
+
   if (findReturnString(hashAssociations, string)) {
     return findReturnString(hashAssociations, string);
   } else if (findReturnString(defaultAssociations, string)) {
@@ -29,9 +32,11 @@ export default function themeColorString(string, hash = {}) {
     if (hash.fallback) {
       return hash.fallback;
     } else {
-      var defaultFallbackObject = defaultAssociations.find((item) => {
-        return item.fallback;
-      });
+      var defaultFallbackObject =
+        defaultAssociations ||
+        [].find((item) => {
+          return item.fallback;
+        });
       if (defaultFallbackObject) {
         return defaultFallbackObject.returnString;
       }
