@@ -6,6 +6,11 @@ body {
   font-family: var(--main-font-family);
 }
 
+::placeholder {
+  --placeholder-color: #888;
+  color: var(--placeholder-color);
+}
+
 .page-header {
   color: var(--page-header-color);
   font-size: calc(var(--page-header-font-size) * var(--rem-adjustment));
