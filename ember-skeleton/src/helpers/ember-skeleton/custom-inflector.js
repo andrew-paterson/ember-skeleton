@@ -1,5 +1,5 @@
 import { helper } from '@ember/component/helper';
-import customInflectorUtil from '../../utils/custom-inflector';
+import customInflectorUtil from '../../utils/custom-inflector.js';
 
 export function customInflector([value], hash) {
   return customInflectorUtil(value, hash);

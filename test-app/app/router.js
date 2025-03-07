@@ -1,5 +1,5 @@
 import AddonDocsRouter, { docsRoute } from 'ember-cli-addon-docs/router';
-import config from './config/environment';
+import config from './config/environment.js';
 
 class Router extends AddonDocsRouter {
   location = config.locationType;
@@ -39,7 +39,6 @@ Router.map(function () {
         this.route('alternative-content');
       }),
       this.route('helpers', function () {
-        this.route('theme-icon');
         this.route('theme-color-string');
         this.route('humanise-string');
         this.route('custom-inflector');
@@ -51,7 +50,6 @@ Router.map(function () {
         this.route('in-array');
       });
     this.route('utils', function () {
-      this.route('theme-icon');
       this.route('theme-color-string');
       this.route('custom-inflector');
       this.route('readable-file-size');
@@ -64,6 +62,3 @@ Router.map(function () {
 });
 
 export default Router;
-
-
-

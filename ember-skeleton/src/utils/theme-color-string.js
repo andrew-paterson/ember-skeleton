@@ -8,7 +8,6 @@ export default function themeColorString(
   }
   string = string.toLowerCase();
   const defaultAssociations = themeColorStringDefaults || [];
-
   var hashAssociations = [];
   for (var key in hash) {
     var existingAssociation = hashAssociations.find((item) => {
@@ -23,7 +22,6 @@ export default function themeColorString(
       });
     }
   }
-
   if (findReturnString(hashAssociations, string)) {
     return findReturnString(hashAssociations, string);
   } else if (findReturnString(defaultAssociations, string)) {
