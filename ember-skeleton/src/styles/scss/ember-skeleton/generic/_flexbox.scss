@@ -77,10 +77,50 @@
   align-items: center;
 }
 
-.flex-basis-100 {
+.flex-basis-100-percent {
   flex-basis: 100%;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+.flex-align-flex-end {
+  align-items: flex-end;
+}
+
+.flex-align-flex-start {
+  align-items: flex-start;
+}
+
+.flex-align-self-start {
+  align-self: flex-start;
+}
+
+.flex-align-self-end {
+  align-self: flex-end;
+}
+
+.flex-align-self-center {
+  align-self: center;
 }
 
 .flex-align-self-stretch {
   align-self: stretch;
+}
+
+.flex-justify-self-start {
+  justify-self: flex-start;
+}
+
+.flex-justify-self-center {
+  justify-self: center;
+}
+
+.flex-justify-self-end {
+  justify-self: flex-end;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
 }

@@ -276,3 +276,7 @@ input[type='button'] {
     fill: var(--button-color);
   }
 }
+
+button:focus {
+  outline: none;
+}

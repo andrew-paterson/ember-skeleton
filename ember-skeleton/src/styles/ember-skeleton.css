@@ -1491,6 +1491,12 @@
   top: inherit;
   bottom: 0;
 }
+.esk-container .overflow-auto {
+  overflow: auto;
+}
+.esk-container .overflow-hidden {
+  overflow: hidden;
+}
 .esk-container img {
   max-width: 100%;
   width: auto;
@@ -3255,11 +3261,38 @@
 .esk-container .flex-align-items-center {
   align-items: center;
 }
-.esk-container .flex-basis-100 {
+.esk-container .flex-basis-100-percent {
   flex-basis: 100%;
+}
+.esk-container .flex-basis-0 {
+  flex-basis: 0;
+}
+.esk-container .flex-align-flex-end {
+  align-items: flex-end;
+}
+.esk-container .flex-align-flex-start {
+  align-items: flex-start;
+}
+.esk-container .flex-align-self-start {
+  align-self: flex-start;
+}
+.esk-container .flex-align-self-end {
+  align-self: flex-end;
+}
+.esk-container .flex-align-self-center {
+  align-self: center;
 }
 .esk-container .flex-align-self-stretch {
   align-self: stretch;
+}
+.esk-container .flex-justify-self-start {
+  justify-self: flex-start;
+}
+.esk-container .flex-justify-self-center {
+  justify-self: center;
+}
+.esk-container .flex-justify-self-end {
+  justify-self: flex-end;
 }
 .esk-container .padding-sm {
   padding: var(--spacer-sm);
@@ -3942,5 +3975,63 @@ body {
 .wrapper.panel-layout footer > div {
   display: flex;
   justify-content: center;
+}
+
+.line-height-0 {
+  line-height: 0;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.width-auto {
+  width: auto !important;
+}
+
+.max-width-200px {
+  max-width: 200px;
+}
+
+.max-width-300px {
+  max-width: 300px;
+}
+
+.max-width-500px {
+  max-width: 500px;
+}
+
+.max-width-700px {
+  max-width: 700px;
+}
+
+.max-width-1000px {
+  max-width: 1000px;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+.monospaced,
+.body-text ul li.monospaced,
+.body-text ol li.monospaced {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+.line-height-120-percent {
+  line-height: 120% !important;
+}
+
+.no-list-style {
+  list-style: none;
 }
 /*@ sourceMappingURL=ember-skeleton.css.map*/
