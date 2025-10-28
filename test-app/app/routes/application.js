@@ -1,5 +1,5 @@
 import { action } from '@ember/object';
-import { inject as service } from '@ember/service';
+import { service } from '@ember/service';
 // BEGIN-SNIPPET loading-state-application-route.js
 import Route from '@ember/routing/route';
 

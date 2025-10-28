@@ -1,4 +1,4 @@
-import { inject as service } from '@ember/service';
+import { service } from '@ember/service';
 // BEGIN-SNIPPET options-in-service.js
 import Component from '@ember/component';
 

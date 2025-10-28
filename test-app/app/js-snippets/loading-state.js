@@ -1,5 +1,5 @@
 import { action } from '@ember/object';
-import { inject as service } from '@ember/service';
+import { service } from '@ember/service';
 // BEGIN-SNIPPET hide-content-explicit.js
 import Component from '@ember/component';
 

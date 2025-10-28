@@ -1,10 +1,8 @@
-Ember Skeleton
-==============================================================================
+# Ember Skeleton
 
 Provides some basic layout components and generic SASS stylesheets.
 
-Installation
-------------------------------------------------------------------------------
+## Installation
 
 ```
 ember install ember-skeleton
@@ -14,21 +12,20 @@ Requirements
 
 The addon `ember-cli-sass` must be installed.
 
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 ## Components
 
 ### Material Card
 
-Adds static classes to a component to give it rounded corners, large padding, a border and box shadow effect. 
+Adds static classes to a component to give it rounded corners, large padding, a border and box shadow effect.
 
 #### Options
 
-* `depth` Default is 1, max is 5. Sets the depth of the box shadow based on the Google Material Design spec.
-* `borderColorProp` When passed, the component leverages the `ember-skeleton/theme-color-string` helper to apply a custom border colour, based on the `borderColorProp`.
-* `themeColorStringHash` Allows you to pass a hash of custom string associations to be used by the `ember-skeleton/theme-color-string` helper when returning the border colour. In the example below, the class `border-success` will be added if `someProp` evaluates to "ok".
-* `materialCardHoverEffect` Determines whether or not effects will be applied when the user hovers obver the card.
+- `depth` Default is 1, max is 5. Sets the depth of the box shadow based on the Google Material Design spec.
+- `borderColorProp` When passed, the component leverages the `ember-skeleton/theme-color-string` helper to apply a custom border colour, based on the `borderColorProp`.
+- `themeColorStringHash` Allows you to pass a hash of custom string associations to be used by the `ember-skeleton/theme-color-string` helper when returning the border colour. In the example below, the class `border-success` will be added if `someProp` evaluates to "ok".
+- `materialCardHoverEffect` Determines whether or not effects will be applied when the user hovers obver the card.
 
 #### Usage in HBS
 
@@ -62,11 +59,11 @@ When inserting the relevant component there are options.
 
 Accepts a string as the first argument.
 
-Replaces underscores with spaces in the string, and applies one of three casing functions: 
+Replaces underscores with spaces in the string, and applies one of three casing functions:
 
-* `titleCase (default)`
-* `sentenceCase`
-* `lowerCase`
+- `titleCase (default)`
+- `sentenceCase`
+- `lowerCase`
 
 #### Examples
 
@@ -108,7 +105,7 @@ Receives a string and returns another string, based on the settings in the ember
 
 #### Default associations
 
-These can be set in `app/services/ember-skeleton` in the consuming app, as shown below. Note that you can also override `defaultThemeColorString`, which is what the helper will return if the string passed does not match anything in the default settings, nor in the hash passed to the helper. 
+These can be set in `app/services/ember-skeleton` in the consuming app, as shown below. Note that you can also override `defaultThemeColorString`, which is what the helper will return if the string passed does not match anything in the default settings, nor in the hash passed to the helper.
 
     import Service from '@ember/service';
 
@@ -156,7 +153,7 @@ Note that if you have defined `themeColorStringDefaults` in the `emberSkeleton` 
 
 ```
 import { themeColorString } from 'ember-skeleton/helpers/ember-skeleton/theme-color-string';
-import { inject as service } from '@ember/service';
+import { service } from '@ember/service';
 
 ...
 emberSkeleton: service(),
@@ -198,6 +195,7 @@ import { readableFileSize } from 'ember-skeleton/helpers/ember-skeleton/readable
 ...
 readableFileSize([23523532345]);
 ```
+
 ### Replace String
 
 Receives a string to search for as the first argument, and then either a search tem and a replace term (simple search), or an array of search and replace hashes (advanced search). Note that the value of the `default` hash will be returned if the string is not found in any of the hashes.
@@ -210,8 +208,8 @@ Receives a string to search for as the first argument, and then either a search 
 
 #### Advanced Usage
 
-    {{ember-skeleton/replace-string "qc_pending" 
-      advanced=(array 
+    {{ember-skeleton/replace-string "qc_pending"
+      advanced=(array
         (hash
           find="spain"
           replace="europe"
@@ -225,8 +223,8 @@ Receives a string to search for as the first argument, and then either a search 
 
 Note that you can pass an array as the `find` property in your advanced search hashes.
 
-    {{ember-skeleton/replace-string "south-africa" 
-      advanced=(array 
+    {{ember-skeleton/replace-string "south-africa"
+      advanced=(array
         (hash
           find=(array "spain" "italy" "france")
           replace="europe"
@@ -301,15 +299,15 @@ Bootstrap is used heavily, but not completely. The following components are used
 
 ### Bootstrap components
 
-* [Alerts](https://getbootstrap.com/docs/4.1/components/alerts/)
-* [Badge](https://getbootstrap.com/docs/4.1/components/badge/)
-* [Buttons](https://getbootstrap.com/docs/4.1/components/buttons/)
-* [List group](https://getbootstrap.com/docs/4.1/components/list-group/)
+- [Alerts](https://getbootstrap.com/docs/4.1/components/alerts/)
+- [Badge](https://getbootstrap.com/docs/4.1/components/badge/)
+- [Buttons](https://getbootstrap.com/docs/4.1/components/buttons/)
+- [List group](https://getbootstrap.com/docs/4.1/components/list-group/)
 
 ### Bootstrap utilities
 
-* [Borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
-* [Colours](https://getbootstrap.com/docs/4.1/utilities/colors/)
+- [Borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
+- [Colours](https://getbootstrap.com/docs/4.1/utilities/colors/)
 
 ## Flexbox styles
 
@@ -329,7 +327,7 @@ Note the following variables:
     $svg-foreground-graphic-fill
     $svg-foreground-graphic-stroke-color
 
-By adding the class `foreground-graphic` to any element inside an svg, the fill and stoke colours will be whatever the corresponding variables are set to (Default is `#fff`). 
+By adding the class `foreground-graphic` to any element inside an svg, the fill and stoke colours will be whatever the corresponding variables are set to (Default is `#fff`).
 
 ### Overlay background and fill classes
 
@@ -337,13 +335,13 @@ By default the following two sets of classes add a semi transparent css backgrou
 
 ### Background
 
-`overlay-bg-black-10` `overlay-bg-black-20` `overlay-bg-black-50` 
-`overlay-bg-white-10` `overlay-bg-white-20` `overlay-bg-white-50` 
+`overlay-bg-black-10` `overlay-bg-black-20` `overlay-bg-black-50`
+`overlay-bg-white-10` `overlay-bg-white-20` `overlay-bg-white-50`
 
 ### Fill
 
-`overlay-fill-black-10` `overlay-fill-black-20` `overlay-fill-black-50` 
-`overlay-fill-white-10` `overlay-fill-white-20` `overlay-fill-white-50` 
+`overlay-fill-black-10` `overlay-fill-black-20` `overlay-fill-black-50`
+`overlay-fill-white-10` `overlay-fill-white-20` `overlay-fill-white-50`
 
 ### Custom overlay background classes
 
@@ -414,35 +412,33 @@ Multiple shadows can be added to one element, with a custom opacity.
 
 #
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
 
 ### Installation
 
-* `git clone <repository-url>`
-* `cd ember-skeleton`
-* `npm install`
+- `git clone <repository-url>`
+- `cd ember-skeleton`
+- `npm install`
 
 ### Linting
 
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+- `npm run lint:hbs`
+- `npm run lint:js`
+- `npm run lint:js -- --fix`
 
 ### Running tests
 
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `ember try:each` – Runs the test suite against multiple Ember versions
+- `ember test` – Runs the test suite on the current Ember version
+- `ember test --server` – Runs the test suite in "watch mode"
+- `ember try:each` – Runs the test suite against multiple Ember versions
 
 ### Running the dummy application
 
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+- `ember serve`
+- Visit the dummy application at [http://localhost:4200](http://localhost:4200).
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
