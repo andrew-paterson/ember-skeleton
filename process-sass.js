@@ -4,15 +4,10 @@ const path = require('path');
 
 const inOut = [
   {
-    input: './ember-skeleton/src/scss/ember-skeleton.scss',
-    output: ['./ember-skeleton/src/components/ember-skeleton/panel-layout/ember-skeleton.css', './ember-skeleton/src/components/ember-skeleton/sidebar-layout/ember-skeleton.css'],
+    input: './ember-skeleton/src/styles/scss/ember-skeleton.scss',
+    output: ['./ember-skeleton/src/styles/ember-skeleton.css'],
     sourceMap: true,
   },
-  // {
-  //   input: './test-app/app/styles/app.scss',
-  //   output: ['./test-app/app/styles/app.css'],
-  //   sourceMap: true,
-  // },
 ];
 
 inOut.forEach((item) => {
