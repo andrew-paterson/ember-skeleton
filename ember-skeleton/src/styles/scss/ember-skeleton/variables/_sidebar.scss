@@ -1,7 +1,11 @@
 .esk-container {
   --sidebar-background: var(--gray-dark);
   --sidebar-layout-top-bar-height: 42px;
-  --sidebar-toggle-menu-background: darken($gray-medium, 20%);
+  --sidebar-toggle-menu-background: hsl(
+    var(--gray-medium-hue),
+    var(--gray-medium-saturation),
+    calc(var(--gray-medium-lightness) - 20%)
+  );
   --sidebar-nav-item-height: var(--spacer-xxl);
   --sidebar-nav-item-color: #ddd;
   --sidebar-nav-item-active-hover-color: #fff;

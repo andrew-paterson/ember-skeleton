@@ -180,15 +180,15 @@
 }
 
 .esk-container {
+  --z-index: 1;
   --header-z-index: 12;
   --sidebar-z-index: 11;
   --sidebar-layout-top-bar-z-index: 11;
-  --popout-box-z-index: 10;
+  --popout-box-z-index: 13;
   --bootstrap-date-picker-popout-z-index: 1;
   --confirm-cancel-popout-z-index: 20000000;
   --info-popouts-z-index: 1;
   --boorstrap-tooltips-z-index: 1;
-  --user-popout-box-z-index: 13;
 }
 
 .esk-container {
@@ -221,7 +221,11 @@
 .esk-container {
   --sidebar-background: var(--gray-dark);
   --sidebar-layout-top-bar-height: 42px;
-  --sidebar-toggle-menu-background: darken($gray-medium, 20%);
+  --sidebar-toggle-menu-background: hsl(
+    var(--gray-medium-hue),
+    var(--gray-medium-saturation),
+    calc(var(--gray-medium-lightness) - 20%)
+  );
   --sidebar-nav-item-height: var(--spacer-xxl);
   --sidebar-nav-item-color: #ddd;
   --sidebar-nav-item-active-hover-color: #fff;
@@ -1459,12 +1463,17 @@
   cursor: pointer;
 }
 .esk-container .pop-up-box {
-  padding: 15px;
-  background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --pop-up-box-border-radius: 3px;
+  padding: var(--spacer-lg);
+  background: #fff;
   border: 1px solid #bbb;
-  border-radius: var(--button-border-radius);
+  border-radius: var(--pop-up-box-border-radius);
   margin: 10px 0;
+}
+.esk-container .pop-up-box:not(.width-auto) {
+  width: 100%;
+  max-width: 340px;
 }
 .esk-container .inline-block {
   display: inline-block;
@@ -3778,97 +3787,6 @@
 }
 .esk-container .panel-layout footer {
   justify-content: center;
-}
-.esk-container div.main-nav {
-  max-width: var(--sidebar-expanded-width);
-  overflow-y: auto;
-  overflow-x: hidden;
-  background: var(--sidebar-background);
-}
-.esk-container div.main-nav.nav-collapsed {
-  max-width: var(--sidebar-collapsed-width);
-}
-.esk-container div.main-nav.nav-toggled {
-  transition: var(--sidebar-toggle-transition);
-}
-.esk-container div.main-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.esk-container div.main-nav ul li {
-  margin: 0;
-  list-style: none;
-  height: var(--sidebar-nav-item-height);
-  width: var(--sidebar-expanded-width);
-  font-size: calc(var(--main-nav-item-font-size) * var(--rem-adjustment));
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  color: var(--gray-light);
-  display: flex;
-  align-items: center;
-  background: var(--gray-dark);
-}
-.esk-container div.main-nav ul li.no-link {
-  padding: 0 var(--spacer-lg);
-}
-.esk-container div.main-nav .menu-toggle {
-  background: var(--sidebar-toggle-menu-background);
-  display: flex;
-  justify-content: space-between;
-  height: var(--sidebar-toggle-menu-list-item-height);
-  border-bottom: 1px solid #666;
-  width: var(--sidebar-expanded-width);
-}
-.esk-container div.main-nav .menu-toggle svg.nav-collapse {
-  height: 18px;
-  fill: var(--sidebar-nav-item-color);
-}
-.esk-container div.main-nav .hamburger .hamburger-stripe {
-  height: 2px;
-  width: 26px;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  background: var(--sidebar-hamburger-color);
-  display: block;
-}
-.esk-container div.main-nav .hamburger .hamburger-stripe:not(:last-child) {
-  margin-bottom: 4px;
-}
-.esk-container div.main-nav a {
-  display: block;
-  text-decoration: none;
-  font-size: 1em;
-  text-transform: none;
-  font-weight: 400;
-  color: var(--sidebar-nav-item-color);
-  display: flex;
-  align-items: center;
-  height: var(--sidebar-nav-item-height);
-  flex-grow: 1;
-}
-.esk-container div.main-nav a:hover,
-.esk-container div.main-nav a:active {
-  color: var(--sidebar-nav-item-active-hover-color);
-  background-color: #777;
-  text-decoration: none;
-}
-.esk-container div.main-nav a.active {
-  cursor: default;
-}
-.esk-container div.main-nav li svg {
-  fill: #fff;
-  width: var(--sidebar-collapsed-width);
-  height: var(--sidebar-nav-item-height);
-  padding: var(--spacer-lg);
-}
-.esk-container .nav-frozen .main-nav ul {
-  opacity: 0.3;
-}
-.esk-container .nav-frozen .main-nav ul li a:hover {
-  cursor: not-allowed;
-  background: transparent;
 }
 .esk-container .alternative-content-icon {
   max-width: var(--alternative-content-icon-max-width);

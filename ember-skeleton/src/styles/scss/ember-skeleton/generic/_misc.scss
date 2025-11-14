@@ -8,12 +8,22 @@
 }
 
 .pop-up-box {
-  padding: 15px;
-  background: #fff;
   @include card-box-shadow;
+  --pop-up-box-border-radius: 3px;
+  &:not(.width-auto) {
+    width: 100%;
+    max-width: 340px;
+  }
+  padding: var(--spacer-lg);
+  background: #fff;
   border: 1px solid #bbb;
-  border-radius: var(--button-border-radius);
+  border-radius: var(--pop-up-box-border-radius);
   margin: 10px 0;
+  // &.auto-width {
+  //   display: inline-block;
+  //   max-width: 100%;
+  //   width: auto;
+  // }
 }
 
 .inline-block {
