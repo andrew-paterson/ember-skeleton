@@ -1,0 +1,44 @@
+.badge {
+  color: var(--badge-color);
+  background: var(--badge-background-color);
+  display: inline-block;
+  padding: var(--badge-padding-y) var(--badge-padding-x);
+  font-weight: var(--badge-font-weight);
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--badge-border-radius);
+
+  // Empty badges collapse automatically
+  &:empty {
+    display: none;
+  }
+  &.badge-sm {
+    padding: calc(var(--badge-padding-y) / 2) calc(var(--badge-padding-x) / 2);
+  }
+}
+
+@each $color in $theme-colors {
+  .badge-#{$color} {
+    --badge-variant: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      var(--#{$color}-lightness)
+    );
+    --badge-variant-dark: hsl(
+      var(--#{$color}-hue),
+      var(--#{$color}-saturation),
+      calc(var(--#{$color}-lightness) - 15%)
+    );
+    --badge-color: var(--#{$color}-contrasted);
+    --badge-background-color: var(--badge-variant);
+    &[href] {
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        --badge-background-color: var(--badge-variant-dark);
+      }
+    }
+  }
+}

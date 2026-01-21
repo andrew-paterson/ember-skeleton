@@ -1,0 +1,18 @@
+@each $colorName, $rgbValue in $overlay-colors {
+  @each $level in $overlay-levels {
+    .overlay-bg-#{$colorName}-#{$level} {
+      $cssValue: 'rgba(' #{$rgbValue}',' #{$level * 0.01}')';
+      background: #{$cssValue};
+      fill: #{$cssValue};
+    }
+  }
+}
+
+@each $colorName, $rgbValue in $overlay-colors {
+  @each $level in $overlay-levels {
+    .overlay-fill-#{$colorName}-#{$level} {
+      $cssValue: 'rgba(' #{$rgbValue}',' #{$level * 0.01}')';
+      fill: #{$cssValue};
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.hidden {
+  display: none !important;
+}
+
+.hover-pointer:hover,
+[role='button'] {
+  cursor: pointer;
+}
+
+.pop-up-box {
+  @include card-box-shadow;
+  --pop-up-box-border-radius: 3px;
+  &:not(.width-auto) {
+    width: 100%;
+    max-width: 340px;
+  }
+  padding: var(--spacer-lg);
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: var(--pop-up-box-border-radius);
+  margin: 10px 0;
+  // &.auto-width {
+  //   display: inline-block;
+  //   max-width: 100%;
+  //   width: auto;
+  // }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  left: inherit;
+  right: 0;
+}
+
+.bottom-0 {
+  top: inherit;
+  bottom: 0;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+hr {
+  border-width: 0;
+  border-top: var(--hr-border-top-width) solid var(--hr-border-top-color);
+  margin: 1em 0;
+}

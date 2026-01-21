@@ -1,0 +1,46 @@
+.width-100 {
+  width: 100%;
+}
+
+.width-auto {
+  width: auto !important;
+}
+
+.width-20px {
+  width: 20px;
+}
+
+.max-width-200px {
+  max-width: 200px;
+}
+
+.max-width-300px {
+  max-width: 300px;
+}
+
+.max-width-400px {
+  max-width: 400px;
+}
+
+.max-width-500px {
+  max-width: 500px;
+}
+
+.max-width-700px {
+  max-width: 700px;
+}
+
+.max-width-1000px {
+  max-width: 1000px;
+}
+
+@each $spacing-type in 'height', 'width' {
+  @each $key, $value in $spacers {
+    .#{$spacing-type}-#{$key} {
+      #{$spacing-type}: var(#{$value});
+    }
+    .max-#{$spacing-type}-#{$key} {
+      max-#{$spacing-type}: var(#{$value});
+    }
+  }
+}
