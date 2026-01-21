@@ -17,7 +17,11 @@
   button.bg-#{$color} {
     &:not(:disabled):not(.disabled):hover,
     &:not(:disabled):not(.disabled):focus {
-      background-color: var(--#{$color}-mildly-dark) !important;
+      background-color: hsl(
+        var(--#{$color}-hue),
+        var(--#{$color}-saturation),
+        calc(var(--#{$color}-lightness) - 10%)
+      ) !important;
     }
   }
 }

@@ -2415,7 +2415,7 @@
 .esk-container a.bg-primary:not(:disabled):not(.disabled):hover, .esk-container a.bg-primary:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-primary:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-primary:not(:disabled):not(.disabled):focus {
-  background-color: var(--primary-mildly-dark) !important;
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness) - 10%)) !important;
 }
 .esk-container .bg-secondary {
   background-color: hsl(var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness)) !important;
@@ -2429,7 +2429,7 @@
 .esk-container a.bg-secondary:not(:disabled):not(.disabled):hover, .esk-container a.bg-secondary:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-secondary:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-secondary:not(:disabled):not(.disabled):focus {
-  background-color: var(--secondary-mildly-dark) !important;
+  background-color: hsl(var(--secondary-hue), var(--secondary-saturation), calc(var(--secondary-lightness) - 10%)) !important;
 }
 .esk-container .bg-success {
   background-color: hsl(var(--success-hue), var(--success-saturation), var(--success-lightness)) !important;
@@ -2443,7 +2443,7 @@
 .esk-container a.bg-success:not(:disabled):not(.disabled):hover, .esk-container a.bg-success:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-success:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-success:not(:disabled):not(.disabled):focus {
-  background-color: var(--success-mildly-dark) !important;
+  background-color: hsl(var(--success-hue), var(--success-saturation), calc(var(--success-lightness) - 10%)) !important;
 }
 .esk-container .bg-info {
   background-color: hsl(var(--info-hue), var(--info-saturation), var(--info-lightness)) !important;
@@ -2457,7 +2457,7 @@
 .esk-container a.bg-info:not(:disabled):not(.disabled):hover, .esk-container a.bg-info:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-info:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-info:not(:disabled):not(.disabled):focus {
-  background-color: var(--info-mildly-dark) !important;
+  background-color: hsl(var(--info-hue), var(--info-saturation), calc(var(--info-lightness) - 10%)) !important;
 }
 .esk-container .bg-warning {
   background-color: hsl(var(--warning-hue), var(--warning-saturation), var(--warning-lightness)) !important;
@@ -2471,7 +2471,7 @@
 .esk-container a.bg-warning:not(:disabled):not(.disabled):hover, .esk-container a.bg-warning:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-warning:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-warning:not(:disabled):not(.disabled):focus {
-  background-color: var(--warning-mildly-dark) !important;
+  background-color: hsl(var(--warning-hue), var(--warning-saturation), calc(var(--warning-lightness) - 10%)) !important;
 }
 .esk-container .bg-danger {
   background-color: hsl(var(--danger-hue), var(--danger-saturation), var(--danger-lightness)) !important;
@@ -2485,7 +2485,7 @@
 .esk-container a.bg-danger:not(:disabled):not(.disabled):hover, .esk-container a.bg-danger:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-danger:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-danger:not(:disabled):not(.disabled):focus {
-  background-color: var(--danger-mildly-dark) !important;
+  background-color: hsl(var(--danger-hue), var(--danger-saturation), calc(var(--danger-lightness) - 10%)) !important;
 }
 .esk-container .bg-gray-extra-light {
   background-color: hsl(var(--gray-extra-light-hue), var(--gray-extra-light-saturation), var(--gray-extra-light-lightness)) !important;
@@ -2499,7 +2499,7 @@
 .esk-container a.bg-gray-extra-light:not(:disabled):not(.disabled):hover, .esk-container a.bg-gray-extra-light:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-gray-extra-light:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-gray-extra-light:not(:disabled):not(.disabled):focus {
-  background-color: var(--gray-extra-light-mildly-dark) !important;
+  background-color: hsl(var(--gray-extra-light-hue), var(--gray-extra-light-saturation), calc(var(--gray-extra-light-lightness) - 10%)) !important;
 }
 .esk-container .bg-gray-light {
   background-color: hsl(var(--gray-light-hue), var(--gray-light-saturation), var(--gray-light-lightness)) !important;
@@ -2513,7 +2513,7 @@
 .esk-container a.bg-gray-light:not(:disabled):not(.disabled):hover, .esk-container a.bg-gray-light:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-gray-light:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-gray-light:not(:disabled):not(.disabled):focus {
-  background-color: var(--gray-light-mildly-dark) !important;
+  background-color: hsl(var(--gray-light-hue), var(--gray-light-saturation), calc(var(--gray-light-lightness) - 10%)) !important;
 }
 .esk-container .bg-gray-medium {
   background-color: hsl(var(--gray-medium-hue), var(--gray-medium-saturation), var(--gray-medium-lightness)) !important;
@@ -2527,7 +2527,7 @@
 .esk-container a.bg-gray-medium:not(:disabled):not(.disabled):hover, .esk-container a.bg-gray-medium:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-gray-medium:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-gray-medium:not(:disabled):not(.disabled):focus {
-  background-color: var(--gray-medium-mildly-dark) !important;
+  background-color: hsl(var(--gray-medium-hue), var(--gray-medium-saturation), calc(var(--gray-medium-lightness) - 10%)) !important;
 }
 .esk-container .bg-gray-dark {
   background-color: hsl(var(--gray-dark-hue), var(--gray-dark-saturation), var(--gray-dark-lightness)) !important;
@@ -2541,7 +2541,7 @@
 .esk-container a.bg-gray-dark:not(:disabled):not(.disabled):hover, .esk-container a.bg-gray-dark:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-gray-dark:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-gray-dark:not(:disabled):not(.disabled):focus {
-  background-color: var(--gray-dark-mildly-dark) !important;
+  background-color: hsl(var(--gray-dark-hue), var(--gray-dark-saturation), calc(var(--gray-dark-lightness) - 10%)) !important;
 }
 .esk-container .bg-white {
   background-color: hsl(var(--white-hue), var(--white-saturation), var(--white-lightness)) !important;
@@ -2555,7 +2555,7 @@
 .esk-container a.bg-white:not(:disabled):not(.disabled):hover, .esk-container a.bg-white:not(:disabled):not(.disabled):focus,
 .esk-container button.bg-white:not(:disabled):not(.disabled):hover,
 .esk-container button.bg-white:not(:disabled):not(.disabled):focus {
-  background-color: var(--white-mildly-dark) !important;
+  background-color: hsl(var(--white-hue), var(--white-saturation), calc(var(--white-lightness) - 10%)) !important;
 }
 .esk-container .bg-transparent {
   background-color: transparent !important;
